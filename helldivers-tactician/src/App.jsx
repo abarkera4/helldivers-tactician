@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import WeaponsPage from "./pages/WeaponsPage";
 import WeaponDetail from "./pages/WeaponDetail";
@@ -12,9 +12,7 @@ import "./App.css"; // Global styles
 
 function App() {
   return (
-    <Router basename="/helldivers-tactician">
-      {" "}
-      {/* Use your repository name here */}
+    <Router>
       <Navbar />
       <main>
         <Routes>

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import primaryWeapons from "../data/primaryWeapons.json";
+import secondaryWeapons from "../data/secondaryWeapons.json";
+import thrownWeapons from "../data/thrownWeapons.json";
+import weaponWiki from "../data/weaponWiki.json";
 import "./WeaponDetail.css";
 
 function WeaponDetail() {
@@ -8,39 +12,20 @@ function WeaponDetail() {
   const [wikiContent, setWikiContent] = useState(null);
 
   useEffect(() => {
-    const fetchWeaponData = async () => {
-      try {
-        let filePath = "";
-        if (id.startsWith("throw")) {
-          filePath = "/src/data/thrownWeapons.json";
-        } else if (id.startsWith("sec")) {
-          filePath = "/src/data/secondaryWeapons.json";
-        } else {
-          filePath = "/src/data/primaryWeapons.json";
-        }
+    let weaponData;
+    if (id.startsWith("throw")) {
+      weaponData = thrownWeapons;
+    } else if (id.startsWith("sec")) {
+      weaponData = secondaryWeapons;
+    } else {
+      weaponData = primaryWeapons;
+    }
 
-        const response = await fetch(filePath);
-        const data = await response.json();
-        const selectedWeapon = data.find((weapon) => weapon.id === id);
-        setWeapon(selectedWeapon);
-      } catch (error) {
-        console.error("Error fetching weapon data:", error);
-      }
-    };
+    const selectedWeapon = weaponData.find((weapon) => weapon.id === id);
+    setWeapon(selectedWeapon);
 
-    const fetchWikiContent = async () => {
-      try {
-        const response = await fetch("/src/data/weaponWiki.json");
-        const data = await response.json();
-        const selectedWikiContent = data.find((content) => content.id === id);
-        setWikiContent(selectedWikiContent);
-      } catch (error) {
-        console.error("Error fetching wiki content:", error);
-      }
-    };
-
-    fetchWeaponData();
-    fetchWikiContent();
+    const selectedWikiContent = weaponWiki.find((content) => content.id === id);
+    setWikiContent(selectedWikiContent);
   }, [id]);
 
   if (!weapon) {
