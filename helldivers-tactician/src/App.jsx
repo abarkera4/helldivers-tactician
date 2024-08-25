@@ -12,7 +12,9 @@ import "./App.css"; // Global styles
 
 function App() {
   return (
-    <Router>
+    <Router basename="/helldivers-tactician">
+      {" "}
+      {/* Use your repository name here */}
       <Navbar />
       <main>
         <Routes>
