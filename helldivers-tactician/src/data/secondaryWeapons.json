@@ -1,0 +1,132 @@
+[
+  {
+    "id": "sec_p2_peacemaker",
+    "name": "P-2 Peacemaker",
+    "category": "Pistol",
+    "type": "Secondary",
+    "base_stats": {
+      "damage": 75,
+      "capacity": 15,
+      "recoil": 23,
+      "fire_rate": 900
+    },
+    "weapon_traits": [
+      "Light Armor Penetrating",
+      "One Handed"
+    ],
+    "additional_traits": [],
+    "description": "The SEAF standard pistol - offering a high fire rate, generous capacity, and fast reloading."
+  },
+  {
+    "id": "sec_p19_redeemer",
+    "name": "P-19 Redeemer",
+    "category": "Pistol",
+    "type": "Secondary",
+    "base_stats": {
+      "damage": 60,
+      "capacity": 31,
+      "recoil": 15,
+      "fire_rate": 1100
+    },
+    "weapon_traits": [
+      "Light Armor Penetrating",
+      "One Handed"
+    ],
+    "additional_traits": [],
+    "description": "A fully-automatic pistol with an extremely high fire rate, allowing for efficient crowd control."
+  },
+  {
+    "id": "sec_p4_senator",
+    "name": "P-4 Senator",
+    "category": "Pistol",
+    "type": "Secondary",
+    "base_stats": {
+      "damage": 175,
+      "capacity": 6,
+      "recoil": 43,
+      "fire_rate": 200
+    },
+    "weapon_traits": [
+      "Medium Armor Penetrating",
+      "One Handed",
+      "Rounds Reload"
+    ],
+    "additional_traits": [],
+    "description": "A high-damage revolver, which can be reloaded with single rounds. A heavy-hitting and reliable sidearm."
+  },
+  {
+    "id": "sec_sg22_bushwhacker",
+    "name": "SG-22 Bushwhacker",
+    "category": "Special",
+    "type": "Secondary",
+    "base_stats": {
+      "damage": 405,
+      "capacity": 3,
+      "recoil": 170,
+      "fire_rate": 650
+    },
+    "weapon_traits": [
+      "Light Armor Penetrating",
+      "One Handed"
+    ],
+    "additional_traits": [],
+    "description": "A triple-barreled, break-action, sawed-off shotgun. Switch firing modes to fire all three barrels at once."
+  },
+  {
+    "id": "sec_p72_crisper",
+    "name": "P-72 Crisper",
+    "category": "Special",
+    "type": "Secondary",
+    "base_stats": {
+      "damage_per_sec": 250,
+      "capacity": 30,
+      "recoil": 3,
+      "fire_rate": 0
+    },
+    "weapon_traits": [
+      "Medium Armor Penetrating",
+      "Incendiary",
+      "One Handed"
+    ],
+    "additional_traits": [],
+    "description": "A compact handgun-style flamethrower, able to project a jet of fire over short distances."
+  },
+  {
+    "id": "sec_gp31_grenade_pistol",
+    "name": "GP-31 Grenade Pistol",
+    "category": "Special",
+    "type": "Secondary",
+    "base_stats": {
+      "damage": 650,
+      "capacity": 1,
+      "recoil": 43,
+      "fire_rate": 900
+    },
+    "weapon_traits": [
+      "One Handed",
+      "Explosive"
+    ],
+    "additional_traits": [],
+    "description": "A pistol that fires grenades. Must be reloaded between shots."
+  },
+  {
+    "id": "sec_las7_dagger",
+    "name": "LAS-7 Dagger",
+    "category": "Special",
+    "type": "Secondary",
+    "base_stats": {
+      "damage_per_sec": 200,
+      "fire_limit": 5,
+      "recoil": 1,
+      "fire_rate": 0
+    },
+    "weapon_traits": [
+      "Light Armor Penetrating",
+      "One Handed",
+      "Beam",
+      "Heat"
+    ],
+    "additional_traits": [],
+    "description": "A laser pistol that fires a continuous beam. Does not require ammo but can overheat and need to change batteries."
+  }
+]

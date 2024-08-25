@@ -1,0 +1,48 @@
+.weapon-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+}
+
+.weapon-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.weapon-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.weapon-category {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weapon-stats-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weapon-stats-section {
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.weapon-stats-section h2 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.weapon-stats-section p {
+  margin: 5px 0;
+}

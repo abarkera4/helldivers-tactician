@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/weapons" element={<WeaponsPage />} />
-        <Route path="/weapon/:weaponId" element={<WeaponDetail />} />
+        <Route path="/weapon/:id" element={<WeaponDetail />} />
         <Route path="/stratagems" element={<StratagemsPage />} />
         <Route path="/stratagem/:stratagemId" element={<StratagemDetail />} />
         <Route path="/armor" element={<ArmorPage />} />
