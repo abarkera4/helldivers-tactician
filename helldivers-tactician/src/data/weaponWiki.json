@@ -1,0 +1,209 @@
+[
+  {
+    "id": "prim_ar23_liberator",
+    "summary": "The AR-23 Liberator is a standard issue assault rifle known for its balanced performance. It's reliable for engaging light-armored targets.",
+    "usage": "Best used in general combat situations, effective against light armor. Best used in general combat situations, effective against light armor. Best used in general combat situations, effective against light armor."
+  },
+  {
+    "id": "prim_ar23p_liberator_penetrator",
+    "summary": "The AR-23P Liberator Penetrator is a modified version of the AR-23, equipped with a scope and armor-piercing rounds.",
+    "usage": "Ideal for engaging medium-armored targets at medium range."
+  },
+  {
+    "id": "prim_ar23c_liberator_concussive",
+    "summary": "The AR-23C Liberator Concussive is a variant of the Liberator firing concussive rounds that stagger enemies.",
+    "usage": "Best used to control the battlefield by staggering enemies, especially in close to medium range."
+  },
+  {
+    "id": "prim_ar23a_liberator_carbine",
+    "summary": "The AR-23A Liberator Carbine is a compact version of the Liberator, designed for increased viability in close quarters.",
+    "usage": "Effective in close-quarters combat, offering a high rate of fire with increased spread."
+  },
+  {
+    "id": "prim_ar61_tenderizer",
+    "summary": "The AR-61 Tenderizer is a high-caliber assault rifle, known for its stopping power but restrictive magazine size.",
+    "usage": "Best used in situations where high damage per shot is required, particularly against lightly armored targets."
+  },
+  {
+    "id": "prim_br14_adjudicator",
+    "summary": "The BR-14 Adjudicator is a precision assault rifle designed for medium-sized targets.",
+    "usage": "Its accuracy makes it ideal for medium-range engagements, though the restrictive magazine size can limit effectiveness in prolonged firefights."
+  },
+  {
+    "id": "prim_r63_diligence",
+    "summary": "The R-63 Diligence is a high-caliber marksman rifle known for powerful, accurate shots at long range.",
+    "usage": "Perfect for long-range engagements, trading rate of fire for stopping power."
+  },
+  {
+    "id": "prim_r63cs_diligence_counter_sniper",
+    "summary": "The R-63CS Diligence Counter Sniper is a modified Diligence rifle offering increased damage with reduced fire rate.",
+    "usage": "Ideal for precise, high-damage shots in long-range combat."
+  },
+  {
+    "id": "prim_mp98_knight",
+    "summary": "The MP-98 Knight is a submachine gun with an extremely high rate of fire, suitable for one-handed operation.",
+    "usage": "Best used for close-range engagements, especially when mobility and rapid fire are required."
+  },
+  {
+    "id": "prim_smg37_defender",
+    "summary": "The SMG-37 Defender is a high-caliber submachine gun, offering a balance of firepower and control.",
+    "usage": "Effective in close-range combat where high damage output is needed."
+  },
+  {
+    "id": "prim_smg72_pummeler",
+    "summary": "The SMG-72 Pummeler is a submachine gun firing concussive rounds that stagger enemies.",
+    "usage": "Ideal for controlling crowds and staggering targets in close combat."
+  },
+  {
+    "id": "prim_sg8_punisher",
+    "summary": "The SG-8 Punisher is a powerful dual magazine pump-action shotgun with a focus on close-range combat.",
+    "usage": "Ideal for crowd control in close quarters, though its limited range should be considered."
+  },
+  {
+    "id": "prim_sg8s_slugger",
+    "summary": "The SG-8S Slugger is a modified version of the Punisher, firing heavy slug rounds with high damage.",
+    "usage": "Perfect for dealing high damage to single, armored targets at close range."
+  },
+  {
+    "id": "prim_sg451_cookout",
+    "summary": "The SG-451 Cookout is a pump-action shotgun that fires incendiary phosphorus pellets.",
+    "usage": "Ideal for setting targets ablaze in close-quarters combat, useful for area denial."
+  },
+  {
+    "id": "prim_sg225_breaker",
+    "summary": "The SG-225 Breaker is a fully automatic shotgun, ideal for crowd control with its high rate of fire.",
+    "usage": "Effective in situations requiring rapid fire to control multiple enemies."
+  },
+  {
+    "id": "prim_sg225sp_breaker_spraypray",
+    "summary": "The SG-225SP Breaker Spray&Pray is a modified version of the Breaker, firing birdshot rounds.",
+    "usage": "Best for clearing out groups of small targets with its spread of pellets."
+  },
+  {
+    "id": "prim_sg225ie_breaker_incendiary",
+    "summary": "The SG-225IE Breaker Incendiary is a modified Breaker firing incendiary projectiles.",
+    "usage": "Ideal for burst fire to control crowds, with the added effect of setting targets on fire."
+  },
+  {
+    "id": "prim_cb9_exploding_crossbow",
+    "summary": "The CB-9 Exploding Crossbow fires powerful bolts that explode on impact, delivering massive damage.",
+    "usage": "Best used against single, heavily armored targets where precision and high damage are needed."
+  },
+  {
+    "id": "prim_jar5_dominator",
+    "summary": "The JAR-5 Dominator fires jet-propelled rounds that sacrifice rate of fire for increased damage per shot.",
+    "usage": "Suitable for situations where each shot must count, especially against medium-armored targets."
+  },
+  {
+    "id": "prim_r36_eruptor",
+    "summary": "The R-36 Eruptor is a bolt-action rifle firing jet-assisted shells that explode on impact.",
+    "usage": "Ideal for long-range engagements against groups of enemies, with caution in close quarters."
+  },
+  {
+    "id": "prim_sg8p_punisher_plasma",
+    "summary": "The SG-8P Punisher Plasma is a modified shotgun firing exploding plasma rounds, effective but dangerous to allies.",
+    "usage": "Ideal for close quarters, though caution must be taken to avoid friendly fire."
+  },
+  {
+    "id": "prim_arc12_blitzer",
+    "summary": "The ARC-12 Blitzer is a shotgun that blasts a wide burst of high-voltage electricity.",
+    "usage": "Best used in close-quarters to deal with groups of enemies, but watch out for friendly fire."
+  },
+  {
+    "id": "prim_las5_scythe",
+    "summary": "The LAS-5 Scythe is a laser rifle firing a continuous beam, effective against light armor.",
+    "usage": "Perfect for mid-range engagements, where sustained fire is needed but overheating must be managed."
+  },
+  {
+    "id": "prim_las16_sickle",
+    "summary": "The LAS-16 Sickle is a laser rifle that fires in short bursts, effective against light armor.",
+    "usage": "Best used for sustained mid-range engagements, especially where precision is required."
+  },
+  {
+    "id": "prim_plas1_scorcher",
+    "summary": "The PLAS-1 Scorcher is a plasma rifle that fires bolts of superheated gas, effective at causing explosive damage.",
+    "usage": "Use with caution in close-quarters combat to avoid self-inflicted damage."
+  },
+  {
+    "id": "prim_flam66_torcher",
+    "summary": "The FLAM-66 Torcher is a lightweight flamethrower that projects a stream of fire.",
+    "usage": "Designed for close-quarters engagements, effective against unarmored or lightly armored enemies."
+  },
+  {
+    "id": "sec_p2_peacemaker",
+    "summary": "The P-2 Peacemaker is the SEAF standard issue pistol, known for its high fire rate and ease of handling.",
+    "usage": "Ideal for situations requiring quick follow-up shots, especially against light-armored targets."
+  },
+  {
+    "id": "sec_p19_redeemer",
+    "summary": "The P-19 Redeemer is a fully-automatic pistol with an exceptionally high fire rate, suited for crowd control.",
+    "usage": "Best used in close-quarters combat where its high fire rate can suppress multiple enemies."
+  },
+  {
+    "id": "sec_p4_senator",
+    "summary": "The P-4 Senator is a high-damage revolver capable of penetrating medium armor.",
+    "usage": "Effective as a backup weapon in scenarios requiring heavy, precise shots. Ideal for single-target elimination."
+  },
+  {
+    "id": "sec_sg22_bushwhacker",
+    "summary": "The SG-22 Bushwhacker is a triple-barreled, sawed-off shotgun, powerful in close-range encounters.",
+    "usage": "Most effective in close-quarters situations, especially against clusters of enemies."
+  },
+  {
+    "id": "sec_p72_crisper",
+    "summary": "The P-72 Crisper is a compact flamethrower that projects a jet of fire over short distances.",
+    "usage": "Designed for close-range engagements, particularly against unarmored or lightly armored enemies."
+  },
+  {
+    "id": "sec_gp31_grenade_pistol",
+    "summary": "The GP-31 Grenade Pistol is a one-handed weapon that launches high-damage grenades.",
+    "usage": "Highly effective in situations requiring explosive force, though it must be reloaded after every shot."
+  },
+  {
+    "id": "sec_las7_dagger",
+    "summary": "The LAS-7 Dagger is a laser pistol firing a continuous beam that can overheat if overused.",
+    "usage": "Ideal for mid-range engagements where sustained damage is necessary, though heat management is crucial."
+  },
+  {
+    "id": "throw_g6_frag",
+    "summary": "The G-6 Frag is a standard antipersonnel fragmentation grenade known for its large area of effect.",
+    "usage": "Best used against groups of lightly armored enemies to maximize its area damage."
+  },
+  {
+    "id": "throw_g12_high_explosive",
+    "summary": "The G-12 High Explosive is a powerful grenade that causes significant damage in a concentrated area.",
+    "usage": "Ideal for taking down lightly armored targets in confined spaces where precision is key."
+  },
+  {
+    "id": "throw_g10_incendiary",
+    "summary": "The G-10 Incendiary is a grenade that sets targets and terrain within its blast radius on fire.",
+    "usage": "Effective for area denial and controlling enemy movement by creating zones of fire."
+  },
+  {
+    "id": "throw_g16_impact",
+    "summary": "The G-16 Impact grenade is a high explosive device that detonates upon impact.",
+    "usage": "Best used in situations where immediate detonation is required to neutralize fast-moving threats."
+  },
+  {
+    "id": "throw_g13_incendiary_impact",
+    "summary": "The G-13 Incendiary Impact is an advanced grenade that ignites upon impact, covering the area in white phosphorus.",
+    "usage": "Useful for creating hazardous zones instantly, especially against entrenched enemies."
+  },
+  {
+    "id": "throw_g23_stun",
+    "summary": "The G-23 Stun grenade is a non-lethal device that temporarily stuns all targets within its effective radius.",
+    "usage": "Primarily used to incapacitate enemies, allowing for strategic repositioning or non-lethal takedowns."
+  },
+  {
+    "id": "throw_g3_smoke",
+    "summary": "The G-3 Smoke is a non-lethal grenade that creates a thick smoke screen, blocking line of sight.",
+    "usage": "Ideal for obscuring vision, facilitating stealth operations, or providing cover during retreats."
+  },
+  {
+    "id": "throw_g123_thermite",
+    "summary": "The G-123 Thermite is a specialized grenade that adheres to surfaces and burns at extremely high temperatures.",
+    "usage": "Best employed against armored targets or for destroying equipment and barriers."
+  }
+
+
+]

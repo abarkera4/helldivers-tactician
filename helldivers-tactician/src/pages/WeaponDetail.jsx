@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./WeaponDetail.css"; // Assuming you have a corresponding CSS file for styles
+import "./WeaponDetail.css";
 
 function WeaponDetail() {
   const { id } = useParams();
   const [weapon, setWeapon] = useState(null);
+  const [wikiContent, setWikiContent] = useState(null);
 
   useEffect(() => {
     const fetchWeaponData = async () => {
@@ -27,43 +28,75 @@ function WeaponDetail() {
       }
     };
 
+    const fetchWikiContent = async () => {
+      try {
+        const response = await fetch("/src/data/weaponWiki.json");
+        const data = await response.json();
+        const selectedWikiContent = data.find((content) => content.id === id);
+        setWikiContent(selectedWikiContent);
+      } catch (error) {
+        console.error("Error fetching wiki content:", error);
+      }
+    };
+
     fetchWeaponData();
+    fetchWikiContent();
   }, [id]);
 
   if (!weapon) {
     return <div>Loading...</div>;
   }
 
+  const spareAmmo = weapon.base_stats?.spare_magazines ?? weapon.base_stats?.spare_rounds ?? "N/A";
+
   return (
     <div className="weapon-detail-container">
-      <h1 className="weapon-title">{weapon.name}</h1>
-      <img className="weapon-image" src={weapon.image ? weapon.image : "/assets/defaultWeaponImage.webp"} alt={weapon.name} />
-      <p className="weapon-category">{weapon.category}</p>
+      <div className="wiki-content">
+        <h2>Weapon Details</h2>
+        <p>{wikiContent?.summary || "No detailed information available."}</p>
+        <h3>Usage</h3>
+        <p>{wikiContent?.usage || "No usage information available."}</p>
+      </div>
 
       <div className="weapon-stats-block">
+        <img className="weapon-image" src={weapon.image || "/src/assets/defaultWeaponImage.webp"} alt={weapon.name} />
+        <h1 className="weapon-title">{weapon.name}</h1>
+        <p className="weapon-category">{weapon.category}</p>
+
         <div className="weapon-stats-section">
-          <h2>Firepower</h2>
-          <p>Damage: {weapon.base_stats?.damage || "N/A"}</p>
+          <div className="stat-header">Firepower</div>
+          <div className="stat-value">Damage: {weapon.base_stats?.damage || "N/A"}</div>
         </div>
 
         <div className="weapon-stats-section">
-          <h2>Weapon Handling</h2>
-          <p>Weapon Traits: {weapon.weapon_traits?.join(", ") || "N/A"}</p>
-          <p>Fire Rate: {weapon.base_stats?.fire_rate || "N/A"} RPM</p>
-          <p>Recoil: {weapon.base_stats?.recoil || "N/A"}</p>
+          <div className="stat-header">Weapon Handling</div>
+          <div className="stat-value">Traits: {weapon.weapon_traits?.join(", ") || "N/A"}</div>
+          <div className="stat-value">Fire Rate: {weapon.base_stats?.fire_rate || "N/A"} RPM</div>
+          <div className="stat-value">Recoil: {weapon.base_stats?.recoil || "N/A"}</div>
         </div>
 
         <div className="weapon-stats-section">
-          <h2>Ammunition</h2>
-          <p>Ammo Capacity: {weapon.base_stats?.capacity || "N/A"}</p>
-          <p>Spare Magazines: {weapon.base_stats?.spare_magazines || "N/A"}</p>
+          <div className="stat-header">Ammunition</div>
+          <div className="stat-value">Capacity: {weapon.base_stats?.capacity || "N/A"}</div>
+          <div className="stat-value">Spare Ammunition: {spareAmmo}</div>
         </div>
 
         <div className="weapon-stats-section">
-          <h2>Acquisition</h2>
-          <p>Source: {weapon.source || "N/A"}</p>
-          <p>Cost: {weapon.cost || "N/A"}</p>
+          <div className="stat-header">Acquisition</div>
+          <div className="stat-value">Source: {weapon.source || "N/A"}</div>
+          <div className="stat-value">Cost: {weapon.cost || "N/A"}</div>
         </div>
+
+        {weapon.additional_traits && weapon.additional_traits.length > 0 && (
+          <div className="weapon-stats-section">
+            <div className="stat-header">Additional Traits</div>
+            {weapon.additional_traits.map((trait, index) => (
+              <div key={index} className="stat-value">
+                {trait.name}: {trait.description}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

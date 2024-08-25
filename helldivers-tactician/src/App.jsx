@@ -8,20 +8,23 @@ import StratagemDetail from "./pages/StratagemDetail";
 import ArmorPage from "./pages/ArmorPage";
 import PerksPage from "./pages/PerksPage";
 import Navbar from "./components/Navbar";
+import "./App.css"; // Global styles
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/weapons" element={<WeaponsPage />} />
-        <Route path="/weapon/:id" element={<WeaponDetail />} />
-        <Route path="/stratagems" element={<StratagemsPage />} />
-        <Route path="/stratagem/:stratagemId" element={<StratagemDetail />} />
-        <Route path="/armor" element={<ArmorPage />} />
-        <Route path="/perks" element={<PerksPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/weapons" element={<WeaponsPage />} />
+          <Route path="/weapon/:id" element={<WeaponDetail />} />
+          <Route path="/stratagems" element={<StratagemsPage />} />
+          <Route path="/stratagem/:stratagemId" element={<StratagemDetail />} />
+          <Route path="/armor" element={<ArmorPage />} />
+          <Route path="/perks" element={<PerksPage />} />
+        </Routes>
+      </main>
     </Router>
   );
 }

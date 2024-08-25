@@ -12,6 +12,7 @@
     },
     "weapon_traits": [],
     "additional_traits": [],
+    "image": "/src/assets/thrownWeapons/G-6_Frag.webp",
     "description": "An antipersonnel fragmentation grenade. Creates damage over a large area when detonated."
   },
   {
@@ -27,6 +28,7 @@
     },
     "weapon_traits": [],
     "additional_traits": [],
+    "image": "/src/assets/thrownWeapons/G-12_HE.webp",
     "description": "A high explosive grenade which damages lightly armored targets. Creates high damage over a small area when detonated."
   },
   {
@@ -44,6 +46,7 @@
       "Incendiary"
     ],
     "additional_traits": [],
+    "image": "/src/assets/thrownWeapons/G-10_Incendiary.webp",
     "description": "An incendiary grenade which ignites any targets and terrain within the blast radius. Use with caution."
   },
   {
@@ -61,6 +64,7 @@
     "additional_traits": [
       "Impact Detonation"
     ],
+    "image": "/src/assets/thrownWeapons/G-16_Impact.webp",
     "description": "A high explosive grenade which detonates on first impact."
   },
   {
@@ -80,6 +84,7 @@
     "additional_traits": [
       "Impact Detonation"
     ],
+    "image": "/src/assets/thrownWeapons/Incen_impact.webp",
     "description": "Detonates on impact, covering the immediate vicinity in self-igniting white phosphorus."
   },
   {
@@ -95,6 +100,7 @@
     },
     "weapon_traits": [],
     "additional_traits": [],
+    "image": "/src/assets/thrownWeapons/G-23_Stun.webp",
     "description": "Temporarily stuns all targets within the effective radius."
   },
   {
@@ -110,6 +116,7 @@
     },
     "weapon_traits": [],
     "additional_traits": [],
+    "image": "/src/assets/thrownWeapons/G-3_Smoke.webp",
     "description": "A 'compliance weapon' to modify enemy behaviour. Creates a thick smoke screen to block targets' line of sight."
   },
   {
@@ -125,6 +132,7 @@
     },
     "weapon_traits": [],
     "additional_traits": [],
+    "image": "/src/assets/thrownWeapons/G-123_Thermite.webp",
     "description": "A thermite grenade designed to adhere to surfaces before burning at 2000°C. Capable of burning through some armor."
   }
 ]

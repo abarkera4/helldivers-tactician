@@ -8,7 +8,8 @@
       "damage": 60,
       "capacity": 45,
       "recoil": 15,
-      "fire_rate": 640
+      "fire_rate": 640,
+      "spare_magazines": 8
     },
     "weapon_traits": [
       "Light Armor Penetrating"
@@ -26,7 +27,8 @@
       "damage": 45,
       "capacity": 30,
       "recoil": 19,
-      "fire_rate": 640
+      "fire_rate": 640,
+      "spare_magazines": 10
     },
     "weapon_traits": [
       "Medium Armor Penetrating"
@@ -44,7 +46,8 @@
       "damage": 65,
       "capacity": 30,
       "recoil": 28,
-      "fire_rate": 320
+      "fire_rate": 320,
+      "spare_magazines": 10
     },
     "weapon_traits": [
       "Light Armor Penetrating"
@@ -52,10 +55,11 @@
     "additional_traits": [
       {
         "name": "Staggering Rounds",
-        "image": "/src/assets/primaryWeapons/AR-23C_Liberator_Concussive.png",
+
         "description": "Fires concussive rounds which do less damage but stagger enemies."
       }
     ],
+    "image": "/src/assets/primaryWeapons/AR-23C_Liberator_Concussive.png",
     "description": "A modified Liberator firing concussive rounds which do less damage but stagger enemies."
   },
   {
@@ -111,7 +115,8 @@
       "damage": 80,
       "capacity": 30,
       "recoil": 40,
-      "fire_rate": 550
+      "fire_rate": 550,
+      "spare_magazines": 8
     },
     "weapon_traits": [
       "Medium Armor Penetrating"
@@ -119,10 +124,10 @@
     "additional_traits": [
       {
         "name": "Accurate and Powerful",
-        "image": "/src/assets/primaryWeapons/BR-14_Adjudicator.webp",
         "description": "Delivers righteous judgment to medium-sized enemies, though its restrictive magazine limits its effectiveness against large groups."
       }
     ],
+    "image": "/src/assets/primaryWeapons/BR-14_Adjucator.webp",
     "description": "An accurate, armor-penetrating rifle, the BR-14 Adjudicator delivers righteous judgment to medium-sized enemies, though its restrictive magazine limits its effectiveness against large groups."
   },
   {
@@ -134,7 +139,8 @@
       "damage": 125,
       "capacity": 20,
       "recoil": 35,
-      "fire_rate": 350
+      "fire_rate": 350,
+      "spare_magazines": 8
     },
     "weapon_traits": [
       "Light Armor Penetrating"
@@ -142,10 +148,11 @@
     "additional_traits": [
       {
         "name": "High-Caliber Precision",
-        "image": "/src/assets/primaryWeapons/R-63_Diligence_29.webp",
+
         "description": "Trades magazine capacity and rate of fire for powerful, accurate shots."
       }
     ],
+    "image": "/src/assets/primaryWeapons/R-63_Diligence_29.webp",
     "description": "This high-caliber marksman rifle trades magazine capacity and rate of fire for powerful, accurate shots."
   },
   {
@@ -157,7 +164,8 @@
       "damage": 140,
       "capacity": 15,
       "recoil": 53,
-      "fire_rate": 350
+      "fire_rate": 350,
+      "spare_magazines": 6
     },
     "weapon_traits": [
       "Medium Armor Penetrating"
@@ -165,10 +173,11 @@
     "additional_traits": [
       {
         "name": "Increased Damage",
-        "image": "/src/assets/primaryWeapons/R-63CS_Diligence_Counter_Sniper_29.webp",
+
         "description": "A modified Diligence rifle offering increased damage, but a reduced rate of fire. Fires a single bullet at a time."
       }
     ],
+    "image": "/src/assets/primaryWeapons/R-63CS_Diligence_Counter_Sniper_29.webp",
     "description": "A modified Diligence rifle offering increased damage, but a reduced rate of fire. Fires a single bullet at a time."
   },
   {
@@ -189,10 +198,11 @@
     "additional_traits": [
       {
         "name": "Extremely High Fire Rate",
-        "image": "/src/assets/primaryWeapons/MP-98_Knight_29.webp",
+
         "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking."
       }
     ],
+    "image": "/src/assets/primaryWeapons/MP-98_Knight_29.webp",
     "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking."
   },
   {
@@ -204,7 +214,8 @@
       "damage": 70,
       "capacity": 45,
       "recoil": 10,
-      "fire_rate": 520
+      "fire_rate": 520,
+      "spare_magazines": 8
     },
     "weapon_traits": [
       "Light Armor Penetrating",
@@ -213,10 +224,11 @@
     "additional_traits": [
       {
         "name": "High-Caliber",
-        "image": "/src/assets/primaryWeapons/SMG-37_Defender.webp",
+
         "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire."
       }
     ],
+    "image": "/src/assets/primaryWeapons/SMG-37_Defender.webp",
     "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire."
   },
   {
@@ -228,7 +240,8 @@
       "damage": 65,
       "capacity": 45,
       "recoil": 10,
-      "fire_rate": 475
+      "fire_rate": 475,
+      "spare_magazines": 7
     },
     "weapon_traits": [
       "Light Armor Penetrating",
@@ -237,10 +250,11 @@
     "additional_traits": [
       {
         "name": "Concussive Rounds",
-        "image": "/src/assets/primaryWeapons/PummelerTemp.webp",
+
         "description": "Fires concussive rounds that stagger enemies. Slower rate of fire than other SMGs."
       }
     ],
+    "image": "/src/assets/primaryWeapons/PummelerTemp.webp",
     "description": "Fires concussive rounds that stagger enemies. Slower rate of fire than other SMGs."
   },
     {
@@ -252,7 +266,8 @@
         "damage": 405,
         "capacity": 16,
         "recoil": 120,
-        "fire_rate": 80
+        "fire_rate": 80,
+        "spare_rounds": 60
       },
       "weapon_traits": [
         "Light Armor Penetrating",
@@ -261,10 +276,11 @@
       "additional_traits": [
         {
           "name": "Dual Magazine Pump-Action",
-          "image": "/src/assets/primaryWeapons/SG-8_Punisher_29.webp",
+
           "description": "A powerful dual magazine pump-action shotgun with limited armor penetration. Ideal for small and fast targets."
         }
       ],
+      "image": "/src/assets/primaryWeapons/SG-8_Punisher_29.webp",
       "description": "A powerful dual magazine pump-action shotgun, with limited armor penetration. Ideal for small and fast targets."
     },
     {
@@ -276,7 +292,8 @@
         "damage": 250,
         "capacity": 16,
         "recoil": 120,
-        "fire_rate": 80
+        "fire_rate": 80,
+        "spare_rounds": 60
       },
       "weapon_traits": [
         "Medium Armor Penetrating",
@@ -285,10 +302,11 @@
       "additional_traits": [
         {
           "name": "Heavy Slug Rounds",
-          "image": "/src/assets/primaryWeapons/SG-8S_Slugger.webp",
+
           "description": "A modified Punisher shotgun firing heavy, high-damage slug rounds. Perfect for punching big holes in big targets."
         }
       ],
+      "image": "/src/assets/primaryWeapons/SG-8S_Slugger.webp",
       "description": "A modified Punisher shotgun firing heavy, high-damage slug rounds. Perfect for punching big holes in big targets."
     },
     {
@@ -300,7 +318,8 @@
         "damage": 320,
         "capacity": 16,
         "recoil": 100,
-        "fire_rate": 80
+        "fire_rate": 80,
+        "spare_rounds": 60
       },
       "weapon_traits": [
         "Light Armor Penetrating",
@@ -324,7 +343,9 @@
         "damage": 330,
         "capacity": 13,
         "recoil": 55,
-        "fire_rate": 300
+        "fire_rate": 300,
+        "spare_magazines": 7
+
       },
       "weapon_traits": [
         "Light Armor Penetrating"
@@ -332,10 +353,11 @@
       "additional_traits": [
         {
           "name": "Fully Automatic",
-          "image": "/src/assets/primaryWeapons/SG-225_Breaker_29.webp",
+
           "description": "A fully-automatic shotgun with a high rate of fire, excellent for controlling crowds. Requires frequent reloading."
         }
       ],
+      "image": "/src/assets/primaryWeapons/SG-225_Breaker_29.webp",
       "description": "A fully-automatic shotgun with a high rate of fire, excellent for controlling crowds. Requires frequent reloading."
     },
     {
@@ -347,7 +369,8 @@
         "damage": 192,
         "capacity": 26,
         "recoil": 45,
-        "fire_rate": 330
+        "fire_rate": 330,
+        "spare_magazines": 7
       },
       "weapon_traits": [
         "Light Armor Penetrating"
@@ -355,10 +378,11 @@
       "additional_traits": [
         {
           "name": "Birdshot Rounds",
-          "image": "/src/assets/primaryWeapons/SG-225SP_Breaker_Spray28Helldivers_2%29.webp",
+
           "description": "A modified Breaker shotgun firing birdshot, small pellets which saturate an area to clear up smaller targets."
         }
       ],
+      "image": "/src/assets/primaryWeapons/SG-225SP_Breaker_Spray.webp",
       "description": "A modified Breaker shotgun firing birdshot, small pellets which saturate an area to clear up smaller targets."
     },
     {
@@ -370,7 +394,8 @@
         "damage": 240,
         "capacity": 25,
         "recoil": 41,
-        "fire_rate": 300
+        "fire_rate": 300,
+        "spare_magazines": 4
       },
       "weapon_traits": [
         "Light Armor Penetrating",
@@ -379,10 +404,11 @@
       "additional_traits": [
         {
           "name": "Incendiary Projectiles",
-          "image": "/src/assets/primaryWeapons/SG-225IE_Breaker_Incendiary_29.webp",
+
           "description": "A modified Breaker shotgun firing incendiary projectiles. Generates heat during use, so limited to burst fire."
         }
       ],
+      "image": "/src/assets/primaryWeapons/SG-225IE_Breaker_Incendiary_29.webp",
       "description": "A modified Breaker shotgun firing incendiary projectiles. Generates heat during use, so limited to burst fire."
     },
       {
@@ -394,7 +420,8 @@
           "damage": 420,
           "capacity": 5,
           "recoil": 35,
-          "fire_rate": 50
+          "fire_rate": 50,
+          "spare_magazines": 8
         },
         "weapon_traits": [
           "Medium Armor Penetrating",
@@ -404,10 +431,11 @@
         "additional_traits": [
           {
             "name": "Exploding Bolts",
-            "image": "/src/assets/primaryWeapons/CB-9_Crossbow.webp",
+
             "description": "Fires powerful exploding bolts which do maximum damage upon direct impact. Gravity must be accounted for when aiming."
           }
         ],
+        "image": "/src/assets/primaryWeapons/CB-9_Crossbow.webp",
         "description": "Fires powerful exploding bolts which do maximum damage upon direct impact. Gravity must be accounted for when aiming."
       },
       {
@@ -419,7 +447,8 @@
           "damage": 275,
           "capacity": 15,
           "recoil": 75,
-          "fire_rate": 250
+          "fire_rate": 250,
+          "spare_magazines": 6
         },
         "weapon_traits": [
           "Medium Armor Penetrating"
@@ -427,10 +456,11 @@
         "additional_traits": [
           {
             "name": "Jet-Propelled Rounds",
-            "image": "/src/assets/primaryWeapons/JAR-5_Dominator.webp",
+
             "description": "Firing jet-propelled rounds, the Dominator trades fire rate and magazine capacity for increased damage per projectile."
           }
         ],
+        "image": "/src/assets/primaryWeapons/JAR-5_Dominator.webp",
         "description": "Firing jet-propelled rounds, the Dominator trades fire rate and magazine capacity for increased damage per projectile."
       },
       {
@@ -442,7 +472,8 @@
           "damage": 570,
           "capacity": 5,
           "recoil": 75,
-          "fire_rate": 25
+          "fire_rate": 25,
+          "spare_magazines": 6
         },
         "weapon_traits": [
           "Medium Armor Penetrating",
@@ -451,10 +482,11 @@
         "additional_traits": [
           {
             "name": "Jet-Assisted Shrapnel Shells",
-            "image": "/src/assets/primaryWeapons/R-36_Eruptor_Render.webp",
+
             "description": "This bolt-action rifle fires jet-assisted shells that explode shrapnel in all directions upon impact. Not recommended for close-quarters use."
           }
         ],
+        "image": "/src/assets/primaryWeapons/R-36_Eruptor_Render.webp",
         "description": "This bolt-action rifle fires jet-assisted shells that explode shrapnel in all directions upon impact. Not recommended for close-quarters use."
       },
         {
@@ -466,7 +498,8 @@
             "damage": 250,
             "capacity": 8,
             "recoil": 110,
-            "fire_rate": 80
+            "fire_rate": 80,
+            "spare_magazines": 8
           },
           "weapon_traits": [
             "Medium Armor Penetrating",
@@ -502,7 +535,8 @@
           "base_stats": {
             "damage_per_sec": 350,
             "fire_limit": 8,
-            "recoil": 1
+            "recoil": 1,
+            "spare_magazines": 4
           },
           "weapon_traits": [
             "Light Armor Penetrating",
@@ -522,7 +556,8 @@
             "damage": 55,
             "fire_limit": 7,
             "recoil": 2,
-            "fire_rate": 750
+            "fire_rate": 750,
+            "spare_magazines": 3
           },
           "weapon_traits": [
             "Light Armor Penetrating",
@@ -541,7 +576,8 @@
             "damage": 200,
             "capacity": 15,
             "recoil": 20,
-            "fire_rate": 250
+            "fire_rate": 250,
+            "spare_magazines": 6
           },
           "weapon_traits": [
             "Light Armor Penetrating",

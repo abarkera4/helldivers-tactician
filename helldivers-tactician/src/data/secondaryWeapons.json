@@ -15,6 +15,7 @@
       "One Handed"
     ],
     "additional_traits": [],
+    "image": "/src/assets/secondaryWeapons/P2_Peacemaker.webp",
     "description": "The SEAF standard pistol - offering a high fire rate, generous capacity, and fast reloading."
   },
   {
@@ -33,6 +34,7 @@
       "One Handed"
     ],
     "additional_traits": [],
+    "image": "/src/assets/secondaryWeapons/P-19_Redeemer_no_mag.webp",
     "description": "A fully-automatic pistol with an extremely high fire rate, allowing for efficient crowd control."
   },
   {
@@ -52,6 +54,7 @@
       "Rounds Reload"
     ],
     "additional_traits": [],
+    "image": "/src/assets/secondaryWeapons/P-4_Senator.webp",
     "description": "A high-damage revolver, which can be reloaded with single rounds. A heavy-hitting and reliable sidearm."
   },
   {
@@ -70,6 +73,7 @@
       "One Handed"
     ],
     "additional_traits": [],
+    "image": "/src/assets/secondaryWeapons/SG-22_Bushwhacker_WB.webp",
     "description": "A triple-barreled, break-action, sawed-off shotgun. Switch firing modes to fire all three barrels at once."
   },
   {
@@ -107,6 +111,7 @@
       "Explosive"
     ],
     "additional_traits": [],
+    "image": "/src/assets/secondaryWeapons/GP-31_Grenade_Pistol.webp",
     "description": "A pistol that fires grenades. Must be reloaded between shots."
   },
   {
@@ -129,4 +134,5 @@
     "additional_traits": [],
     "description": "A laser pistol that fires a continuous beam. Does not require ammo but can overheat and need to change batteries."
   }
+  
 ]

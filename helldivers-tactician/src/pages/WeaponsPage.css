@@ -1,0 +1,117 @@
+.weapons-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; /* Full width of the viewport */
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.weapons-page {
+  max-width: 1200px;
+  width: 100%; /* Full width relative to its parent */
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section-title {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.section-title:hover {
+  color: #0088cc;
+}
+
+
+
+/* Centered Title */
+.weapons-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+/* Weapon Categories */
+.weapon-category {
+  margin-bottom: 40px;
+}
+
+.weapon-category-title {
+  font-size: 1.5rem;
+  color: #00aaff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Weapon List */
+.weapon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the weapon items within their container */
+  gap: 20px;
+}
+
+/* Clickable Weapon Items */
+.weapon-item-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.weapon-item-link:hover .weapon-item {
+  transform: scale(1.05); /* Apply the hover effect to the entire link */
+  box-shadow: 0 0 15px #00aaff; /* Apply the hover effect to the entire link */
+}
+
+/* Individual Weapon Item */
+.weapon-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 150px; /* Ensures consistent sizing */
+}
+
+/* Weapon Image */
+.weapon-image {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #00aaff;
+  margin-bottom: 10px;
+}
+
+/* Weapon Name */
+.weapon-name {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.weapon-name:hover {
+  color: #00aaff;
+  text-decoration: underline;
+}
