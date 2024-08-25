@@ -44,7 +44,7 @@ function WeaponDetail() {
       </div>
 
       <div className="weapon-stats-block">
-        <img className="weapon-image" src={weapon.image || "/src/assets/defaultWeaponImage.webp"} alt={weapon.name} />
+        <img className="weapon-image" src={weapon.image} alt={weapon.name} />
         <h1 className="weapon-title">{weapon.name}</h1>
         <p className="weapon-category">{weapon.category}</p>
 
