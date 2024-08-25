@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import primaryWeapons from "../data/primaryWeapons.json";
 import secondaryWeapons from "../data/secondaryWeapons.json";
 import thrownWeapons from "../data/thrownWeapons.json";
@@ -9,9 +9,18 @@ function WeaponsPage() {
   const [isSecondaryOpen, setIsSecondaryOpen] = useState(true);
   const [isThrowableOpen, setIsThrowableOpen] = useState(true);
 
+  const [weaponsLoaded, setWeaponsLoaded] = useState(false);
+
   const togglePrimary = () => setIsPrimaryOpen(!isPrimaryOpen);
   const toggleSecondary = () => setIsSecondaryOpen(!isSecondaryOpen);
   const toggleThrowable = () => setIsThrowableOpen(!isThrowableOpen);
+
+  useEffect(() => {
+    // Simulate a data loading delay
+    setTimeout(() => {
+      setWeaponsLoaded(true);
+    }, 100); // Adjust this delay as necessary
+  }, []);
 
   const groupWeaponsByCategory = (weapons) => {
     const weaponsByCategory = {};
@@ -29,6 +38,10 @@ function WeaponsPage() {
   const primaryWeaponsByCategory = groupWeaponsByCategory(primaryWeapons);
   const secondaryWeaponsByCategory = groupWeaponsByCategory(secondaryWeapons);
   const thrownWeaponsByCategory = groupWeaponsByCategory(thrownWeapons);
+
+  if (!weaponsLoaded) {
+    return <h1>Loading...</h1>;
+  }
 
   return (
     <div className="weapons-page-container">

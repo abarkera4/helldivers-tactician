@@ -29,7 +29,7 @@ function WeaponDetail() {
   }, [id]);
 
   if (!weapon) {
-    return <div>Loading...</div>;
+    return <h1>Loading...</h1>;
   }
 
   const spareAmmo = weapon.base_stats?.spare_magazines ?? weapon.base_stats?.spare_rounds ?? "N/A";
