@@ -5,9 +5,9 @@ import thrownWeapons from "../data/thrownWeapons.json";
 import "./WeaponsPage.css";
 
 function WeaponsPage() {
-  const [isPrimaryOpen, setIsPrimaryOpen] = useState(true);
-  const [isSecondaryOpen, setIsSecondaryOpen] = useState(true);
-  const [isThrowableOpen, setIsThrowableOpen] = useState(true);
+  const [isPrimaryOpen, setIsPrimaryOpen] = useState(false);
+  const [isSecondaryOpen, setIsSecondaryOpen] = useState(false);
+  const [isThrowableOpen, setIsThrowableOpen] = useState(false);
 
   const [weaponsLoaded, setWeaponsLoaded] = useState(false);
 
