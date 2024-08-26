@@ -7,5 +7,5 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
   },
-  base: "/helldivers-tactician/", // Replace with your GitHub repo name
+  base: "/", // Replace with your GitHub repo name
 });
