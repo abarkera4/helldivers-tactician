@@ -16,10 +16,9 @@ function WeaponsPage() {
   const toggleThrowable = () => setIsThrowableOpen(!isThrowableOpen);
 
   useEffect(() => {
-    // Simulate a data loading delay
     setTimeout(() => {
       setWeaponsLoaded(true);
-    }, 100); // Adjust this delay as necessary
+    }, 100);
   }, []);
 
   const groupWeaponsByCategory = (weapons) => {
