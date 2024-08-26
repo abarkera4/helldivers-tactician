@@ -1,6 +1,3 @@
 {
-  "scripts": {
-    "build": "vite build"
-  },
   "outputDirectory": "dist"
 }
