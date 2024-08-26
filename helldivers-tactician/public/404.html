@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-      // Redirect to the original page the user was trying to access
-      var pathname = window.location.pathname;
-      var search = window.location.search;
-      var hash = window.location.hash;
-
-      window.location.href = window.location.origin + pathname + search + hash;
-    </script>
-  </head>
-  <body>
-    <p>Redirecting...</p>
-  </body>
+<head>
+  <meta http-equiv="refresh" content="0; URL=/" />
+  <script>
+    var target = window.location.pathname;
+    if (target !== "/") {
+      window.location.href = "/" + "#" + target;
+    }
+  </script>
+</head>
+<body>
+</body>
 </html>
