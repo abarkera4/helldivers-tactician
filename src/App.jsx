@@ -9,27 +9,23 @@ import ArmorPage from "./pages/ArmorPage";
 import PerksPage from "./pages/PerksPage";
 import Navbar from "./components/Navbar";
 import "./App.css"; // Global styles
-import { Http2ServerRequest } from "http2";
 
 function App() {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-      <Router>
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<h2>Home Page</h2>} />
-            <Route path="/weapons" element={<WeaponsPage />} />
-            <Route path="/weapon/:id" element={<WeaponDetail />} />
-            <Route path="/stratagems" element={<StratagemsPage />} />
-            <Route path="/stratagem/:stratagemId" element={<StratagemDetail />} />
-            <Route path="/armor" element={<ArmorPage />} />
-            <Route path="/perks" element={<PerksPage />} />
-          </Routes>
-        </main>
-      </Router>
-    </div>
+    <Router>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/weapons" element={<WeaponsPage />} />
+          <Route path="/weapon/:id" element={<WeaponDetail />} />
+          <Route path="/stratagems" element={<StratagemsPage />} />
+          <Route path="/stratagem/:stratagemId" element={<StratagemDetail />} />
+          <Route path="/armor" element={<ArmorPage />} />
+          <Route path="/perks" element={<PerksPage />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
