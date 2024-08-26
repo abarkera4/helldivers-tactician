@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <h1>Hello, World!</h1>
-      <Router basename="/helldivers-tactician">
+      <Router>
         <Navbar />
         <main>
           <Routes>
