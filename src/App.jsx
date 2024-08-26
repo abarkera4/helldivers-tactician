@@ -15,6 +15,7 @@ function App() {
     <Router basename="/helldivers-tactician">
       <Navbar />
       <main>
+        <h1>Hello, World!</h1>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/weapons" element={<WeaponsPage />} />
