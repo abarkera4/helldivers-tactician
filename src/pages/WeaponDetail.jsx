@@ -22,11 +22,9 @@ function WeaponDetail() {
     }
 
     const selectedWeapon = weaponData.find((weapon) => weapon.id === id);
-    console.log("Selected Weapon:", selectedWeapon); ////////////////////// REMOVE AFTER TESTING
     setWeapon(selectedWeapon);
 
     const selectedWikiContent = weaponWiki.find((content) => content.id === id);
-    console.log("Selected Wiki Content:", selectedWikiContent); ////////////////////// REMOVE AFTER TESTING
     setWikiContent(selectedWikiContent);
   }, [id]);
 
