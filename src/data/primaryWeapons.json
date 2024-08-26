@@ -15,7 +15,7 @@
       "Light Armor Penetrating"
     ],
     "additional_traits": [],
-    "image": "assets/primaryWeapons/AR-23_Liberator.webp",
+    "image": "/assets/primaryWeapons/AR-23_Liberator.webp",
     "description": "The SEAF standard assault rifle, balancing power, fire rate, and weight for a reliable weapon against smaller targets."
   },
   {
@@ -34,7 +34,7 @@
       "Medium Armor Penetrating"
     ],
     "additional_traits": [],
-    "image": "assets/primaryWeapons/AR-23P_Liberator_Penetrator.webp",
+    "image": "/assets/primaryWeapons/AR-23P_Liberator_Penetrator.webp",
     "description": "A modified Liberator fitted with a scope and firing armor-piercing rounds, to help users take down armored targets."
   },
   {
@@ -59,7 +59,7 @@
         "description": "Fires concussive rounds which do less damage but stagger enemies."
       }
     ],
-    "image": "assets/primaryWeapons/AR-23C_Liberator_Concussive.png",
+    "image": "/assets/primaryWeapons/AR-23C_Liberator_Concussive.png",
     "description": "A modified Liberator firing concussive rounds which do less damage but stagger enemies."
   },
   {
@@ -127,7 +127,7 @@
         "description": "Delivers righteous judgment to medium-sized enemies, though its restrictive magazine limits its effectiveness against large groups."
       }
     ],
-    "image": "assets/primaryWeapons/BR-14_Adjucator.webp",
+    "image": "/assets/primaryWeapons/BR-14_Adjucator.webp",
     "description": "An accurate, armor-penetrating rifle, the BR-14 Adjudicator delivers righteous judgment to medium-sized enemies, though its restrictive magazine limits its effectiveness against large groups."
   },
   {
@@ -152,7 +152,7 @@
         "description": "Trades magazine capacity and rate of fire for powerful, accurate shots."
       }
     ],
-    "image": "assets/primaryWeapons/R-63_Diligence_29.webp",
+    "image": "/assets/primaryWeapons/R-63_Diligence_29.webp",
     "description": "This high-caliber marksman rifle trades magazine capacity and rate of fire for powerful, accurate shots."
   },
   {
@@ -177,7 +177,7 @@
         "description": "A modified Diligence rifle offering increased damage, but a reduced rate of fire. Fires a single bullet at a time."
       }
     ],
-    "image": "assets/primaryWeapons/R-63CS_Diligence_Counter_Sniper_29.webp",
+    "image": "/assets/primaryWeapons/R-63CS_Diligence_Counter_Sniper_29.webp",
     "description": "A modified Diligence rifle offering increased damage, but a reduced rate of fire. Fires a single bullet at a time."
   },
   {
@@ -202,7 +202,7 @@
         "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking."
       }
     ],
-    "image": "assets/primaryWeapons/MP-98_Knight_29.webp",
+    "image": "/assets/primaryWeapons/MP-98_Knight_29.webp",
     "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking."
   },
   {
@@ -228,7 +228,7 @@
         "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire."
       }
     ],
-    "image": "assets/primaryWeapons/SMG-37_Defender.webp",
+    "image": "/assets/primaryWeapons/SMG-37_Defender.webp",
     "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire."
   },
   {
@@ -254,7 +254,7 @@
         "description": "Fires concussive rounds that stagger enemies. Slower rate of fire than other SMGs."
       }
     ],
-    "image": "assets/primaryWeapons/Pummelertemp.webp",
+    "image": "/assets/primaryWeapons/Pummelertemp.webp",
     "description": "Fires concussive rounds that stagger enemies. Slower rate of fire than other SMGs."
   },
     {
@@ -280,7 +280,7 @@
           "description": "A powerful dual magazine pump-action shotgun with limited armor penetration. Ideal for small and fast targets."
         }
       ],
-      "image": "assets/primaryWeapons/SG-8_Punisher_29.webp",
+      "image": "/assets/primaryWeapons/SG-8_Punisher_29.webp",
       "description": "A powerful dual magazine pump-action shotgun, with limited armor penetration. Ideal for small and fast targets."
     },
     {
@@ -306,7 +306,7 @@
           "description": "A modified Punisher shotgun firing heavy, high-damage slug rounds. Perfect for punching big holes in big targets."
         }
       ],
-      "image": "assets/primaryWeapons/SG-8S_Slugger.webp",
+      "image": "/assets/primaryWeapons/SG-8S_Slugger.webp",
       "description": "A modified Punisher shotgun firing heavy, high-damage slug rounds. Perfect for punching big holes in big targets."
     },
     {
@@ -357,7 +357,7 @@
           "description": "A fully-automatic shotgun with a high rate of fire, excellent for controlling crowds. Requires frequent reloading."
         }
       ],
-      "image": "assets/primaryWeapons/SG-225_Breaker_29.webp",
+      "image": "/assets/primaryWeapons/SG-225_Breaker_29.webp",
       "description": "A fully-automatic shotgun with a high rate of fire, excellent for controlling crowds. Requires frequent reloading."
     },
     {
@@ -382,7 +382,7 @@
           "description": "A modified Breaker shotgun firing birdshot, small pellets which saturate an area to clear up smaller targets."
         }
       ],
-      "image": "assets/primaryWeapons/SG-225SP_Breaker_Spray.webp",
+      "image": "/assets/primaryWeapons/SG-225SP_Breaker_Spray.webp",
       "description": "A modified Breaker shotgun firing birdshot, small pellets which saturate an area to clear up smaller targets."
     },
     {
@@ -408,7 +408,7 @@
           "description": "A modified Breaker shotgun firing incendiary projectiles. Generates heat during use, so limited to burst fire."
         }
       ],
-      "image": "assets/primaryWeapons/SG-225IE_Breaker_Incendiary_29.webp",
+      "image": "/assets/primaryWeapons/SG-225IE_Breaker_Incendiary_29.webp",
       "description": "A modified Breaker shotgun firing incendiary projectiles. Generates heat during use, so limited to burst fire."
     },
       {
@@ -435,7 +435,7 @@
             "description": "Fires powerful exploding bolts which do maximum damage upon direct impact. Gravity must be accounted for when aiming."
           }
         ],
-        "image": "assets/primaryWeapons/CB-9_Crossbow.webp",
+        "image": "/assets/primaryWeapons/CB-9_Crossbow.webp",
         "description": "Fires powerful exploding bolts which do maximum damage upon direct impact. Gravity must be accounted for when aiming."
       },
       {
@@ -460,7 +460,7 @@
             "description": "Firing jet-propelled rounds, the Dominator trades fire rate and magazine capacity for increased damage per projectile."
           }
         ],
-        "image": "assets/primaryWeapons/JAR-5_Dominator.webp",
+        "image": "/assets/primaryWeapons/JAR-5_Dominator.webp",
         "description": "Firing jet-propelled rounds, the Dominator trades fire rate and magazine capacity for increased damage per projectile."
       },
       {
@@ -486,7 +486,7 @@
             "description": "This bolt-action rifle fires jet-assisted shells that explode shrapnel in all directions upon impact. Not recommended for close-quarters use."
           }
         ],
-        "image": "assets/primaryWeapons/R-36_Eruptor_Render.webp",
+        "image": "/assets/primaryWeapons/R-36_Eruptor_Render.webp",
         "description": "This bolt-action rifle fires jet-assisted shells that explode shrapnel in all directions upon impact. Not recommended for close-quarters use."
       },
         {
@@ -506,7 +506,7 @@
             "Explosive"
           ],
           "additional_traits": [],
-          "image": "assets/primaryWeapons/SG-8P_Punisher_Plasma_29.webp",
+          "image": "/assets/primaryWeapons/SG-8P_Punisher_Plasma_29.webp",
           "description": "A modified Punisher shotgun firing exploding plasma rounds. Fire carefully - exploding plasma can injure squadmates."
         },
         {
@@ -524,7 +524,7 @@
             "Medium Armor Penetrating"
           ],
           "additional_traits": [],
-          "image": "assets/primaryWeapons/ARC-12_Blitzer_Render.webp",
+          "image": "/assets/primaryWeapons/ARC-12_Blitzer_Render.webp",
           "description": "This shotgun blasts a wide burst of high-voltage electricity that arcs between all units—enemy or otherwise—within range."
         },
         {
@@ -544,7 +544,7 @@
             "Heat"
           ],
           "additional_traits": [],
-          "image": "assets/primaryWeapons/LAS-5_Scythe_29_II.webp",
+          "image": "/assets/primaryWeapons/LAS-5_Scythe_29_II.webp",
           "description": "A laser rifle firing a continuous beam. Does not need reloading, but if it overheats a new heat sink must be fitted."
         },
         {
@@ -564,7 +564,7 @@
             "Heat"
           ],
           "additional_traits": [],
-          "image": "assets/primaryWeapons/LAS-16_Sickle_29_II.webp",
+          "image": "/assets/primaryWeapons/LAS-16_Sickle_29_II.webp",
           "description": "A laser rifle, firing in short bursts. Does not need reloading, but if it overheats a new heat sink must be fitted."
         },
         {
@@ -584,7 +584,7 @@
             "Explosive"
           ],
           "additional_traits": [],
-          "image": "assets/primaryWeapons/PLAS-1_Scorcher_29_II.webp",
+          "image": "/assets/primaryWeapons/PLAS-1_Scorcher_29_II.webp",
           "description": "A plasma rifle, firing a bolt of superheated gas which explodes on impact. Avoid standing in proximity to the blast."
         },
         {
