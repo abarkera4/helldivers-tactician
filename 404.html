@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=./index.html">
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
     <script type="text/javascript">
-      // Redirect to index.html while preserving the path
-      window.location.replace(window.location.origin + window.location.pathname + window.location.search);
+      // Redirect to the original page the user was trying to access
+      var pathname = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      window.location.href = window.location.origin + pathname + search + hash;
     </script>
   </head>
-  <body></body>
+  <body>
+    <p>Redirecting...</p>
+  </body>
 </html>
