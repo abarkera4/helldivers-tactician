@@ -3,5 +3,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/helldivers-tactician/", // Replace <repository-name> with your actual repo name
+  base: "/", // Ensure this is correct
+  build: {
+    outDir: "dist", // Ensure the output directory is correctly set
+  },
 });
