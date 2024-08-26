@@ -12,21 +12,23 @@ import "./App.css"; // Global styles
 
 function App() {
   return (
-    <Router basename="/helldivers-tactician">
-      <Navbar />
-      <main>
-        <h1>Hello, World!</h1>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/weapons" element={<WeaponsPage />} />
-          <Route path="/weapon/:id" element={<WeaponDetail />} />
-          <Route path="/stratagems" element={<StratagemsPage />} />
-          <Route path="/stratagem/:stratagemId" element={<StratagemDetail />} />
-          <Route path="/armor" element={<ArmorPage />} />
-          <Route path="/perks" element={<PerksPage />} />
-        </Routes>
-      </main>
-    </Router>
+    <div>
+      <h1>Hello, World!</h1>
+      <Router basename="/helldivers-tactician">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/weapons" element={<WeaponsPage />} />
+            <Route path="/weapon/:id" element={<WeaponDetail />} />
+            <Route path="/stratagems" element={<StratagemsPage />} />
+            <Route path="/stratagem/:stratagemId" element={<StratagemDetail />} />
+            <Route path="/armor" element={<ArmorPage />} />
+            <Route path="/perks" element={<PerksPage />} />
+          </Routes>
+        </main>
+      </Router>
+    </div>
   );
 }
 
