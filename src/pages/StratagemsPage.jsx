@@ -3,7 +3,7 @@ import backpackStratagems from "../data/backpackStratagems.json";
 import defensiveEmplacements from "../data/defensiveStratagems.json";
 import eagleStrikes from "../data/eagleStratagems.json";
 import orbitalStrikes from "../data/orbitalStratagems.json";
-import supportWeapons from "../data/supportWeaponsStratagems.json";
+import supportWeapons from "../data/supportWeaponStratagems.json";
 import vehicles from "../data/vehicleStratagems.json";
 import "./WeaponsPage.css";
 
