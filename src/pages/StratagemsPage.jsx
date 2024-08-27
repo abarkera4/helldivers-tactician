@@ -69,7 +69,6 @@ function StratagemsPage() {
               <>
                 {Object.keys(supportWeaponsByCategory).map((category) => (
                   <div key={category} className="stratagem-category">
-                    <h3 className="stratagem-category-title">{category}</h3>
                     <div className="stratagem-list">
                       {supportWeaponsByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
@@ -93,7 +92,6 @@ function StratagemsPage() {
               <>
                 {Object.keys(backpackStratagemsByCategory).map((category) => (
                   <div key={category} className="stratagem-category">
-                    <h3 className="stratagem-category-title">{category}</h3>
                     <div className="stratagem-list">
                       {backpackStratagemsByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
@@ -116,7 +114,6 @@ function StratagemsPage() {
               <>
                 {Object.keys(vehiclesByCategory).map((category) => (
                   <div key={category} className="stratagem-category">
-                    <h3 className="stratagem-category-title">{category}</h3>
                     <div className="stratagem-list">
                       {vehiclesByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
@@ -142,7 +139,6 @@ function StratagemsPage() {
               <>
                 {Object.keys(eagleStrikesByCategory).map((category) => (
                   <div key={category} className="stratagem-category">
-                    <h3 className="stratagem-category-title">{category}</h3>
                     <div className="stratagem-list">
                       {eagleStrikesByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
@@ -166,7 +162,6 @@ function StratagemsPage() {
               <>
                 {Object.keys(orbitalStrikesByCategory).map((category) => (
                   <div key={category} className="stratagem-category">
-                    <h3 className="stratagem-category-title">{category}</h3>
                     <div className="stratagem-list">
                       {orbitalStrikesByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
@@ -190,7 +185,6 @@ function StratagemsPage() {
               <>
                 {Object.keys(defensiveStratagemsByCategory).map((category) => (
                   <div key={category} className="stratagem-category">
-                    <h3 className="stratagem-category-title">{category}</h3>
                     <div className="stratagem-list">
                       {defensiveStratagemsByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
