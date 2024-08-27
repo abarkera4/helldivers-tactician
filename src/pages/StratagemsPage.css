@@ -1,4 +1,3 @@
-/* StratagemsPage Container */
 .stratagems-page-container {
   display: flex;
   justify-content: center;
@@ -8,72 +7,30 @@
   margin: 0 auto;
 }
 
-.stratagems-page {
+.stratagems-columns {
+  display: flex;
+  justify-content: space-between;
   max-width: 1200px;
   width: 100%;
-  background-color: #1f1f1f;
-  color: #f0f0f0;
-  padding: 20px;
-  margin: 0 auto;
   box-sizing: border-box;
 }
 
-/* Section Titles */
-.section-title {
-  cursor: pointer;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #00aaff;
-  margin: 40px 0 20px 0;
-  text-align: center;
+.stratagems-columns > div {
+  width: 48%; /* Two columns with a small gap */
 }
 
-.section-title:hover {
-  color: #0088cc;
-}
-
-/* Stratagem Columns */
-.stratagem-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Stratagem Categories */
 .stratagem-category {
   margin-bottom: 40px;
-  width: 48%; /* Adjusts the width to fit two columns */
+  width: 100%;
 }
 
-.stratagem-category-title {
-  font-size: 1.5rem;
-  color: #00aaff;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #00aaff;
-  padding-bottom: 5px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* Stratagem List */
 .stratagem-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 
-/* Clickable Stratagem Items */
-.stratagem-item-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.stratagem-item-link:hover .stratagem-item {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #00aaff;
-}
-
-/* Individual Stratagem Item */
 .stratagem-item {
   text-align: center;
   padding: 10px;
@@ -84,7 +41,16 @@
   width: 150px;
 }
 
-/* Stratagem Image */
+.stratagem-item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.stratagem-item-link:hover .stratagem-item {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00aaff;
+}
+
 .stratagem-image {
   max-width: 100%;
   border-radius: 10px;
@@ -92,7 +58,6 @@
   margin-bottom: 10px;
 }
 
-/* Stratagem Name */
 .stratagem-name {
   font-size: 1.2rem;
   color: #f0f0f0;
