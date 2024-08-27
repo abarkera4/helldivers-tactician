@@ -58,8 +58,7 @@ function StratagemsPage() {
     <div className="stratagems-page-container">
       <div className="stratagems-page">
         <h1>Stratagems</h1>
-
-        <div className="stratagems-columns">
+        <div className="stratagem-columns">
           <div className="left-column">
             {/* Support Weapons Section */}
             <h2 className="section-title" onClick={toggleSupportWeapons}>
@@ -135,6 +134,30 @@ function StratagemsPage() {
           </div>
 
           <div className="right-column">
+            {/* Defensive Emplacements Section */}
+            <h2 className="section-title" onClick={toggleDefensive}>
+              {isDefensiveOpen ? "▼" : "▶"} Defensive Emplacements
+            </h2>
+            {isDefensiveOpen && (
+              <>
+                {Object.keys(defensiveStratagemsByCategory).map((category) => (
+                  <div key={category} className="stratagem-category">
+                    <h3 className="stratagem-category-title">{category}</h3>
+                    <div className="stratagem-list">
+                      {defensiveStratagemsByCategory[category].map((stratagem) => (
+                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
+                          <div className="stratagem-item">
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            <p className="stratagem-name">{stratagem.name}</p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
+
             {/* Eagle Strikes Section */}
             <h2 className="section-title" onClick={toggleEagle}>
               {isEagleOpen ? "▼" : "▶"} Eagle Strikes
@@ -158,7 +181,6 @@ function StratagemsPage() {
                 ))}
               </>
             )}
-
             {/* Orbital Strikes Section */}
             <h2 className="section-title" onClick={toggleOrbital}>
               {isOrbitalOpen ? "▼" : "▶"} Orbital Strikes
@@ -170,30 +192,6 @@ function StratagemsPage() {
                     <h3 className="stratagem-category-title">{category}</h3>
                     <div className="stratagem-list">
                       {orbitalStrikesByCategory[category].map((stratagem) => (
-                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
-                          <div className="stratagem-item">
-                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
-                            <p className="stratagem-name">{stratagem.name}</p>
-                          </div>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </>
-            )}
-
-            {/* Defensive Emplacements Section */}
-            <h2 className="section-title" onClick={toggleDefensive}>
-              {isDefensiveOpen ? "▼" : "▶"} Defensive Emplacements
-            </h2>
-            {isDefensiveOpen && (
-              <>
-                {Object.keys(defensiveStratagemsByCategory).map((category) => (
-                  <div key={category} className="stratagem-category">
-                    <h3 className="stratagem-category-title">{category}</h3>
-                    <div className="stratagem-list">
-                      {defensiveStratagemsByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
                           <div className="stratagem-item">
                             {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}

@@ -17,6 +17,15 @@
   box-sizing: border-box;
 }
 
+.stratagem-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column, .right-column {
+  width: 48%; /* Adjusted to fit two columns */
+}
+
 .section-title {
   cursor: pointer;
   font-size: 2rem;
@@ -30,16 +39,22 @@
   color: #0088cc;
 }
 
-/* Centralized Column Layout */
-.stratagems-columns {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+/* Centered Title */
+.stratagems-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Left and Right Columns */
-.left-column, .right-column {
-  flex: 1;
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin: 40px 0 20px 0;
+  text-align: center;
 }
 
 /* Stratagem Categories */
