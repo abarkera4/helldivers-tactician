@@ -1,15 +1,16 @@
+/* StratagemsPage Container */
 .stratagems-page-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 100%; /* Full width of the viewport */
+  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .stratagems-page {
   max-width: 1200px;
-  width: 100%; /* Full width relative to its parent */
+  width: 100%;
   background-color: #1f1f1f;
   color: #f0f0f0;
   padding: 20px;
@@ -17,15 +18,7 @@
   box-sizing: border-box;
 }
 
-.stratagem-columns {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-column, .right-column {
-  width: 48%; /* Adjusted to fit two columns */
-}
-
+/* Section Titles */
 .section-title {
   cursor: pointer;
   font-size: 2rem;
@@ -39,27 +32,16 @@
   color: #0088cc;
 }
 
-/* Centered Title */
-.stratagems-page h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #00aaff;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Section Titles */
-.section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #00aaff;
-  margin: 40px 0 20px 0;
-  text-align: center;
+/* Stratagem Columns */
+.stratagem-columns {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Stratagem Categories */
 .stratagem-category {
   margin-bottom: 40px;
+  width: 48%; /* Adjusts the width to fit two columns */
 }
 
 .stratagem-category-title {
@@ -76,19 +58,19 @@
 .stratagem-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the stratagem items within their container */
+  justify-content: center;
   gap: 20px;
 }
 
 /* Clickable Stratagem Items */
 .stratagem-item-link {
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit text color from parent */
+  text-decoration: none;
+  color: inherit;
 }
 
 .stratagem-item-link:hover .stratagem-item {
-  transform: scale(1.05); /* Apply the hover effect to the entire link */
-  box-shadow: 0 0 15px #00aaff; /* Apply the hover effect to the entire link */
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00aaff;
 }
 
 /* Individual Stratagem Item */
@@ -99,7 +81,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 150px; /* Ensures consistent sizing */
+  width: 150px;
 }
 
 /* Stratagem Image */
