@@ -1,0 +1,243 @@
+[
+  {
+    "id": "defensive_tesla_tower",
+    "name": "A/ARC-3 Tesla Tower",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Support Weapon",
+      "Hellpod",
+      "Electric"
+    ],
+    "input_code": "↓ ↑ ↓ ↑",
+    "call_in_time": "7.75 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Supply Stratagem",
+    "firepower": {
+      "damage": "WIP",
+      "penetration": "High"
+    },
+    "weapon_handling": {
+      "lock_on": "1.5s",
+      "range": "20m",
+      "cooldown": "150s"
+    },
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 15",
+      "cost": "8000"
+    },
+    "extra_info": [
+      "Tesla bolts ignore armor, but it cannot dispatch heavy armored units quickly.",
+      "Effective against small to medium-sized groups.",
+      "Inconveniently placed Tesla Tower can be harmful to team."
+    ],
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_ARC-3_Tesla_Tower_Icon.webp"
+  },
+  {
+    "id": "defensive_ems_mortar_sentry",
+    "name": "A/M-23 EMS Mortar Sentry",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Support Weapon",
+      "Hellpod",
+      "Non-lethal"
+    ],
+    "input_code": "↓ ↑ ↓ ←",
+    "call_in_time": "7.75 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Supply Stratagem",
+    "firepower": {
+      "damage": "15",
+      "penetration": "WIP"
+    },
+    "weapon_handling": {
+      "lock_on": "2s",
+      "cooldown": "180s",
+      "ems_field_duration": "9s per round"
+    },
+    "ammunition": {
+      "capacity": "10",
+      "spare_rounds": "138"
+    },
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 20",
+      "cost": "8000"
+    },
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A-M-23_EMS_Mortar_Sentry_Icon.webp"
+  },
+  {
+    "id": "defensive_mortar_sentry",
+    "name": "A/M-12 Mortar Sentry",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Support Weapon",
+      "Hellpod",
+      "Explosive"
+    ],
+    "input_code": "↓ ↑ ↓ →",
+    "call_in_time": "7.75 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Supply Stratagem",
+    "firepower": {
+      "damage": "36",
+      "penetration": "High"
+    },
+    "weapon_handling": {
+      "lock_on": "2s",
+      "cooldown": "180s",
+      "range": "125m"
+    },
+    "extra_info": [
+      "Fires in advance of enemy movement; good against large groups and static enemies."
+    ],
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 8",
+      "cost": "7000"
+    },
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_M-12_Mortar_Sentry_Icon.webp"
+  },
+  {
+    "id": "defensive_rocket_sentry",
+    "name": "A/MLS-4X Rocket Sentry",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Support Weapon",
+      "Hellpod",
+      "Armor Penetrating"
+    ],
+    "input_code": "↓ ↑ ↓ ←",
+    "call_in_time": "7.75 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Supply Stratagem",
+    "firepower": {
+      "damage": "32",
+      "penetration": "High"
+    },
+    "weapon_handling": {
+      "lock_on": "1.5s",
+      "turning_speed": "24°/s",
+      "cooldown": "180s",
+      "range": "100m"
+    },
+    "extra_info": [
+      "Slow rotation speed; primarily targets heavy armored units."
+    ],
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 15",
+      "cost": "7500"
+    },
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MLS-4X_Rocket_Sentry_Icon.webp"
+  },
+  {
+    "id": "defensive_autocannon_sentry",
+    "name": "A/AC-8 Autocannon Sentry",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Support Weapon",
+      "Hellpod",
+      "Anti-armor"
+    ],
+    "input_code": "↓ ↑ ↓ ←",
+    "call_in_time": "7.75 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Supply Stratagem",
+    "firepower": {
+      "damage": "24",
+      "penetration": "High"
+    },
+    "weapon_handling": {
+      "lock_on": "1.5s",
+      "turning_speed": "24°/s",
+      "cooldown": "180s",
+      "range": "85m"
+    },
+    "extra_info": [
+      "Effective at long range but struggles at close range.",
+      "Targets heavy units effectively."
+    ],
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 13",
+      "cost": "6000"
+    },
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_AC-8_Autocannon_Sentry_Icon.webp"
+  },
+  {
+    "id": "defensive_gatling_sentry",
+    "name": "A/G-16 Gatling Sentry",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Support Weapon",
+      "Hellpod",
+      "High Rate of Fire"
+    ],
+    "input_code": "↓ ↑ ↓ →",
+    "call_in_time": "7.75 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Supply Stratagem",
+    "firepower": {
+      "damage": "390",
+      "penetration": "Medium"
+    },
+    "weapon_handling": {
+      "lock_on": "0.5s",
+      "turning_speed": "72°/s",
+      "cooldown": "180s",
+      "range": "75m"
+    },
+    "extra_info": [
+      "Fast rotation and high rate of fire make it effective against groups.",
+      "May accidentally hit teammates if not carefully positioned."
+    ],
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 5",
+      "cost": "4000"
+    },
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_G-16_Gatling_Sentry_Icon.webp"
+  },
+  {
+    "id": "defensive_machine_gun_sentry",
+    "name": "A/MG-43 Machine Gun Sentry",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Support Weapon",
+      "Hellpod",
+      "High Precision"
+    ],
+    "input_code": "↓ ↑ ↓ →",
+    "call_in_time": "7.75 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Supply Stratagem",
+    "firepower": {
+      "damage": "130",
+      "penetration": "Medium"
+    },
+    "weapon_handling": {
+      "lock_on": "0.1s",
+      "turning_speed": "72°/s",
+      "cooldown": "180s",
+      "range": "75m"
+    },
+    "extra_info": [
+      "Highly accurate with lower rate of fire.",
+      "Stops firing while rotating to target."
+    ],
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 3",
+      "cost": "1500"
+    },
+    "image": "public/assets/stratagemIcons/defensiveEmplacements/A_MG-43_Machine_Gun_Sentry_Icon.webp"
+  }
+]

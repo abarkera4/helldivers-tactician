@@ -1,0 +1,242 @@
+[
+  {
+    "id": "backpack_sh32_shield_generator",
+    "summary": "The SH-32 Shield Generator Pack provides a protective shield around the user, blocking high-speed projectiles. The shield has a limited duration once deployed.",
+    "usage": "Best used in situations where protection from enemy fire is essential, allowing the user to advance or retreat safely."
+  },
+  {
+    "id": "backpack_b1_supply_pack",
+    "summary": "The B-1 Supply Pack allows users to carry and distribute ammunition to fellow Helldivers, providing essential support during prolonged engagements.",
+    "usage": "Ideal for sustaining long missions where ammunition is limited or where the team needs to keep a steady supply of ammo."
+  },
+  {
+    "id": "backpack_axlas5_guard_dog_rover",
+    "summary": "The AX/LAS-5 'Guard Dog' Rover is an autonomous drone equipped with a laser rifle, providing 360° cover for the user.",
+    "usage": "Effective for providing additional firepower and protection, particularly in situations where enemies may approach from multiple angles."
+  },
+  {
+    "id": "backpack_axar23_guard_dog",
+    "summary": "The AX/AR-23 'Guard Dog' is an autonomous drone equipped with a Liberator assault rifle, providing 360° cover for the user.",
+    "usage": "Best used to supplement the user's firepower, particularly in engagements where constant 360° coverage is necessary."
+  },
+  {
+    "id": "backpack_lift850_jump_pack",
+    "summary": "The LIFT-850 Jump Pack allows the user to jump higher than normal, bypassing obstacles and reaching elevated positions.",
+    "usage": "Useful for quickly traversing the battlefield or avoiding enemy attacks by reaching higher ground."
+  },
+  {
+    "id": "backpack_sh20_ballistic_shield",
+    "summary": "The SH-20 Ballistic Shield Backpack can be wielded as a one-handed ballistic shield, protecting the user against small arms fire.",
+    "usage": "Ideal for defensive maneuvers or advancing under fire, allowing the user to close in on enemies while minimizing exposure to gunfire."
+  },
+  {
+    "id": "defensive_tesla_tower",
+    "summary": "The A/ARC-3 Tesla Tower is a defensive emplacement that fires electric bolts at enemies, ignoring armor but being less effective against heavily armored units.",
+    "usage": "Best used against small to medium-sized enemy groups, providing area denial and crowd control."
+  },
+  {
+    "id": "defensive_ems_mortar_sentry",
+    "summary": "The A/M-23 EMS Mortar Sentry is a non-lethal defensive emplacement that launches EMS rounds, creating an area of effect that disables electronics and lightly damages enemies.",
+    "usage": "Useful for disrupting enemy formations and electronic devices, slowing their advance."
+  },
+  {
+    "id": "defensive_mortar_sentry",
+    "summary": "The A/M-12 Mortar Sentry is a defensive emplacement that fires explosive rounds, effective against large groups and static enemies.",
+    "usage": "Ideal for defending chokepoints or suppressing enemy positions, providing area coverage with explosive fire."
+  },
+  {
+    "id": "defensive_rocket_sentry",
+    "summary": "The A/MLS-4X Rocket Sentry is a defensive emplacement that launches rockets at heavily armored targets, with slow rotation speed.",
+    "usage": "Best used against heavy armored enemies, providing focused anti-armor fire."
+  },
+  {
+    "id": "defensive_autocannon_sentry",
+    "summary": "The A/AC-8 Autocannon Sentry is a defensive emplacement designed to target heavy units, effective at long range but struggles in close combat.",
+    "usage": "Ideal for providing long-range anti-armor fire, particularly in defensive setups where the user expects to engage distant heavy units."
+  },
+  {
+    "id": "defensive_gatling_sentry",
+    "summary": "The A/G-16 Gatling Sentry is a defensive emplacement with a high rate of fire, effective against groups of enemies.",
+    "usage": "Best used for crowd control and suppressing large enemy groups, but requires careful positioning to avoid friendly fire."
+  },
+  {
+    "id": "defensive_machine_gun_sentry",
+    "summary": "The A/MG-43 Machine Gun Sentry is a defensive emplacement with high precision, effective at medium ranges.",
+    "usage": "Ideal for providing accurate suppressive fire, particularly in situations where precise targeting of individual enemies is required."
+  },
+  {
+    "id": "eagle_strafing_run",
+    "summary": "The Eagle Strafing Run calls in an airstrike that fires multiple rounds in a straight line, effective against lightly armored targets.",
+    "usage": "Best used to clear a path or suppress enemy infantry in a specific direction."
+  },
+  {
+    "id": "eagle_airstrike",
+    "summary": "The Eagle Airstrike calls in a bombardment of high-explosive bombs in a perpendicular pattern, effective against groups of enemies.",
+    "usage": "Ideal for dealing heavy damage to concentrated enemy formations or static defenses."
+  },
+  {
+    "id": "eagle_cluster_bomb",
+    "summary": "The Eagle Cluster Bomb releases multiple smaller bombs over a wide area, causing medium damage with significant spread.",
+    "usage": "Best used to saturate an area with explosives, effective against groups of enemies or when precision is not a priority."
+  },
+  {
+    "id": "eagle_napalm_airstrike",
+    "summary": "The Eagle Napalm Airstrike drops incendiary bombs that cause high damage over a wide area, with additional burning effects.",
+    "usage": "Ideal for area denial and dealing continuous damage to enemies caught in the blast."
+  },
+  {
+    "id": "eagle_smoke_strike",
+    "summary": "The Eagle Smoke Strike releases smoke bombs that obscure vision, providing cover for advancing or retreating troops.",
+    "usage": "Best used to create a visual barrier, hindering enemy targeting and protecting allies."
+  },
+  {
+    "id": "eagle_110mm_rocket_pods",
+    "summary": "The Eagle 110mm Rocket Pods deliver high-penetration rockets over a targeted area, effective against armored targets.",
+    "usage": "Ideal for taking out armored vehicles or fortified positions."
+  },
+  {
+    "id": "eagle_500kg_bomb",
+    "summary": "The Eagle 500kg Bomb is a single, high-damage explosive designed to obliterate a specific target or area.",
+    "usage": "Best used against heavily fortified or high-value targets, delivering a devastating single blow."
+  },
+  {
+    "id": "orbital_gatling_barrage",
+    "summary": "The Orbital Gatling Barrage calls in an orbital cannon to fire multiple high-velocity projectiles, effective against a range of targets.",
+    "usage": "Ideal for general suppression and dealing consistent damage over an area."
+  },
+  {
+    "id": "orbital_airburst_strike",
+    "summary": "The Orbital Airburst Strike delivers explosive rounds that detonate mid-air, raining shrapnel over a wide area.",
+    "usage": "Best used against dispersed enemy groups, providing area denial and high damage."
+  },
+  {
+    "id": "orbital_120mm_he_barrage",
+    "summary": "The Orbital 120mm HE Barrage calls in high-explosive shells from orbit, causing massive damage over a targeted area.",
+    "usage": "Ideal for breaking enemy lines or dealing with concentrated forces."
+  },
+  {
+    "id": "orbital_380mm_he_barrage",
+    "summary": "The Orbital 380mm HE Barrage is a devastating strike that unleashes heavy explosive shells, causing significant damage.",
+    "usage": "Best used against large, heavily armored enemy formations or fortified positions."
+  },
+  {
+    "id": "orbital_walking_barrage",
+    "summary": "The Orbital Walking Barrage provides a continuous bombardment along a path, devastating anything in its way.",
+    "usage": "Effective for clearing enemy forces along a line of advance or retreat."
+  },
+  {
+    "id": "orbital_laser",
+    "summary": "The Orbital Laser focuses a high-intensity beam from orbit, causing continuous damage to anything in its path.",
+    "usage": "Best used to destroy high-value targets or disrupt enemy formations with precision."
+  },
+  {
+    "id": "orbital_railcannon_strike",
+    "summary": "The Orbital Railcannon Strike uses a railgun to fire a single, extremely high-velocity projectile from orbit, penetrating the toughest armor.",
+    "usage": "Ideal for taking out the most heavily armored targets or critical infrastructure."
+  },
+  {
+    "id": "orbital_precision_strike",
+    "summary": "The Orbital Precision Strike is a targeted bombardment that delivers a single, highly accurate explosive round.",
+    "usage": "Best used to eliminate key enemy assets or fortified positions with precision."
+  },
+  {
+    "id": "orbital_gas_strike",
+    "summary": "The Orbital Gas Strike releases a toxic gas over an area, causing damage and debuffing enemy units.",
+    "usage": "Ideal for area denial and weakening enemy forces before a direct assault."
+  },
+  {
+    "id": "orbital_ems_strike",
+    "summary": "The Orbital EMS Strike deploys a powerful electromagnetic pulse that disrupts enemy electronics and communications over a wide area.",
+    "usage": "Best used for disabling enemy electronics and vehicles, making them vulnerable to follow-up attacks."
+  },
+  {
+    "id": "orbital_smoke_strike",
+    "summary": "The Orbital Smoke Strike covers a large area with smoke, providing concealment and disrupting enemy targeting systems.",
+    "usage": "Effective for covering retreats or advancing under enemy fire, reducing the effectiveness of enemy ranged attacks."
+  },
+  {
+    "id": "support_rl77_airburst",
+    "summary": "The RL-77 Airburst Rocket Launcher fires rockets that explode mid-air, delivering high-explosive damage to targets below.",
+    "usage": "Ideal for targeting groups of enemies in open areas, where the airburst effect can maximize damage."
+  },
+  {
+    "id": "support_ac8_autocannon",
+    "summary": "The AC-8 Autocannon is a support weapon that provides rapid, sustained fire with moderate armor penetration.",
+    "usage": "Best used for suppressing enemy infantry and lightly armored vehicles, providing continuous fire support."
+  },
+  {
+    "id": "support_flam40_flamethrower",
+    "summary": "The Flam-40 Flamethrower projects a stream of fire, dealing damage over time and igniting enemies.",
+    "usage": "Effective for area denial and flushing out enemies from cover, particularly in close quarters."
+  },
+  {
+    "id": "support_las98_laser_cannon",
+    "summary": "The LAS-98 Laser Cannon fires a concentrated beam of energy, capable of piercing medium armor.",
+    "usage": "Best used against medium-armored targets at medium range, where the precision and penetration of the laser can be fully utilized."
+  },
+  {
+    "id": "support_m105_stalwart",
+    "summary": "The M-105 Stalwart is a versatile machine gun with adjustable fire rates, capable of suppressing enemy infantry.",
+    "usage": "Ideal for providing sustained fire in defensive positions or during an assault, adaptable to different combat situations."
+  },
+  {
+    "id": "support_mg43_machine_gun",
+    "summary": "The MG-43 Machine Gun offers high precision and a moderate rate of fire, effective against medium-range targets.",
+    "usage": "Best used for suppressive fire in defensive operations or controlled engagements at medium range."
+  },
+  {
+    "id": "support_arc3_arc_thrower",
+    "summary": "The ARC-3 Arc Thrower discharges high-voltage electricity, dealing damage to targets and disabling electronics.",
+    "usage": "Effective against electronic systems and lightly armored targets, providing a non-explosive alternative to traditional weapons."
+  },
+  {
+    "id": "support_gl21_grenade_launcher",
+    "summary": "The GL-21 Grenade Launcher fires explosive rounds that detonate on impact, causing area damage.",
+    "usage": "Ideal for engaging groups of enemies in cover or disrupting enemy formations with explosive fire."
+  },
+  {
+    "id": "support_apw1_anti_materiel_rifle",
+    "summary": "The APW-1 Anti-Materiel Rifle is a high-caliber weapon designed for penetrating heavy armor and infrastructure.",
+    "usage": "Best used for taking out vehicles, structures, and heavily armored enemies at long range."
+  },
+  {
+    "id": "support_rs422_railgun",
+    "summary": "The RS-422 Railgun fires a high-velocity projectile capable of penetrating the toughest armor, with adjustable firing modes.",
+    "usage": "Effective against heavy armor and long-range targets, providing precise, high-damage shots."
+  },
+  {
+    "id": "support_gr8_recoilless_rifle",
+    "summary": "The GR-8 Recoilless Rifle is a shoulder-fired weapon that launches powerful explosive rounds, effective against armor and structures.",
+    "usage": "Best used for destroying vehicles and fortifications, where its high explosive power can be fully utilized."
+  },
+  {
+    "id": "support_faf14_spear",
+    "summary": "The FAF-14 Spear is a guided missile launcher with heavy armor penetration and lock-on targeting, ideal for anti-armor roles.",
+    "usage": "Ideal for targeting and destroying heavily armored vehicles and structures from a safe distance."
+  },
+  {
+    "id": "support_las99_quasar_cannon",
+    "summary": "The LAS-99 Quasar Cannon is a heavy laser weapon that provides continuous fire with medium armor penetration.",
+    "usage": "Best used for sustained fire against medium armor, providing a reliable source of damage over time."
+  },
+  {
+    "id": "support_mg206_heavy_machine_gun",
+    "summary": "The MG-206 Heavy Machine Gun is a powerful support weapon with adjustable fire rates, capable of penetrating medium armor.",
+    "usage": "Effective in both defensive and offensive operations, providing flexible fire support for various combat scenarios."
+  },
+  {
+    "id": "support_eat17_expendable_antitank",
+    "summary": "The EAT-17 Expendable Anti-Tank weapon is a single-use rocket launcher designed for penetrating armor and destroying vehicles.",
+    "usage": "Best used for one-time engagements where a high-damage, high-penetration shot is needed."
+  },
+  {
+    "id": "vehicle_exo45_patriot_exosuit",
+    "summary": "The EXO-45 Patriot Exosuit is a heavily armored combat exoskeleton equipped with a rocket pod and a rotary gatling gun.",
+    "usage": "Best used for frontline assaults and supporting infantry with heavy firepower and durability."
+  },
+  {
+    "id": "vehicle_exo49_emancipator_exosuit",
+    "summary": "The EXO-49 Emancipator Exosuit is a dual-autocannon exoskeleton, ideal for taking down medium armor and enemy fortifications.",
+    "usage": "Effective for high-mobility operations where sustained firepower and armor penetration are required."
+  }
+]

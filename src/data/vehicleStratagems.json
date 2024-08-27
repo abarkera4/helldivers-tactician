@@ -1,0 +1,60 @@
+[
+  {
+    "id": "vehicle_exo45_patriot_exosuit",
+    "name": "EXO-45 Patriot Exosuit",
+    "type": "Stratagem",
+    "category": "Vehicle",
+    "traits": [
+      "Hellpod"
+    ],
+    "input_code": ["↓", "→", "↓", "←", "↓"],
+    "call_in_time": "5 Seconds",
+    "uses": "2",
+    "cooldown_time": "600 Seconds",
+    "firepower": {
+      "left_arm": {
+        "damage": "WIP",
+        "ammo_capacity": "14",
+        "rate_of_fire": "WIP",
+        "armor_penetration": "High"
+      },
+      "right_arm": {
+        "damage": "WIP",
+        "ammo_capacity": "1000",
+        "rate_of_fire": "WIP",
+        "armor_penetration": "Medium"
+      }
+    },
+    "description": "The EXO-45 Patriot Exosuit is equipped with a rocket pod on the left and a rotary gatling gun on the right. The rockets can penetrate heavy armor and are capable of destroying enemy infrastructure, including Broadcast Towers.",
+    "image": "/assets/stratagemIcons/vehicles/EXO-45_Patriot_Exosuit_Icon.webp"
+  },
+  {
+    "id": "vehicle_exo49_emancipator_exosuit",
+    "name": "EXO-49 Emancipator Exosuit",
+    "type": "Stratagem",
+    "category": "Vehicle",
+    "traits": [
+      "Hellpod"
+    ],
+    "input_code": ["↓", "→", "↓", "←", "↓", "→"],
+    "call_in_time": "5 Seconds",
+    "uses": "2",
+    "cooldown_time": "600 Seconds",
+    "firepower": {
+      "left_arm": {
+        "damage": "WIP",
+        "ammo_capacity": "75",
+        "rate_of_fire": "WIP",
+        "armor_penetration": "High"
+      },
+      "right_arm": {
+        "damage": "WIP",
+        "ammo_capacity": "75",
+        "rate_of_fire": "WIP",
+        "armor_penetration": "High"
+      }
+    },
+    "description": "The EXO-49 Emancipator Exosuit is equipped with dual autocannons that fire high penetration explosive rounds, ideal for eliminating medium-armored enemies. The autocannons can also destroy enemy infrastructure such as Spore Spewers and Broadcast Towers.",
+    "image": "/assets/stratagemIcons/vehicles/EXO-49_Emancipator_Exosuit_Icon.webp"
+  }
+]
