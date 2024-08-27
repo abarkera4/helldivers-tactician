@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import backpackStratagems from "../data/backpackStratagems.json";
-import defensiveEmplacements from "../data/defensiveEmplacements.json";
-import eagleStrikes from "../data/eagleStrikes.json";
-import orbitalStrikes from "../data/orbitalStrikes.json";
-import supportWeapons from "../data/supportWeapons.json";
-import vehicles from "../data/vehicles.json";
+import defensiveEmplacements from "../data/defensiveStratagems.json";
+import eagleStrikes from "../data/eagleStratagems.json";
+import orbitalStrikes from "../data/orbitalStratagems.json";
+import supportWeapons from "../data/supportWeaponsStratagems.json";
+import vehicles from "../data/vehicleStratagems.json";
 import "./WeaponsPage.css";
 
 function StratagemsPage() {
