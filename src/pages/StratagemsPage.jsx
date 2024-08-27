@@ -108,7 +108,6 @@ function StratagemsPage() {
                 ))}
               </>
             )}
-
             {/* Vehicles Section */}
             <h2 className="section-title" onClick={toggleVehicles}>
               {isVehiclesOpen ? "▼" : "▶"} Vehicles

@@ -133,6 +133,6 @@
       "cost": "6000"
     },
     "description": "A backpack which can be wielded as a one-handed ballistic shield, protecting against small arms fire.",
-    "image": "public/assets/stratagemIcons/supportBackpacks/SH-20_Ballistic_Shield_Backpack_Icon.webp"
+    "image": "/assets/stratagemIcons/supportBackpacks/SH-20_Ballistic_Shield_Backpack_Icon.webp"
   }
 ]

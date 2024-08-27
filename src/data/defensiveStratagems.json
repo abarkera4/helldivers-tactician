@@ -238,6 +238,6 @@
       "unlock_requirement": "Level 3",
       "cost": "1500"
     },
-    "image": "public/assets/stratagemIcons/defensiveEmplacements/A_MG-43_Machine_Gun_Sentry_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MG-43_Machine_Gun_Sentry_Icon.webp"
   }
 ]

@@ -51,7 +51,7 @@
     "id": "eagle_cluster_bomb",
     "name": "Eagle Cluster Bomb",
     "type": "Offensive Stratagem",
-    "image": "public/assets/stratagemIcons/offensiveEagle/Eagle_Cluster_Bomb_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Cluster_Bomb_Icon.webp",
     "stats": {
       "uses": 4,
       "call_in_time": "0 Seconds",
@@ -75,7 +75,7 @@
     "id": "eagle_napalm_airstrike",
     "name": "Eagle Napalm Airstrike",
     "type": "Offensive Stratagem",
-    "image": "public/assets/stratagemIcons/offensiveEagle/Eagle_Napalm_Airstrike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Napalm_Airstrike_Icon.webp",
     "stats": {
       "uses": 2,
       "call_in_time": "0 Seconds",

@@ -233,7 +233,7 @@
       "unlock_requirement": "Level 2",
       "cost": "5000"
     },
-    "image": "public/assets/stratagemIcons/supportWeapons/APW-1_Anti-Materiel_Rifle_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/APW-1_Anti-Materiel_Rifle_Icon.webp"
   },
   {
     "id": "support_rs422_railgun",
@@ -325,7 +325,7 @@
       "unlock_requirement": "Level 20",
       "cost": "9000"
     },
-    "image": "/path/to/spear_image.png"
+    "image": "/assets/stratagemIcons/supportWeapons/FAF-14_Spear_Icon.webp"
   },
   {
     "id": "support_las99_quasar_cannon",
