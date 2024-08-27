@@ -5,7 +5,7 @@ import eagleStrikes from "../data/eagleStrikes.json";
 import orbitalStrikes from "../data/orbitalStrikes.json";
 import supportWeapons from "../data/supportWeapons.json";
 import vehicles from "../data/vehicles.json";
-import "./StratagemsPage.css";
+import "./WeaponsPage.css";
 
 function StratagemsPage() {
   const [isBackpacksOpen, setIsBackpacksOpen] = useState(false);
