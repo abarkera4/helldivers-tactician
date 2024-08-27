@@ -1,0 +1,109 @@
+.stratagems-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; /* Full width of the viewport */
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.stratagems-page {
+  max-width: 1200px;
+  width: 100%; /* Full width relative to its parent */
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section-title {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00aaff;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.section-title:hover {
+  color: #0088cc;
+}
+
+/* Centralized Column Layout */
+.stratagems-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Left and Right Columns */
+.left-column, .right-column {
+  flex: 1;
+}
+
+/* Stratagem Categories */
+.stratagem-category {
+  margin-bottom: 40px;
+}
+
+.stratagem-category-title {
+  font-size: 1.5rem;
+  color: #00aaff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Stratagem List */
+.stratagem-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the stratagem items within their container */
+  gap: 20px;
+}
+
+/* Clickable Stratagem Items */
+.stratagem-item-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.stratagem-item-link:hover .stratagem-item {
+  transform: scale(1.05); /* Apply the hover effect to the entire link */
+  box-shadow: 0 0 15px #00aaff; /* Apply the hover effect to the entire link */
+}
+
+/* Individual Stratagem Item */
+.stratagem-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 150px; /* Ensures consistent sizing */
+}
+
+/* Stratagem Image */
+.stratagem-image {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #00aaff;
+  margin-bottom: 10px;
+}
+
+/* Stratagem Name */
+.stratagem-name {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.stratagem-name:hover {
+  color: #00aaff;
+  text-decoration: underline;
+}

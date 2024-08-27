@@ -5,7 +5,7 @@ import eagleStrikes from "../data/eagleStratagems.json";
 import orbitalStrikes from "../data/orbitalStratagems.json";
 import supportWeapons from "../data/supportWeaponStratagems.json";
 import vehicles from "../data/vehicleStratagems.json";
-import "./WeaponsPage.css";
+import "./StratagemsPage.css";
 
 function StratagemsPage() {
   const [isBackpacksOpen, setIsBackpacksOpen] = useState(false);
@@ -59,149 +59,155 @@ function StratagemsPage() {
       <div className="stratagems-page">
         <h1>Stratagems</h1>
 
-        {/* Backpacks Section */}
-        <h2 className="section-title" onClick={toggleBackpacks}>
-          {isBackpacksOpen ? "▼" : "▶"} Backpacks
-        </h2>
-        {isBackpacksOpen && (
-          <>
-            {Object.keys(backpackStratagemsByCategory).map((category) => (
-              <div key={category} className="stratagem-category">
-                <h3 className="stratagem-category-title">{category}</h3>
-                <div className="stratagem-list">
-                  {backpackStratagemsByCategory[category].map((stratagem) => (
-                    <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
-                      <div className="stratagem-item">
-                        {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
-                        <p className="stratagem-name">{stratagem.name}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </>
-        )}
+        <div className="stratagems-columns">
+          <div className="left-column">
+            {/* Support Weapons Section */}
+            <h2 className="section-title" onClick={toggleSupportWeapons}>
+              {isSupportWeaponsOpen ? "▼" : "▶"} Support Weapons
+            </h2>
+            {isSupportWeaponsOpen && (
+              <>
+                {Object.keys(supportWeaponsByCategory).map((category) => (
+                  <div key={category} className="stratagem-category">
+                    <h3 className="stratagem-category-title">{category}</h3>
+                    <div className="stratagem-list">
+                      {supportWeaponsByCategory[category].map((stratagem) => (
+                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
+                          <div className="stratagem-item">
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            <p className="stratagem-name">{stratagem.name}</p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
 
-        {/* Defensive Emplacements Section */}
-        <h2 className="section-title" onClick={toggleDefensive}>
-          {isDefensiveOpen ? "▼" : "▶"} Defensive Emplacements
-        </h2>
-        {isDefensiveOpen && (
-          <>
-            {Object.keys(defensiveStratagemsByCategory).map((category) => (
-              <div key={category} className="stratagem-category">
-                <h3 className="stratagem-category-title">{category}</h3>
-                <div className="stratagem-list">
-                  {defensiveStratagemsByCategory[category].map((stratagem) => (
-                    <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
-                      <div className="stratagem-item">
-                        {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
-                        <p className="stratagem-name">{stratagem.name}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </>
-        )}
+            {/* Backpacks Section */}
+            <h2 className="section-title" onClick={toggleBackpacks}>
+              {isBackpacksOpen ? "▼" : "▶"} Backpacks
+            </h2>
+            {isBackpacksOpen && (
+              <>
+                {Object.keys(backpackStratagemsByCategory).map((category) => (
+                  <div key={category} className="stratagem-category">
+                    <h3 className="stratagem-category-title">{category}</h3>
+                    <div className="stratagem-list">
+                      {backpackStratagemsByCategory[category].map((stratagem) => (
+                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
+                          <div className="stratagem-item">
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            <p className="stratagem-name">{stratagem.name}</p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
 
-        {/* Eagle Strikes Section */}
-        <h2 className="section-title" onClick={toggleEagle}>
-          {isEagleOpen ? "▼" : "▶"} Eagle Strikes
-        </h2>
-        {isEagleOpen && (
-          <>
-            {Object.keys(eagleStrikesByCategory).map((category) => (
-              <div key={category} className="stratagem-category">
-                <h3 className="stratagem-category-title">{category}</h3>
-                <div className="stratagem-list">
-                  {eagleStrikesByCategory[category].map((stratagem) => (
-                    <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
-                      <div className="stratagem-item">
-                        {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
-                        <p className="stratagem-name">{stratagem.name}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </>
-        )}
+            {/* Vehicles Section */}
+            <h2 className="section-title" onClick={toggleVehicles}>
+              {isVehiclesOpen ? "▼" : "▶"} Vehicles
+            </h2>
+            {isVehiclesOpen && (
+              <>
+                {Object.keys(vehiclesByCategory).map((category) => (
+                  <div key={category} className="stratagem-category">
+                    <h3 className="stratagem-category-title">{category}</h3>
+                    <div className="stratagem-list">
+                      {vehiclesByCategory[category].map((stratagem) => (
+                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
+                          <div className="stratagem-item">
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            <p className="stratagem-name">{stratagem.name}</p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
+          </div>
 
-        {/* Orbital Strikes Section */}
-        <h2 className="section-title" onClick={toggleOrbital}>
-          {isOrbitalOpen ? "▼" : "▶"} Orbital Strikes
-        </h2>
-        {isOrbitalOpen && (
-          <>
-            {Object.keys(orbitalStrikesByCategory).map((category) => (
-              <div key={category} className="stratagem-category">
-                <h3 className="stratagem-category-title">{category}</h3>
-                <div className="stratagem-list">
-                  {orbitalStrikesByCategory[category].map((stratagem) => (
-                    <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
-                      <div className="stratagem-item">
-                        {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
-                        <p className="stratagem-name">{stratagem.name}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </>
-        )}
+          <div className="right-column">
+            {/* Eagle Strikes Section */}
+            <h2 className="section-title" onClick={toggleEagle}>
+              {isEagleOpen ? "▼" : "▶"} Eagle Strikes
+            </h2>
+            {isEagleOpen && (
+              <>
+                {Object.keys(eagleStrikesByCategory).map((category) => (
+                  <div key={category} className="stratagem-category">
+                    <h3 className="stratagem-category-title">{category}</h3>
+                    <div className="stratagem-list">
+                      {eagleStrikesByCategory[category].map((stratagem) => (
+                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
+                          <div className="stratagem-item">
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            <p className="stratagem-name">{stratagem.name}</p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
 
-        {/* Support Weapons Section */}
-        <h2 className="section-title" onClick={toggleSupportWeapons}>
-          {isSupportWeaponsOpen ? "▼" : "▶"} Support Weapons
-        </h2>
-        {isSupportWeaponsOpen && (
-          <>
-            {Object.keys(supportWeaponsByCategory).map((category) => (
-              <div key={category} className="stratagem-category">
-                <h3 className="stratagem-category-title">{category}</h3>
-                <div className="stratagem-list">
-                  {supportWeaponsByCategory[category].map((stratagem) => (
-                    <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
-                      <div className="stratagem-item">
-                        {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
-                        <p className="stratagem-name">{stratagem.name}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </>
-        )}
+            {/* Orbital Strikes Section */}
+            <h2 className="section-title" onClick={toggleOrbital}>
+              {isOrbitalOpen ? "▼" : "▶"} Orbital Strikes
+            </h2>
+            {isOrbitalOpen && (
+              <>
+                {Object.keys(orbitalStrikesByCategory).map((category) => (
+                  <div key={category} className="stratagem-category">
+                    <h3 className="stratagem-category-title">{category}</h3>
+                    <div className="stratagem-list">
+                      {orbitalStrikesByCategory[category].map((stratagem) => (
+                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
+                          <div className="stratagem-item">
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            <p className="stratagem-name">{stratagem.name}</p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
 
-        {/* Vehicles Section */}
-        <h2 className="section-title" onClick={toggleVehicles}>
-          {isVehiclesOpen ? "▼" : "▶"} Vehicles
-        </h2>
-        {isVehiclesOpen && (
-          <>
-            {Object.keys(vehiclesByCategory).map((category) => (
-              <div key={category} className="stratagem-category">
-                <h3 className="stratagem-category-title">{category}</h3>
-                <div className="stratagem-list">
-                  {vehiclesByCategory[category].map((stratagem) => (
-                    <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
-                      <div className="stratagem-item">
-                        {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
-                        <p className="stratagem-name">{stratagem.name}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </>
-        )}
+            {/* Defensive Emplacements Section */}
+            <h2 className="section-title" onClick={toggleDefensive}>
+              {isDefensiveOpen ? "▼" : "▶"} Defensive Emplacements
+            </h2>
+            {isDefensiveOpen && (
+              <>
+                {Object.keys(defensiveStratagemsByCategory).map((category) => (
+                  <div key={category} className="stratagem-category">
+                    <h3 className="stratagem-category-title">{category}</h3>
+                    <div className="stratagem-list">
+                      {defensiveStratagemsByCategory[category].map((stratagem) => (
+                        <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
+                          <div className="stratagem-item">
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            <p className="stratagem-name">{stratagem.name}</p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
