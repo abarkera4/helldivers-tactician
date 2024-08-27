@@ -33,12 +33,12 @@
 
 .stratagem-item {
   text-align: center;
-  padding: 10px;
+  padding: 20px; /* Increase padding to accommodate larger icon */
   background-color: #2c2c2c;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 150px;
+  width: 300px; /* Double the width */
 }
 
 .stratagem-item-link {
@@ -55,11 +55,11 @@
   max-width: 100%;
   border-radius: 10px;
   border: 2px solid #00aaff;
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Increase margin to match larger icon */
 }
 
 .stratagem-name {
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* Slightly increase the font size */
   color: #f0f0f0;
   text-transform: uppercase;
   text-decoration: none;
