@@ -19,7 +19,7 @@
     "ammunition": {
       "ammo_capacity": "6 (5 in Backpack + 1 loaded)"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/RL-77_Airburst_Rocket_Launcher_Icon.svg"
+    "image": "/assets/stratagemIcons/supportWeapons/RL-77_Airburst_Rocket_Launcher_Icon.webp"
   },
   {
     "id": "support_ac8_autocannon",

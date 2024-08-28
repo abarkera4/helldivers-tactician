@@ -13,7 +13,7 @@
     "salvos": 4,
     "capacity": 60,
     "attacks": ["Cannon Eagle 23mm", "Cannon 23mm Silent"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Gatling_Barrage_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Gatling_Barrage_Icon.svg",
     "details": {
       "Cannon Eagle 23mm": {
         "Projectile": {
@@ -77,7 +77,7 @@
     "salvos": 3,
     "capacity": 3,
     "attacks": ["Orbital Cannon 110mm", "Heavy Shrapnel"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Airburst_Strike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Airburst_Strike_Icon.svg",
     "details": {
       "Orbital Cannon 110mm": {
         "Projectile": {
@@ -146,7 +146,7 @@
     "salvos": 5,
     "capacity": 3,
     "attacks": ["Orbital Cannon 120mm HE", "Orbital Strike"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_120MM_HE_Barrage_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_120MM_HE_Barrage_Icon.svg",
     "details": {
       "Orbital Cannon 120mm HE": {
         "Projectile": {
@@ -210,7 +210,7 @@
     "salvos": 5,
     "capacity": 3,
     "attacks": ["Orbital Cannon 380mm HE", "Orbital Barrage"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_380MM_HE_Barrage_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_380MM_HE_Barrage_Icon.svg",
     "details": {
       "Orbital Cannon 380mm HE": {
         "Projectile": {
@@ -274,7 +274,7 @@
     "salvos": 5,
     "capacity": 3,
     "attacks": ["Orbital Cannon 380mm HE", "Orbital Barrage"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Walking_Barrage_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Walking_Barrage_Icon.svg",
     "details": {
       "Orbital Cannon 380mm HE": {
         "Projectile": {
@@ -337,7 +337,7 @@
     "call_in_time": 2,
     "fire_limit": 25,
     "attacks": ["DPS Beam Huge", "DPS Fire"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Laser_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Laser_Icon.svg",
     "details": {
       "DPS Beam Huge": {
         "Damage": {
@@ -391,7 +391,7 @@
     "call_in_time": 1,
     "salvos": 1,
     "attacks": ["Orbital Railcannon", "Railcannon Impact"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Railcannon_Strike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Railcannon_Strike_Icon.svg",
     "details": {
       "Orbital Railcannon": {
         "Projectile": {
@@ -454,7 +454,7 @@
     "call_in_time": 2,
     "salvos": 1,
     "attacks": ["Orbital Precision Strike Projectile", "Precision Strike Explosion"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Precision_Strike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Precision_Strike_Icon.svg",
     "detailed_stats": {
       "projectile": {
         "caliber": "406 mm",
@@ -510,7 +510,7 @@
     "call_in_time": 2,
     "salvos": 1,
     "attacks": ["Orbital Gas Projectile", "Orbital Gas Explosion"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Gas_Strike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Gas_Strike_Icon.svg",
     "detailed_stats": {
       "projectile": {
         "caliber": "84 mm",
@@ -568,7 +568,7 @@
     "call_in_time": 2,
     "salvos": 3,
     "attacks": ["Orbital EMS Impact", "Orbital Shockwave"],
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_EMS_Strike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_EMS_Strike_Icon.svg",
     "detailed_stats": {
     }
   },
@@ -581,7 +581,7 @@
     "module": "Bridge",
     "traits": ["Explosive", "Orbital"],
     "stratagem_code": "➡️⬇️⬇️⬇️",
-    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Smoke_Strike_Icon.webp"
+    "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Smoke_Strike_Icon.svg"
 }
 ]
 
