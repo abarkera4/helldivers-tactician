@@ -1,20 +1,20 @@
 import React from "react";
 
-const SupportWeaponStratagemDetails = ({ details, firepower, weaponHandling, ammunition }) => {
+const SupportWeaponStratagemDetails = ({ details, firepower, weaponHandling, ammunition, acquisition }) => {
+  if (!details && !firepower && !weaponHandling && !ammunition && !acquisition) return null;
+
   const renderDetailSection = (title, detailData) => {
+    if (!detailData || Object.keys(detailData).length === 0) return null;
+
     return (
       <div className="detail-section">
         <h4>{title}</h4>
         <ul>
-          {typeof detailData === "object" ? (
-            Object.entries(detailData).map(([key, value]) => (
-              <li key={key}>
-                <strong>{key}:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
-              </li>
-            ))
-          ) : (
-            <li>{detailData}</li>
-          )}
+          {Object.entries(detailData).map(([key, value]) => (
+            <li key={key}>
+              <strong>{key}:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
+            </li>
+          ))}
         </ul>
       </div>
     );
@@ -22,10 +22,11 @@ const SupportWeaponStratagemDetails = ({ details, firepower, weaponHandling, amm
 
   return (
     <div className="support-weapon-stratagem-details">
-      {firepower && renderDetailSection("Firepower", firepower)}
-      {weaponHandling && renderDetailSection("Weapon Handling", weaponHandling)}
-      {ammunition && renderDetailSection("Ammunition", ammunition)}
-      {details && Object.entries(details).map(([key, value]) => renderDetailSection(key, value))}
+      {renderDetailSection("Firepower", firepower)}
+      {renderDetailSection("Weapon Handling", weaponHandling)}
+      {renderDetailSection("Ammunition", ammunition)}
+      {renderDetailSection("Acquisition", acquisition)}
+      {renderDetailSection("Details", details)}
     </div>
   );
 };

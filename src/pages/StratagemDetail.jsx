@@ -37,7 +37,7 @@ function StratagemDetail() {
     } else if (eagleStratagems.some((s) => s.id === stratagem.id)) {
       return <EagleStratagemDetails details={stratagem.details} />;
     } else if (supportWeaponsStratagems.some((s) => s.id === stratagem.id)) {
-      return <SupportWeaponStratagemDetails details={stratagem.details} />;
+      return <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} acquisition={stratagem.acquisition} />;
     }
     return null;
   };
