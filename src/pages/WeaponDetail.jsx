@@ -32,76 +32,22 @@ function WeaponDetail() {
     return <h1>Loading...</h1>;
   }
 
-  const getWeaponValue = (section, keys, defaultValue = "N/A") => {
-    if (!section) return defaultValue;
-    for (let key of keys) {
-      if (section[key] !== undefined) return section[key];
-    }
-    return defaultValue;
-  };
+  const spareAmmo = weapon.ammunition?.spare_magazines ?? weapon.ammunition?.spare_rounds ?? "N/A";
 
-  const renderAttackDetails = (attackName, attackData) => {
-    if (typeof attackData === "string") {
-      return (
-        <div key={attackName}>
-          {attackName}: {attackData}
-        </div>
-      );
-    }
-    return (
-      <div key={attackName}>
-        <strong>{attackName}</strong>:
-        {attackData.Projectile && (
-          <div className="attack-detail">
-            <div>Projectile:</div>
-            <ul>
-              {Object.entries(attackData.Projectile).map(([key, value]) => (
-                <li key={key}>
-                  <strong>{key.replace(/_/g, " ")}:</strong> {value}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        {attackData.Damage && (
-          <div className="attack-detail">
-            <div>Damage:</div>
-            <ul>
-              {Object.entries(attackData.Damage).map(([key, value]) => (
-                <li key={key}>
-                  <strong>{key.replace(/_/g, " ")}:</strong> {value}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        {attackData.Penetration && (
-          <div className="attack-detail">
-            <div>Penetration:</div>
-            <ul>
-              {Object.entries(attackData.Penetration).map(([key, value]) => (
-                <li key={key}>
-                  <strong>{key.replace(/_/g, " ")}:</strong> {value}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        {attackData.special_effects && (
-          <div className="attack-detail">
-            <div>Special Effects:</div>
-            <ul>
-              {Object.entries(attackData.special_effects).map(([key, value]) => (
-                <li key={key}>
-                  <strong>{key.replace(/_/g, " ")}:</strong> {value}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-    );
-  };
+  const renderAttackDetails = (attackName, attackData) => (
+    <div key={attackName}>
+      <strong>{attackName}:</strong>
+      <ul>
+        {typeof attackData === "object" && !Array.isArray(attackData)
+          ? Object.entries(attackData).map(([key, value]) => (
+              <li key={key}>
+                <strong>{key}:</strong> {JSON.stringify(value)}
+              </li>
+            ))
+          : attackData}
+      </ul>
+    </div>
+  );
 
   const renderDetailsSection = () => {
     if (!weapon.details) return null;
@@ -115,9 +61,13 @@ function WeaponDetail() {
         {weapon.details.attacks && (
           <div className="stat-value">
             <strong>Attacks:</strong>
-            {Array.isArray(weapon.details.attacks)
-              ? weapon.details.attacks.map((attackData, index) => renderAttackDetails(`Attack ${index + 1}`, attackData))
-              : Object.entries(weapon.details.attacks).map(([attackName, attackData]) => renderAttackDetails(attackName, attackData))}
+            {Array.isArray(weapon.details.attacks) ? (
+              weapon.details.attacks.map((attackData, index) => renderAttackDetails(`Attack ${index + 1}`, attackData))
+            ) : typeof weapon.details.attacks === "object" ? (
+              Object.entries(weapon.details.attacks).map(([attackName, attackData]) => renderAttackDetails(attackName, attackData))
+            ) : (
+              <div>{weapon.details.attacks}</div>
+            )}
           </div>
         )}
       </div>
@@ -140,31 +90,41 @@ function WeaponDetail() {
 
         <div className="weapon-stats-section">
           <div className="stat-header">Firepower</div>
-          <div className="stat-value">Damage: {getWeaponValue(weapon.firepower, ["standard_damage", "damage"])}</div>
-          <div className="stat-value">Penetration Level: {getWeaponValue(weapon.firepower, ["max_penetration", "penetration"])}</div>
+          <div className="stat-value">Damage: {weapon.firepower?.damage || weapon.firepower?.standard_damage || "N/A"}</div>
+          <div className="stat-value">Penetration Level: {weapon.firepower?.max_penetration || weapon.firepower?.penetration_level || "N/A"}</div>
         </div>
 
         <div className="weapon-stats-section">
           <div className="stat-header">Weapon Handling</div>
-          <div className="stat-value">Fire Rate: {getWeaponValue(weapon.weapon_handling, ["fire_rate", "fire_rate_rpm"])}</div>
-          <div className="stat-value">Recoil: {getWeaponValue(weapon.weapon_handling, ["recoil"])}</div>
-          <div className="stat-value">Firing Modes: {getWeaponValue(weapon.weapon_handling, ["firing_modes"])}</div>
+          <div className="stat-value">Fire Rate: {weapon.weapon_handling?.fire_rate || "N/A"}</div>
+          <div className="stat-value">Recoil: {weapon.weapon_handling?.recoil || "N/A"}</div>
           <div className="stat-value">Traits: {weapon.traits?.join(", ") || "N/A"}</div>
         </div>
 
         <div className="weapon-stats-section">
           <div className="stat-header">Ammunition</div>
-          <div className="stat-value">Capacity: {getWeaponValue(weapon.ammunition, ["capacity"])}</div>
-          <div className="stat-value">Spare Ammunition: {getWeaponValue(weapon.ammunition, ["spare_mags", "spare_shells", "spare"])}</div>
+          <div className="stat-value">Capacity: {weapon.ammunition?.capacity || weapon.ammunition?.ammo_capacity || "N/A"}</div>
+          <div className="stat-value">Spare Ammunition: {spareAmmo}</div>
         </div>
 
         <div className="weapon-stats-section">
           <div className="stat-header">Acquisition</div>
-          <div className="stat-value">Source: {getWeaponValue(weapon.acquisition, ["source"])}</div>
-          <div className="stat-value">Cost: {getWeaponValue(weapon.acquisition, ["cost"])}</div>
+          <div className="stat-value">Source: {weapon.acquisition?.source || "N/A"}</div>
+          <div className="stat-value">Cost: {weapon.acquisition?.cost || "N/A"}</div>
         </div>
 
         {renderDetailsSection()}
+
+        {weapon.additional_traits && weapon.additional_traits.length > 0 && (
+          <div className="weapon-stats-section">
+            <div className="stat-header">Additional Traits</div>
+            {weapon.additional_traits.map((trait, index) => (
+              <div key={index} className="stat-value">
+                {trait.name}: {trait.description}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
