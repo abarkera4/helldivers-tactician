@@ -4,9 +4,19 @@ import backpackStratagems from "../data/backpackStratagems.json";
 import defensiveStratagems from "../data/defensiveStratagems.json";
 import eagleStratagems from "../data/eagleStratagems.json";
 import orbitalStratagems from "../data/orbitalStratagems.json";
-import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
+import supportWeaponsStratagems from "../data/supportWeaponsStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
+import ProjectileStats from "../components/ProjectileStats";
+import AreaOfEffectStats from "../components/AreaOfEffectStats";
+import DamageStats from "../components/DamageStats";
+import SpecialEffects from "../components/SpecialEffects";
+import FirepowerStats from "../components/FirepowerStats";
+import GeneralStats from "../components/GeneralStats";
+import DetailsStats from "../components/DetailsStats";
+import WeaponHandlingStats from "../components/WeaponHandlingStats";
+import AcquisitionStats from "../components/AcquisitionStats";
+import AmmunitionStats from "../components/AmmunitionStats";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -28,86 +38,6 @@ function StratagemDetail() {
     return <h1>Loading...</h1>;
   }
 
-  const renderWeaponHandling = (weaponHandling) => {
-    return (
-      weaponHandling && (
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Weapon Handling</div>
-          {weaponHandling.fire_modes && <div className="stat-value">Fire Modes: {weaponHandling.fire_modes}</div>}
-          {weaponHandling.recoil && <div className="stat-value">Recoil: {weaponHandling.recoil}</div>}
-          {weaponHandling.fire_rate && <div className="stat-value">Fire Rate: {Array.isArray(weaponHandling.fire_rate) ? weaponHandling.fire_rate.join(", ") : weaponHandling.fire_rate}</div>}
-          {weaponHandling.cooldown && <div className="stat-value">Cooldown: {weaponHandling.cooldown}</div>}
-        </div>
-      )
-    );
-  };
-
-  const renderFirepower = (firepower) => {
-    return (
-      firepower && (
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Firepower</div>
-          <div className="stat-value">Damage: {firepower.damage || "N/A"}</div>
-          {firepower.penetration_level && <div className="stat-value">Penetration Level: {firepower.penetration_level}</div>}
-        </div>
-      )
-    );
-  };
-
-  const renderAmmunition = (ammunition) => {
-    return (
-      ammunition && (
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Ammunition</div>
-          {ammunition.ammo_capacity && <div className="stat-value">Ammo Capacity: {ammunition.ammo_capacity}</div>}
-          {ammunition.spare_clips && <div className="stat-value">Spare Clips: {ammunition.spare_clips}</div>}
-          {ammunition.spare_canisters && <div className="stat-value">Spare Canisters: {ammunition.spare_canisters}</div>}
-          {ammunition.spare_heat_sinks && <div className="stat-value">Spare Heat Sinks: {ammunition.spare_heat_sinks}</div>}
-        </div>
-      )
-    );
-  };
-
-  const renderAcquisition = (acquisition) => {
-    return (
-      acquisition && (
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Acquisition</div>
-          <div className="stat-value">Source: {acquisition.source || "N/A"}</div>
-          <div className="stat-value">Cost: {acquisition.cost || "N/A"}</div>
-          <div className="stat-value">Unlock Requirement: {acquisition.unlock_requirement || "N/A"}</div>
-        </div>
-      )
-    );
-  };
-
-  const renderDetailedStats = (detailedStats) => {
-    if (!detailedStats) return null;
-
-    return (
-      <div className="stratagem-stats-section">
-        <div className="stat-header">Detailed Stats</div>
-        {detailedStats.projectile && (
-          <div>
-            <h4>Projectile:</h4>
-            <div className="stat-value">Caliber: {detailedStats.projectile.caliber}</div>
-            <div className="stat-value">Mass: {detailedStats.projectile.mass}</div>
-            <div className="stat-value">Initial Velocity: {detailedStats.projectile.initial_velocity}</div>
-            <div className="stat-value">Damage: {detailedStats.projectile.damage.standard} (Standard)</div>
-          </div>
-        )}
-        {detailedStats.explosion && (
-          <div>
-            <h4>Explosion:</h4>
-            <div className="stat-value">Damage: {detailedStats.explosion.damage}</div>
-            <div className="stat-value">Inner Radius: {detailedStats.explosion.inner_radius}</div>
-            <div className="stat-value">Outer Radius: {detailedStats.explosion.outer_radius}</div>
-          </div>
-        )}
-      </div>
-    );
-  };
-
   return (
     <div className="stratagem-detail-container">
       <div className="wiki-content">
@@ -122,11 +52,39 @@ function StratagemDetail() {
         <h1 className="stratagem-title">{stratagem.name}</h1>
         <p className="stratagem-category">{stratagem.category}</p>
 
-        {renderFirepower(stratagem.firepower)}
-        {renderWeaponHandling(stratagem.weapon_handling)}
-        {renderAmmunition(stratagem.ammunition)}
-        {renderAcquisition(stratagem.acquisition)}
-        {renderDetailedStats(stratagem.detailed_stats)}
+        <GeneralStats stats={stratagem.stats} />
+        <FirepowerStats firepower={stratagem.firepower} />
+        <WeaponHandlingStats weaponHandling={stratagem.weapon_handling} />
+        <AmmunitionStats ammunition={stratagem.ammunition} />
+        <AcquisitionStats acquisition={stratagem.acquisition} />
+        <DetailsStats details={stratagem.details} />
+
+        {/* Conditionally render ProjectileStats if the data is available */}
+        {stratagem.details?.projectile && <ProjectileStats projectile={stratagem.details.projectile} />}
+
+        {/* Conditionally render AreaOfEffectStats if the data is available */}
+        {stratagem.details?.area_of_effect && <AreaOfEffectStats areaOfEffect={stratagem.details.area_of_effect} />}
+
+        {/* Conditionally render DamageStats if the data is available */}
+        {stratagem.details?.damage && <DamageStats damage={stratagem.details.damage} />}
+
+        {/* Conditionally render SpecialEffects if the data is available */}
+        {stratagem.details?.special_effects && <SpecialEffects specialEffects={stratagem.details.special_effects} />}
+
+        {stratagem.requirements && (
+          <div className="stratagem-stats-section">
+            <div className="stat-header">Requirements</div>
+            <div className="stat-value">Cost: {stratagem.requirements.cost}</div>
+            <div className="stat-value">Level: {stratagem.requirements.level}</div>
+          </div>
+        )}
+
+        {stratagem.strike_pattern && (
+          <div className="stratagem-stats-section">
+            <div className="stat-header">Strike Pattern</div>
+            <img src={stratagem.strike_pattern} alt="Strike Pattern" className="strike-pattern" />
+          </div>
+        )}
       </div>
     </div>
   );
