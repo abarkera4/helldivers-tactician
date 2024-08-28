@@ -1,5 +1,4 @@
 import React from "react";
-import "./OrbitalStratagemDetails.css";
 
 const OrbitalStratagemDetails = ({ details }) => {
   if (!details) return null;
