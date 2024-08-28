@@ -8,6 +8,8 @@ import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
 import OrbitalStratagemDetails from "../components/OrbitalStratagemDetails";
+import EagleStratagemDetails from "../components/EagleStratagemDetails";
+import SupportWeaponStratagemDetails from "../components/SupportWeaponStratagemDetails";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -28,6 +30,20 @@ function StratagemDetail() {
   if (!stratagem) {
     return <h1>Loading...</h1>;
   }
+
+  const renderStratagemDetails = () => {
+    switch (stratagem.type) {
+      case "Orbital":
+        return <OrbitalStratagemDetails details={stratagem.details} />;
+      case "Offensive Stratagem":
+        return <EagleStratagemDetails details={stratagem.details} />;
+      case "Stratagem":
+      case "Support Weapon":
+        return <SupportWeaponStratagemDetails details={stratagem.details} />;
+      default:
+        return <p>No detailed information available.</p>;
+    }
+  };
 
   return (
     <div className="stratagem-detail-container">
@@ -50,7 +66,7 @@ function StratagemDetail() {
 
         <div className="stat-section">
           <h2>Details</h2>
-          <OrbitalStratagemDetails details={stratagem.details} />
+          {renderStratagemDetails()}
         </div>
       </div>
     </div>
