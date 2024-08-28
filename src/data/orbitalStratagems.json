@@ -409,74 +409,6 @@
         "extra_info": []
     },
     {
-        "id": "orbital_railcannon_strike",
-        "name": "Orbital Railcannon Strike",
-        "type": null,
-        "category": null,
-        "traits": [
-            "Orbital"
-        ],
-        "input_code": null,
-        "call_in_time": 1,
-        "uses": null,
-        "permit_type": "Offensive",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {
-            "Orbital Railcannon": {
-                "Projectile": {
-                    "Caliber": "100 mm",
-                    "Mass": "5 kg",
-                    "Initial Velocity": "14000 m/s",
-                    "Drag Factor": "0%",
-                    "Gravity Factor": "100%",
-                    "Penetration Slowdown": "0%"
-                },
-                "Damage": {
-                    "Standard": 2000,
-                    "vs. Durable": 2000
-                },
-                "Penetration": {
-                    "Direct": "8 Heavy VI",
-                    "Slight Angle": "7 Heavy V",
-                    "Large Angle": "6 Heavy IV",
-                    "Extreme Angle": "0 Unarmored"
-                },
-                "Special Effects": {
-                    "Demolition Force": 50,
-                    "Stagger Force": 60,
-                    "Push Force": 35
-                }
-            },
-            "Railcannon Impact": {
-                "Area of Effect": {
-                    "Inner Radius": "2.5 m",
-                    "Outer Radius": "2.5 m",
-                    "Shockwave Radius": "10 m"
-                },
-                "Damage": {
-                    "Inner Radius": 500,
-                    "Outer Radius": "499 - 0"
-                },
-                "Penetration": {
-                    "Inner Radius": "6 Heavy II",
-                    "Outer Radius": "5 Heavy I",
-                    "Shockwave": "6 Heavy II"
-                },
-                "AoE Effect": {
-                    "Demolition Force": 50,
-                    "Stagger Force": 30,
-                    "Push Force": 50
-                }
-            }
-        },
-        "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Railcannon_Strike_Icon.svg",
-        "extra_info": []
-    },
-    {
         "id": "orbital_precision_strike",
         "name": "Orbital Precision Strike",
         "type": null,
@@ -485,19 +417,70 @@
             "Explosive",
             "Orbital"
         ],
-        "input_code": null,
+        "input_code": "⇩⇧⇧",
         "call_in_time": 2,
         "uses": null,
         "permit_type": "Offensive",
-        "cooldown_time": null,
+        "cooldown_time": 90,
         "firepower": {},
         "weapon_handling": {},
         "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "acquisition": {
+            "unlock_level": 1,
+            "unlock_cost": 0,
+            "module": "Bridge"
+        },
+        "details": {
+            "Orbital Precision Strike": {
+                "Projectile": {
+                    "Caliber": "406 mm",
+                    "Mass": "30 kg",
+                    "Initial Velocity": "400 m/s",
+                    "Drag Factor": "0%",
+                    "Gravity Factor": "100%",
+                    "Penetration Slowdown": "25%"
+                },
+                "Damage": {
+                    "Standard": 450,
+                    "vs. Durable": 450
+                },
+                "Penetration": {
+                    "Direct": "8 Heavy IV",
+                    "Slight Angle": "7 Heavy III",
+                    "Large Angle": "6 Heavy II",
+                    "Extreme Angle": "0 Unarmored"
+                },
+                "Special Effects": {
+                    "Demolition Force": 50,
+                    "Stagger Force": 20,
+                    "Push Force": 20
+                }
+            },
+            "Precision Strike": {
+                "Area of Effect": {
+                    "Inner Radius": "4 m",
+                    "Outer Radius": "12 m",
+                    "Shockwave Radius": "18 m"
+                },
+                "Damage": {
+                    "Inner Radius": 1000,
+                    "Outer Radius": "999 - 0"
+                },
+                "Penetration": {
+                    "Inner Radius": "6 Heavy II",
+                    "Outer Radius": "5 Heavy I",
+                    "Shockwave": "6 Heavy II"
+                },
+                "AoE Effect": {
+                    "Demolition Force": 50,
+                    "Stagger Force": 70,
+                    "Push Force": 60
+                }
+            }
+        },
         "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Precision_Strike_Icon.svg",
         "extra_info": []
-    },
+    },    
     {
         "id": "orbital_gas_strike",
         "name": "Orbital Gas Strike",
@@ -511,15 +494,64 @@
         "call_in_time": 2,
         "uses": null,
         "permit_type": "Offensive",
-        "cooldown_time": null,
+        "cooldown_time": 75,
         "firepower": {},
         "weapon_handling": {},
         "ammunition": {},
         "acquisition": {},
-        "details": {},
+        "details": {
+            "Orbital Gas Projectile": {
+                "Projectile": {
+                    "Caliber": "84 mm",
+                    "Mass": "5 kg",
+                    "Initial Velocity": "400 m/s",
+                    "Drag Factor": "0%",
+                    "Gravity Factor": "100%",
+                    "Penetration Slowdown": "25%"
+                },
+                "Damage": {
+                    "Standard": 300,
+                    "vs. Durable": 300
+                },
+                "Penetration": {
+                    "Direct": "7 Heavy III",
+                    "Slight Angle": "7 Heavy III",
+                    "Large Angle": "6 Heavy II",
+                    "Extreme Angle": "0 Unarmored"
+                },
+                "Special Effects": {
+                    "Demolition Force": 50,
+                    "Stagger Force": 60,
+                    "Push Force": 15
+                }
+            },
+            "Orbital Gas AoE": {
+                "Area of Effect": {
+                    "Inner Radius": "1 m",
+                    "Outer Radius": "15 m",
+                    "Shockwave Radius": "20 m"
+                },
+                "Damage": {
+                    "Element": "Gas",
+                    "Inner Radius": 0
+                },
+                "Penetration": {
+                    "Inner Radius": "6 Heavy II",
+                    "Outer Radius": "5 Heavy I",
+                    "Shockwave": "6 Heavy II"
+                },
+                "AoE Effect": {
+                    "Status": "Gas",
+                    "Status Strength": 100,
+                    "Demolition Force": 50,
+                    "Stagger Force": 10,
+                    "Push Force": 40
+                }
+            }
+        },
         "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_Gas_Strike_Icon.svg",
         "extra_info": []
-    },
+    },    
     {
         "id": "orbital_ems_strike",
         "name": "Orbital EMS Strike",
@@ -528,7 +560,7 @@
         "traits": [
             "Orbital"
         ],
-        "input_code": null,
+        "input_code": "⬇️➡️⬇️⬆️",
         "call_in_time": 2,
         "uses": null,
         "permit_type": "Offensive",
@@ -536,7 +568,11 @@
         "firepower": {},
         "weapon_handling": {},
         "ammunition": {},
-        "acquisition": {},
+        "acquisition": {
+            "Unlock Level": 5,
+            "Unlock Cost": "6000 Requisition",
+            "Module": "Bridge"
+        },
         "details": {},
         "image": "/assets/stratagemIcons/offensiveOrbital/Orbital_EMS_Strike_Icon.svg",
         "extra_info": []
