@@ -4,17 +4,65 @@
         "name": "AR-23 Liberator",
         "type": "Primary",
         "category": "Assault Rifle",
-        "traits": [],
+        "traits": [
+            "Light Armor Penetrating"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": "60",
+            "max_penetration": "Light II"
+        },
+        "weapon_handling": {
+            "fire_rate": "640 RPM",
+            "recoil": "15",
+            "firing_modes": "Auto, Semi, Burst"
+        },
+        "ammunition": {
+            "capacity": "45",
+            "spare_mags": "7",
+            "starting_magazines": "5",
+            "mags_from_supply": "7",
+            "mags_from_ammo_box": "3"
+        },
+        "acquisition": {
+            "source": "Starter Equipment"
+        },
+        "details": {
+            "tactical_reload_time": "2 s",
+            "reload_time": "3 s",
+            "scope_options": "25m, 50m, 100m",
+            "attacks": {
+                "Rifle 5.5x50mm Full Metal Jacket": {
+                    "Projectile": {
+                        "Caliber": "5.5 mm",
+                        "Mass": "4.5 g",
+                        "Initial Velocity": "900 m/s",
+                        "Drag Factor": "30%",
+                        "Gravity Factor": "100%",
+                        "Penetration Slowdown": "25%"
+                    },
+                    "Damage": {
+                        "Standard": "60",
+                        "vs. Durable": "14"
+                    },
+                    "Penetration": {
+                        "Direct": "Light II",
+                        "Slight Angle": "Light II",
+                        "Large Angle": "Light II",
+                        "Extreme Angle": "Unarmored"
+                    },
+                    "Special Effects": {
+                        "Demolition Force": "10",
+                        "Stagger Force": "10",
+                        "Push Force": "10"
+                    }
+                }
+            }
+        },
         "image": "/assets/primaryWeapons/AR-23_Liberator.webp",
         "extra_info": []
     },
@@ -23,208 +71,582 @@
         "name": "AR-23P Liberator Penetrator",
         "type": "Primary",
         "category": "Assault Rifle",
-        "traits": [],
+        "traits": ["Medium Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 45,
+            "max_penetration": "3 Medium I"
+        },
+        "weapon_handling": {
+            "recoil": 19,
+            "fire_rate": "640 RPM",
+            "firing_modes": ["Semi", "Burst", "Full"]
+        },
+        "ammunition": {
+            "capacity": 30,
+            "spare_mags": 10,
+            "starting_magazines": 7,
+            "mags_from_supply": 10,
+            "mags_from_ammo_box": 5
+        },
+        "acquisition": {
+            "source": "Helldivers Mobilize - Warbond, Page 6",
+            "cost": "40 Medals"
+        },
+        "details": {
+            "reload_time": "3 s",
+            "tactical_reload": "2 s",
+            "attacks": "Rifle 5.5x50mm Penetrator - Projectile",
+            "projectile": {
+                "caliber": "5.5 mm",
+                "mass": "4.5 g",
+                "initial_velocity": "1000 m/s",
+                "drag_factor": "30%",
+                "gravity_factor": "100%",
+                "penetration_slowdown": "25%",
+                "damage_standard": 45,
+                "damage_vs_durable": 15,
+                "penetration_direct": "3 Medium I",
+                "penetration_slight_angle": "3 Medium I",
+                "penetration_large_angle": "3 Medium I",
+                "penetration_extreme_angle": "0 Unarmored",
+                "special_effects": {
+                    "demolition_force": 10,
+                    "stagger_force": 10,
+                    "push_force": 10
+                }
+            }
+        },
         "image": "/assets/primaryWeapons/AR-23P_Liberator_Penetrator.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_ar23c_liberator_concussive",
         "name": "AR-23C Liberator Concussive",
         "type": "Primary",
         "category": "Assault Rifle",
-        "traits": [],
+        "traits": ["Light Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": 65,
+            "max_penetration": "Light II"
+        },
+        "weapon_handling": {
+            "recoil": 28,
+            "fire_rate": 320,
+            "firing_modes": ["Auto", "Semi"]
+        },
+        "ammunition": {
+            "capacity": 30,
+            "spare_mags": 10,
+            "starting_magazines": 7,
+            "mags_from_supply": 10,
+            "mags_from_ammo_box": 5
+        },
+        "acquisition": {
+            "source": "Steeled Veterans",
+            "cost": "20 Medals"
+        },
+        "details": {
+            "projectile": {
+                "caliber": "5.5 mm",
+                "mass": "4.5 g",
+                "initial_velocity": "800 m/s",
+                "drag_factor": "30%",
+                "gravity_factor": "100%",
+                "penetration_slowdown": "25%",
+                "damage": {
+                    "standard": 65,
+                    "vs_durable": 23
+                },
+                "penetration": {
+                    "direct": "Light II",
+                    "slight_angle": "Light II",
+                    "large_angle": "Light II",
+                    "extreme_angle": "Light II"
+                },
+                "special_effects": {
+                    "demolition_force": 10,
+                    "stagger_force": 35,
+                    "push_force": 100
+                }
+            }
+        },
         "image": "/assets/primaryWeapons/AR-23C_Liberator_Concussive.png",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_ar23a_liberator_carbine",
         "name": "AR-23A Liberator Carbine",
         "type": "Primary",
         "category": "Assault Rifle",
-        "traits": [],
+        "traits": ["Light Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
-        "image": null,
+        "firepower": {
+            "Standard Damage": 0,
+            "Max Penetration": "Light II"
+        },
+        "weapon_handling": {
+            "Recoil": 26,
+            "Fire Rate": "920 rpm",
+            "Reload Time": "3 s",
+            "Tactical Reload": "2 s"
+        },
+        "ammunition": {
+            "Capacity": 45,
+            "Spare Magazines": 7,
+            "Starting Magazines": 4,
+            "Mags from Supply": 7,
+            "Mags from Ammo Box": 3
+        },
+        "acquisition": {
+            "Source": "Viper Commandos, Page 1",
+            "Cost": "20 Medals"
+        },
+        "details": {
+            "Attacks": {
+                "Rifle 5.5x50mm Full Metal Jacket": {
+                    "Projectile": {
+                        "Caliber": "5.5 mm",
+                        "Mass": "4.5 g",
+                        "Initial Velocity": "900 m/s",
+                        "Drag Factor": "30%",
+                        "Gravity Factor": "100%",
+                        "Penetration Slowdown": "25%"
+                    },
+                    "Damage": {
+                        "Standard": 60,
+                        "vs. Durable": 14
+                    },
+                    "Penetration": {
+                        "Direct": "Light II",
+                        "Slight Angle": "Light II",
+                        "Large Angle": "Light II",
+                        "Extreme Angle": "Unarmored"
+                    },
+                    "Special Effects": {
+                        "Demolition Force": 10,
+                        "Stagger Force": 10,
+                        "Push Force": 10
+                    }
+                }
+            }
+        },
+        "image": "/assets/primaryWeapons/AR-23A_Liberator_Carbine_Weapon_Icon.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_ar61_tenderizer",
         "name": "AR-61 Tenderizer",
         "type": "Primary",
         "category": "Assault Rifle",
-        "traits": [],
+        "traits": ["Light Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
-        "image": null,
+        "firepower": {
+            "Standard Damage": 95,
+            "Max Penetration": "Light II",
+            "Caliber": "8 mm",
+            "Mass": "11 g",
+            "Initial Velocity": "820 m/s",
+            "Drag Factor": "30%",
+            "Gravity Factor": "100%",
+            "Penetration Slowdown": "25%",
+            "Damage vs. Durable": 22,
+            "Penetration": {
+                "Direct": "Light II",
+                "Slight Angle": "Light II",
+                "Large Angle": "Light II",
+                "Extreme Angle": "Unarmored"
+            },
+            "Special Effects": {
+                "Demolition Force": 10,
+                "Stagger Force": 15,
+                "Push Force": 10
+            }
+        },
+        "weapon_handling": {
+            "Recoil": 10,
+            "Fire Rate": "600 rpm",
+            "Capacity": 30,
+            "Reload Time": "3.3 s",
+            "Tactical Reload": "2.2 s"
+        },
+        "ammunition": {
+            "Spare Magazines": 7,
+            "Starting Magazines": 5,
+            "Mags from Supply": 7,
+            "Mags from Ammo Box": 3
+        },
+        "acquisition": {
+            "Source": "Polar Patriots Premium Warbond",
+            "Cost": "20 Medals"
+        },
+        "details": {
+            "Attacks": "Rifle Rico Projectile",
+            "Scope Options": ["25m", "50m", "100m"],
+            "Firing Modes": ["Single", "Burst", "Auto"]
+        },
+        "image": "/assets/primaryWeapons/AR-61_Tenderizer_Weapon_Icon.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_br14_adjudicator",
         "name": "BR-14 Adjudicator",
         "type": "Primary",
         "category": "Assault Rifle",
-        "traits": [],
+        "traits": ["Medium Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 80,
+            "max_penetration": "Medium I",
+            "capacity": 30,
+            "recoil": 40,
+            "fire_rate": "550 rpm",
+            "dps": 0
+        },
+        "weapon_handling": {
+            "reload_time": "3 s",
+            "tactical_reload": "1.7 s"
+        },
+        "ammunition": {
+            "spare_magazines": 8,
+            "starting_magazines": 6,
+            "mags_from_supply": 8,
+            "mags_from_ammo_box": 4
+        },
+        "acquisition": {
+            "source": "Democratic Detonation",
+            "cost": "20 Medals"
+        },
+        "details": {
+            "attack_type": "Projectile",
+            "caliber": "8 mm",
+            "mass": "11 g",
+            "initial_velocity": "820 m/s",
+            "drag_factor": "30%",
+            "gravity_factor": "100%",
+            "penetration_slowdown": "25%",
+            "damage_vs_durable": 16,
+            "penetration": {
+                "direct": "Medium I",
+                "slight_angle": "Medium I",
+                "large_angle": "Medium I",
+                "extreme_angle": "Light I"
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 15,
+                "push_force": 12
+            }
+        },
         "image": "/assets/primaryWeapons/BR-14_Adjucator.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_r63_diligence",
         "name": "R-63 Diligence",
         "type": "Primary",
         "category": "Marksman Rifle",
-        "traits": [],
+        "traits": ["Light Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 125,
+            "vs_durable_damage": 32,
+            "penetration": {
+                "max_penetration": "Light II",
+                "direct": "Light II",
+                "slight_angle": "Light II",
+                "large_angle": "Light II",
+                "extreme_angle": "Unarmored"
+            }
+        },
+        "weapon_handling": {
+            "recoil": 35,
+            "fire_rate": 350,
+            "reload_time": "3 s",
+            "tactical_reload_time": "1.9 s",
+            "firing_modes": ["Semi"],
+            "scope_options": ["25m", "75m", "150m"]
+        },
+        "ammunition": {
+            "capacity": 20,
+            "spare_mags": 8,
+            "starting_mags": 5,
+            "mags_from_supply": 8,
+            "mags_from_ammo_box": 4
+        },
+        "acquisition": {
+            "source": "Standard Warbonds | Page 2",
+            "cost": "8 Medals"
+        },
+        "details": {
+            "attacks": {
+                "type": "Projectile",
+                "round_type": "Rifle 9x70mm Full Metal Jacket"
+            },
+            "projectile": {
+                "caliber": "9 mm",
+                "mass": "20 g",
+                "initial_velocity": "850 m/s",
+                "drag_factor": "30%",
+                "gravity_factor": "100%",
+                "penetration_slowdown": "25%"
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 15,
+                "push_force": 14
+            }
+        },
         "image": "/assets/primaryWeapons/R-63_Diligence_29.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_r63cs_diligence_counter_sniper",
         "name": "R-63CS Diligence Counter Sniper",
         "type": "Primary",
         "category": "Marksman Rifle",
-        "traits": [],
+        "traits": ["Medium Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "Standard Damage": 140,
+            "vs. Durable": 14,
+            "Max Penetration": "Medium I"
+        },
+        "weapon_handling": {
+            "Fire Rate": "350 rpm",
+            "Recoil": 53
+        },
+        "ammunition": {
+            "Capacity": 15,
+            "Spare Mags": 6,
+            "Starting Magazines": 4,
+            "Mags from Supply": 6,
+            "Mags from Ammo Box": 3
+        },
+        "acquisition": {
+            "Source": "Standard Warbonds | Page 7",
+            "Cost": "40 Medals"
+        },
+        "details": {
+            "Reload Time": "3 s",
+            "Tactical Reload": "1.9 s",
+            "Firing Modes": ["Semi"],
+            "Scope Options": ["50m", "100m", "200m"],
+            "Attacks": "Rifle 9x70mm High Velocity Projectile",
+            "Projectile Stats": {
+                "Caliber": "9 mm",
+                "Mass": "20 g",
+                "Initial Velocity": "940 m/s",
+                "Drag Factor": "30%",
+                "Gravity Factor": "100%",
+                "Penetration Slowdown": "25%"
+            },
+            "Penetration": {
+                "Direct": "Medium I",
+                "Slight Angle": "Medium I",
+                "Large Angle": "Medium I",
+                "Extreme Angle": "Unarmored"
+            },
+            "Special Effects": {
+                "Demolition Force": 10,
+                "Stagger Force": 15,
+                "Push Force": 14
+            }
+        },
         "image": "/assets/primaryWeapons/R-63CS_Diligence_Counter_Sniper_29.webp",
         "extra_info": []
-    },
+    },      
     {
         "id": "prim_mp98_knight",
         "name": "MP-98 Knight",
         "type": "Primary",
         "category": "Submachine Gun",
-        "traits": [],
+        "traits": ["Light Armor Penetrating", "One Handed"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": 50,
+            "penetration_level": "Light II"
+        },
+        "weapon_handling": {
+            "recoil": 20,
+            "fire_rate_rpm": 1380
+        },
+        "ammunition": {
+            "capacity": 50,
+            "spare_mags": 7
+        },
+        "acquisition": {
+            "source": "Super Citizen Edition",
+            "cost": "0 Medals"
+        },
+        "details": {
+            "reload_time": "2.5 s",
+            "tactical_reload": "1.8 s",
+            "starting_mags": 5,
+            "mags_from_supply": 5,
+            "mags_from_ammo_box": 2,
+            "projectile_type": "Pistol 9x20mm Soft Metal Jacket",
+            "caliber": "9 mm",
+            "mass": "7 g",
+            "initial_velocity": "375 m/s",
+            "drag_factor": "30%",
+            "gravity_factor": "100%",
+            "penetration_slowdown": "25%",
+            "damage_vs_durable": 5,
+            "penetration_direct": "Light II",
+            "penetration_slight_angle": "Light II",
+            "penetration_large_angle": "Light II",
+            "penetration_extreme_angle": "Unarmored",
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 10,
+                "push_force": 4
+            }
+        },
         "image": "/assets/primaryWeapons/MP-98_Knight_29.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_smg37_defender",
         "name": "SMG-37 Defender",
         "type": "Primary",
         "category": "Submachine Gun",
-        "traits": [],
+        "traits": [
+            "Light Armor Penetrating",
+            "One Handed"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": 70,
+            "penetration": "Light II"
+        },
+        "weapon_handling": {
+            "recoil": 10,
+            "fire_rate": 520
+        },
+        "ammunition": {
+            "capacity": 45,
+            "spare_mags": 7
+        },
+        "acquisition": {
+            "source": "Helldivers Mobilize Warbond Page 3",
+            "cost": 15
+        },
+        "details": {
+            "tactical_reload": "2 s",
+            "starting_magazines": 5,
+            "mags_from_supply": 7,
+            "mags_from_ammo_box": 3,
+            "attacks": "Pistol 12x25mm Full Metal Jacket",
+            "projectile": {
+                "caliber": "12 mm",
+                "mass": "15 g",
+                "initial_velocity": "285 m/s",
+                "drag_factor": "30%",
+                "gravity_factor": "100%",
+                "penetration_slowdown": "25%"
+            },
+            "damage_vs_durable": 7,
+            "penetration": {
+                "direct": "Light II",
+                "slight_angle": "Light II",
+                "large_angle": "Light II",
+                "extreme_angle": "Unarmored"
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 10,
+                "push_force": 5
+            }
+        },
         "image": "/assets/primaryWeapons/SMG-37_Defender.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_smg72_pummeler",
         "name": "SMG-72 Pummeler",
         "type": "Primary",
         "category": "Submachine Gun",
-        "traits": [],
+        "traits": ["Light Armor Penetrating", "One Handed"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 65,
+            "penetration": "Light II"
+        },
+        "weapon_handling": {
+            "fire_rate": "475 rpm",
+            "recoil": 10,
+            "reload_time": "3 s",
+            "tactical_reload": "2.1 s",
+            "spare_magazines": 7,
+            "starting_magazines": 5,
+            "mags_from_supply": 7,
+            "mags_from_ammo_box": 3
+        },
+        "ammunition": {
+            "capacity": 46,
+            "caliber": "12 mm",
+            "mass": "15 g",
+            "initial_velocity": "210 m/s",
+            "drag_factor": "30%",
+            "gravity_factor": "100%",
+            "penetration_slowdown": "25%"
+        },
+        "acquisition": {
+            "source": "Polar Patriots Premium Warbond",
+            "cost": "60 Medals"
+        },
+        "details": {
+            "damage_vs_durable": 7,
+            "demolition_force": 10,
+            "stagger_force": 15,
+            "push_force": 5,
+            "status": "Stun Small",
+            "status_strength": 1,
+            "attacks": "Pistol 12x25mm Stun Projectile"
+        },
         "image": "/assets/primaryWeapons/Pummelertemp.webp",
-        "extra_info": []
-    },
-    {
-        "id": "prim_sg8_punisher",
-        "name": "SG-8 Punisher",
-        "type": "Primary",
-        "category": "Shotgun",
-        "traits": [],
-        "input_code": null,
-        "call_in_time": null,
-        "uses": null,
-        "permit_type": null,
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
-        "image": "/assets/primaryWeapons/SG-8_Punisher_29.webp",
         "extra_info": []
     },
     {
@@ -232,150 +654,539 @@
         "name": "SG-8S Slugger",
         "type": "Primary",
         "category": "Shotgun",
-        "traits": [],
+        "traits": ["Rounds Reload", "Medium Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": 250,
+            "penetration_level": "Medium I"
+        },
+        "weapon_handling": {
+            "recoil": 120,
+            "fire_rate": "80 rpm",
+            "reload_time": "6.9 s",
+            "reload_1_round": "0.8 s"
+        },
+        "ammunition": {
+            "capacity": 16,
+            "spare_rounds": 60,
+            "starting_rounds": 32,
+            "rounds_from_supply": 60,
+            "rounds_from_ammo_box": 30
+        },
+        "acquisition": {
+            "source": "Standard Warbonds | Page 8",
+            "cost": "60 Medals"
+        },
+        "details": {
+            "caliber": "18 mm",
+            "mass": "50 g",
+            "initial_velocity": "390 m/s",
+            "drag_factor": "50%",
+            "gravity_factor": "100%",
+            "penetration_slowdown": "25%",
+            "damage": {
+                "standard": 250,
+                "vs_durable": 75
+            },
+            "penetration": {
+                "direct": "Medium I",
+                "slight_angle": "Medium I",
+                "large_angle": "Medium I",
+                "extreme_angle": "Unarmored"
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 20,
+                "push_force": 35
+            }
+        },
         "image": "/assets/primaryWeapons/SG-8S_Slugger.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_sg451_cookout",
         "name": "SG-451 Cookout",
         "type": "Primary",
         "category": "Shotgun",
-        "traits": [],
+        "traits": ["Light Armor Penetrating", "Rounds Reload", "Incendiary"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
-        "image": null,
+        "firepower": {
+            "damage": 320,
+            "penetration_level": "Light II"
+        },
+        "weapon_handling": {
+            "recoil": 100,
+            "fire_rate": "80 rpm"
+        },
+        "ammunition": {
+            "capacity": 16,
+            "spare_shells": 60
+        },
+        "acquisition": {
+            "source": "Freedom's Flame | Page 1",
+            "cost": "20 Medals"
+        },
+        "details": {
+            "caliber": "12 Gauge",
+            "mass": "40 g",
+            "initial_velocity": "380 m/s",
+            "drag_factor": "50%",
+            "gravity_factor": "100%",
+            "penetration_slowdown": "25%",
+            "damage": {
+                "standard": 320,
+                "vs_durable": 85
+            },
+            "penetration": {
+                "direct": "Light II",
+                "slight_angle": "Light II",
+                "large_angle": "Light II",
+                "extreme_angle": "Unarmored"
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 25,
+                "push_force": 35
+            }
+        },
+        "image": "/assets/primaryWeapons/SG-451_Cookout_Weapon_Icon.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_sg225_breaker",
         "name": "SG-225 Breaker",
         "type": "Primary",
         "category": "Shotgun",
-        "traits": [],
+        "traits": ["Light Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": "30 x 11",
+            "penetration": "Light II",
+            "structure_damage": "6"
+        },
+        "weapon_handling": {
+            "recoil": "55",
+            "fire_rate": "300 rpm"
+        },
+        "ammunition": {
+            "capacity": "13",
+            "spare_mags": "7",
+            "tactical_reload": "1.8s",
+            "reload_time": "2.5s"
+        },
+        "acquisition": {
+            "source": "Standard Warbonds | Page 4",
+            "cost": "20 Medals"
+        },
+        "details": {
+            "projectile_type": "Shotgun 12-Gauge Buckshot",
+            "caliber": "8 mm",
+            "mass": "4 g",
+            "initial_velocity": "360 m/s",
+            "drag_factor": "50%",
+            "gravity_factor": "100%",
+            "penetration_slowdown": "80%",
+            "special_effects": {
+                "demolition_force": "10",
+                "stagger_force": "10",
+                "push_force": "10"
+            }
+        },
         "image": "/assets/primaryWeapons/SG-225_Breaker_29.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_sg225sp_breaker_spraypray",
         "name": "SG-225SP Breaker Spray&Pray",
         "type": "Primary",
         "category": "Shotgun",
-        "traits": [],
+        "traits": [
+            "Light Armor Penetrating"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 192,
+            "max_penetration": "Light II"
+        },
+        "weapon_handling": {
+            "recoil": 45,
+            "fire_rate": "330 rpm",
+            "firing_modes": ["Auto", "Semi"]
+        },
+        "ammunition": {
+            "capacity": 26,
+            "spare_mags": 8
+        },
+        "acquisition": {
+            "source": "Helldivers Mobilize, page 9",
+            "cost": "60 Medals"
+        },
+        "details": {
+            "attack_type": "Shotgun 12-Gauge Birdshot",
+            "projectile": {
+                "pellets": 16,
+                "caliber": "3 mm",
+                "mass": "1 g",
+                "initial_velocity": "250 m/s",
+                "drag_factor": "50%",
+                "gravity_factor": "100%",
+                "penetration_slowdown": "80%",
+                "damage": {
+                    "standard": 12,
+                    "vs_durable": 4
+                },
+                "penetration": {
+                    "direct": "Light II",
+                    "slight_angle": "Light II",
+                    "large_angle": "Light II",
+                    "extreme_angle": "Unarmored"
+                },
+                "special_effects": {
+                    "demolition_force": 10,
+                    "stagger_force": 3,
+                    "push_force": 1
+                }
+            }
+        },
         "image": "/assets/primaryWeapons/SG-225SP_Breaker_Spray.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_sg225ie_breaker_incendiary",
         "name": "SG-225IE Breaker Incendiary",
         "type": "Primary",
         "category": "Shotgun",
-        "traits": [],
+        "traits": [
+            "Light Armor Penetrating",
+            "Incendiary"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 240,
+            "max_penetration": "Light II",
+            "damage_vs_durable": 10,
+            "fire_damage": 50,
+            "penetration": {
+                "direct": "Light II",
+                "slight_angle": "Light II",
+                "large_angle": "Light II",
+                "extreme_angle": "Unarmored"
+            },
+            "special_effects": {
+                "status": "Fire",
+                "status_strength": 100,
+                "demolition_force": 10,
+                "stagger_force": 10,
+                "push_force": 10
+            }
+        },
+        "weapon_handling": {
+            "recoil": 41,
+            "rate_of_fire": 300,
+            "fire_modes": [
+                "Burst",
+                "Semi"
+            ]
+        },
+        "ammunition": {
+            "capacity": 25,
+            "spare_magazines": 4,
+            "spare_shells": 60
+        },
+        "acquisition": {
+            "source": "Steeled Veterans, Page 2",
+            "cost": 60
+        },
+        "details": {
+            "reload_time": "2.5s",
+            "tactical_reload_time": "1.8s",
+            "attacks": "Shotgun 12-Gauge Liberty Fire Projectile"
+        },
         "image": "/assets/primaryWeapons/SG-225IE_Breaker_Incendiary_29.webp",
         "extra_info": []
     },
+    {
+        "id": "prim_sg8_punisher",
+        "name": "SG-8 Punisher",
+        "type": "Primary",
+        "category": "Shotgun",
+        "traits": [
+            "Light Armor Penetrating",
+            "Rounds Reload"
+        ],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {
+            "standard_damage": 45,
+            "max_penetration": "Light II"
+        },
+        "weapon_handling": {
+            "capacity": 16,
+            "recoil": 120,
+            "fire_rate": 80,
+            "reload_time": 6.9,
+            "reload_one_round": 0.8
+        },
+        "ammunition": {
+            "spare_mags": 60,
+            "spare_shells": 60,
+            "starting_ammo": 32,
+            "ammo_from_supply": 60,
+            "ammo_from_box": 30
+        },
+        "acquisition": {
+            "source": "Standard Warbonds | Page 1",
+            "cost": 4
+        },
+        "details": {
+            "attacks": "Shotgun 10-Gauge Buckshot Projectile",
+            "penetration": {
+                "direct": "Light II",
+                "slight_angle": "Light II",
+                "large_angle": "Light II",
+                "extreme_angle": "Unarmored"
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 35,
+                "push_force": 30
+            }
+        },
+        "image": "/assets/primaryWeapons/SG-8_Punisher_29.webp",
+        "extra_info": []
+    },    
     {
         "id": "prim_cb9_exploding_crossbow",
         "name": "CB-9 Exploding Crossbow",
         "type": "Primary",
         "category": "Explosive",
-        "traits": [],
+        "traits": ["Explosive", "One Handed"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 420,
+            "penetration": "Medium I"
+        },
+        "weapon_handling": {
+            "capacity": 5,
+            "recoil": 35,
+            "fire_rate": 50
+        },
+        "ammunition": {
+            "spare_mags": 8,
+            "starting_mags": 8,
+            "mags_from_supply": 8,
+            "mags_from_ammo_box": 4
+        },
+        "acquisition": {
+            "source": "Democratic Detonation, page 3",
+            "cost": 80
+        },
+        "details": {
+            "attacks": ["Crossbow Bolt Explosive", "Crossbow Bolt"],
+            "projectile": {
+                "caliber": "15 mm",
+                "mass": "100 g",
+                "initial_velocity": "100 m/s",
+                "drag_factor": "100%",
+                "gravity_factor": "50%",
+                "penetration_slowdown": "25%",
+                "damage": {
+                    "standard": 270,
+                    "vs_durable": 50
+                },
+                "penetration": {
+                    "direct": "Medium I",
+                    "slight_angle": "Medium I",
+                    "large_angle": "Medium I",
+                    "extreme_angle": "Unarmored"
+                },
+                "special_effects": {
+                    "demolition_force": 0,
+                    "stagger_force": 30,
+                    "push_force": 10
+                }
+            },
+            "aoe_effect": {
+                "inner_radius": 2,
+                "outer_radius": 4,
+                "shockwave_radius": 5,
+                "damage": {
+                    "inner_radius": 150,
+                    "outer_radius": "149-0"
+                },
+                "penetration": {
+                    "inner_radius": "Medium I",
+                    "outer_radius": "Light II",
+                    "shockwave": "Medium I"
+                },
+                "special_effects": {
+                    "demolition_force": 20,
+                    "stagger_force": 25,
+                    "push_force": 10
+                }
+            }
+        },
         "image": "/assets/primaryWeapons/CB-9_Crossbow.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_jar5_dominator",
         "name": "JAR-5 Dominator",
         "type": "Primary",
         "category": "Explosive",
-        "traits": [],
+        "traits": ["Medium Armor Penetrating"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": 275,
+            "penetration": "Medium I",
+            "rate_of_fire": "250 rpm",
+            "recoil": 75,
+            "range": null,
+            "projectile_type": "Rocket 15x100mm Standard"
+        },
+        "weapon_handling": {
+            "reload_time": "3.8 s",
+            "tactical_reload": "2.6 s",
+            "capacity": 15
+        },
+        "ammunition": {
+            "spare_mags": 6,
+            "starting_mags": 4,
+            "mags_from_supply": 6,
+            "mags_from_ammo_box": 3
+        },
+        "acquisition": {
+            "source": "Steeled Veterans, page 3",
+            "cost": "80 Medals"
+        },
+        "details": {
+            "caliber": "15 mm",
+            "mass": "100 g",
+            "initial_velocity": "180 m/s",
+            "drag_factor": "0%",
+            "gravity_factor": "30%",
+            "penetration_slowdown": "25%",
+            "damage_vs_durable": 90,
+            "penetration_direct": "3 Medium I",
+            "penetration_slight_angle": "3 Medium I",
+            "penetration_large_angle": "3 Medium I",
+            "penetration_extreme_angle": "Unarmored",
+            "demolition_force": 10,
+            "stagger_force": 35,
+            "push_force": 15
+        },
         "image": "/assets/primaryWeapons/JAR-5_Dominator.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_r36_eruptor",
         "name": "R-36 Eruptor",
         "type": "Primary",
         "category": "Explosive",
-        "traits": [],
+        "traits": [
+            "Explosive",
+            "Medium Armor Penetrating"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": 570,
+            "penetration": "Medium I"
+        },
+        "weapon_handling": {
+            "fire_rate": "25 rpm",
+            "recoil": 75,
+            "reload_time": "4.7 s",
+            "tactical_reload_time": "2.8 s"
+        },
+        "ammunition": {
+            "capacity": 5,
+            "spare_mags": 6,
+            "mags_from_supply": 6,
+            "mags_from_ammo_box": 3
+        },
+        "acquisition": {
+            "source": "Democratic Detonation, page 2",
+            "cost": "60 Medals"
+        },
+        "details": {
+            "attacks": [
+                {
+                    "type": "Projectile",
+                    "name": "Rocket JAR Phoenix 20mm",
+                    "caliber": "15 mm",
+                    "mass": "100 g",
+                    "velocity": "180 m/s",
+                    "damage": {
+                        "standard": 230,
+                        "vs_durable": 115
+                    },
+                    "penetration": {
+                        "direct": "Medium I",
+                        "slight_angle": "Medium I",
+                        "large_angle": "Medium I",
+                        "extreme_angle": "Unarmored"
+                    },
+                    "special_effects": {
+                        "demolition_force": 30,
+                        "stagger_force": 35,
+                        "push_force": 20
+                    }
+                },
+                {
+                    "type": "Explosion",
+                    "name": "JAR Phoenix 20mm",
+                    "damage": {
+                        "inner_radius": 340,
+                        "outer_radius": "339 - 0"
+                    },
+                    "penetration": {
+                        "inner_radius": "Medium I",
+                        "outer_radius": "Light II",
+                        "shockwave": "Medium I"
+                    },
+                    "aoe_effects": {
+                        "demolition_force": 20,
+                        "stagger_force": 35,
+                        "push_force": 40
+                    }
+                }
+            ]
+        },
         "image": "/assets/primaryWeapons/R-36_Eruptor_Render.webp",
         "extra_info": []
     },
@@ -384,17 +1195,75 @@
         "name": "SG-8P Punisher Plasma",
         "type": "Primary",
         "category": "Energy-Based",
-        "traits": [],
+        "traits": ["Explosive"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 250,
+            "max_penetration": "Medium I"
+        },
+        "weapon_handling": {
+            "capacity": 8,
+            "recoil": 110,
+            "fire_rate": 80,
+            "dps": 0
+        },
+        "ammunition": {
+            "spare_mags": 8,
+            "starting_mags": 6,
+            "mags_from_supply": 8,
+            "mags_from_ammo_box": 4
+        },
+        "acquisition": {
+            "source": "Cutting Edge, Page 2",
+            "cost": 60
+        },
+        "details": {
+            "firing_modes": ["Semi-automatic"],
+            "scope_options": ["N/A"],
+            "attacks": {
+                "primary": {
+                    "type": "Projectile",
+                    "name": "Punisher Plasma Bolt",
+                    "damage": {
+                        "standard": 100,
+                        "vs_durable": 50
+                    },
+                    "penetration": {
+                        "direct": "Light II",
+                        "slight_angle": "Light II",
+                        "large_angle": "Light II",
+                        "extreme_angle": "Unarmored"
+                    },
+                    "special_effects": {
+                        "demolition_force": 10,
+                        "stagger_force": 20,
+                        "push_force": 10
+                    }
+                },
+                "secondary": {
+                    "type": "Explosion",
+                    "name": "Punisher Plasma Explosion",
+                    "damage": {
+                        "inner_radius": 150,
+                        "outer_radius": "149-0"
+                    },
+                    "penetration": {
+                        "inner_radius": "Medium I",
+                        "outer_radius": "Light II",
+                        "shockwave": "Medium I"
+                    },
+                    "aoe_effects": {
+                        "demolition_force": 10,
+                        "stagger_force": 35,
+                        "push_force": 30
+                    }
+                }
+            }
+        },
         "image": "/assets/primaryWeapons/SG-8P_Punisher_Plasma_29.webp",
         "extra_info": []
     },
@@ -409,11 +1278,48 @@
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 250,
+            "max_penetration": "Medium I"
+        },
+        "weapon_handling": {
+            "capacity": "Infinite",
+            "recoil": 60,
+            "fire_rate": 45
+        },
+        "ammunition": {
+            "attacks": [
+                {
+                    "name": "Arc Shotgun",
+                    "details": "Arc x 5"
+                }
+            ]
+        },
+        "acquisition": {
+            "source": "Cutting Edge, page 3",
+            "cost": "80 Medals"
+        },
+        "details": {
+            "arc_range": "25 m",
+            "arc_velocity": "300 m/s",
+            "arc_aim_angle": "10°",
+            "damage": {
+                "element": "Arc",
+                "standard": 50,
+                "vs_durable": 35
+            },
+            "penetration": {
+                "direct": "3 | Medium I",
+                "slight_angle": "3 | Medium I",
+                "large_angle": "3 | Medium I",
+                "extreme_angle": "0 | Unarmored"
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 30,
+                "push_force": 25
+            }
+        },
         "image": "/assets/primaryWeapons/ARC-12_Blitzer_Render.webp",
         "extra_info": []
     },
@@ -422,75 +1328,319 @@
         "name": "LAS-5 Scythe",
         "type": "Primary",
         "category": "Energy-Based",
-        "traits": [],
+        "traits": [
+            "Light Armor Penetrating",
+            "Beam",
+            "Heat"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 350,
+            "penetration": "Light II"
+        },
+        "weapon_handling": {
+            "recoil": 1,
+            "stun_time": 0,
+            "fire_limit": "8 Seconds"
+        },
+        "ammunition": {
+            "capacity": 4,
+            "spare": 4
+        },
+        "acquisition": {
+            "source": "Helldivers Mobilize, page 5",
+            "cost": "30 Medals"
+        },
+        "details": {
+            "reload_time": "1.8 s",
+            "tactical_reload": "3 s",
+            "attacks": [
+                {
+                    "name": "Medium Beam",
+                    "type": "Beam",
+                    "range": "1000 m",
+                    "damage": {
+                        "standard": 350,
+                        "durable": 70,
+                        "element": "Fire",
+                        "status_strength": 0.25,
+                        "penetration": {
+                            "direct": "Light II",
+                            "slight_angle": "Light II",
+                            "large_angle": "Light II",
+                            "extreme_angle": "Unarmored"
+                        },
+                        "special_effects": {
+                            "demolition_force": 10,
+                            "stagger_force": 0,
+                            "push_force": 0
+                        }
+                    }
+                },
+                {
+                    "name": "DPS Fire",
+                    "type": "Beam",
+                    "damage": {
+                        "standard": 50,
+                        "durable": 25,
+                        "element": "Fire",
+                        "penetration": {
+                            "direct": "Medium II",
+                            "slight_angle": "Medium II",
+                            "large_angle": "Medium II",
+                            "extreme_angle": "Unarmored"
+                        },
+                        "special_effects": {
+                            "demolition_force": 0,
+                            "stagger_force": 0,
+                            "push_force": 0
+                        }
+                    }
+                }
+            ]
+        },
         "image": "/assets/primaryWeapons/LAS-5_Scythe_29_II.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_las16_sickle",
         "name": "LAS-16 Sickle",
         "type": "Primary",
         "category": "Energy-Based",
-        "traits": [],
+        "traits": [
+            "Light Armor Penetrating",
+            "Heat"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "damage": 55,
+            "max_penetration": "Light II"
+        },
+        "weapon_handling": {
+            "capacity": 100,
+            "recoil": 2,
+            "fire_rate": 750,
+            "spare_mags": 3
+        },
+        "ammunition": {
+            "type": "Laser Long",
+            "caliber": "10 mm",
+            "mass": "12 g",
+            "initial_velocity": "1300 m/s",
+            "drag_factor": "0%",
+            "gravity_factor": "0%",
+            "lifetime": "6 sec",
+            "penetration_slowdown": "25%"
+        },
+        "acquisition": {
+            "source": "Cutting Edge, page 1",
+            "cost": "20 Medals"
+        },
+        "details": {
+            "fire_limit": "7 s",
+            "reload_time": "2.1 s",
+            "tactical_reload": "3 s",
+            "spare_magazines": 3,
+            "starting_magazines": 3,
+            "mags_from_supply": 3,
+            "mags_from_ammo_box": 1,
+            "attacks": [
+                {
+                    "type": "Projectile",
+                    "name": "Laser Long"
+                }
+            ]
+        },
         "image": "/assets/primaryWeapons/LAS-16_Sickle_29_II.webp",
         "extra_info": []
-    },
+    },    
     {
         "id": "prim_plas1_scorcher",
         "name": "PLAS-1 Scorcher",
         "type": "Primary",
         "category": "Energy-Based",
-        "traits": [],
+        "traits": [
+            "Light Armor Penetrating",
+            "Explosive"
+        ],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
+        "firepower": {
+            "standard_damage": 200,
+            "max_penetration": "Medium I"
+        },
+        "weapon_handling": {
+            "capacity": 15,
+            "recoil": 20,
+            "fire_rate": 250,
+            "tactical_reload": 2.3,
+            "reload_time": 2.5,
+            "spare_mags": 6
+        },
+        "ammunition": {
+            "type": "Plasma Bolt Medium",
+            "caliber": "20 mm",
+            "mass": "100 g",
+            "initial_velocity": "550 m/s",
+            "drag_factor": "100%",
+            "gravity_factor": "50%",
+            "penetration_slowdown": "35%"
+        },
+        "acquisition": {
+            "source": "Helldivers Mobilize, page 10",
+            "cost": "75 Medals"
+        },
+        "details": {
+            "damage": {
+                "standard": 100,
+                "vs_durable": 50
+            },
+            "penetration": {
+                "direct": "Light II",
+                "slight_angle": "Light II",
+                "large_angle": "Light II",
+                "extreme_angle": "Unarmored"
+            },
+            "aoe_effect": {
+                "inner_radius": "Medium I",
+                "outer_radius": "Light II",
+                "shockwave_radius": "Medium I",
+                "demolition_force": 10,
+                "stagger_force": 10,
+                "push_force": 7
+            },
+            "special_effects": {
+                "demolition_force": 10,
+                "stagger_force": 10,
+                "push_force": 10
+            }
+        },
         "image": "/assets/primaryWeapons/PLAS-1_Scorcher_29_II.webp",
         "extra_info": []
-    },
+    },    
+    {
+        "id": "prim_plas101_purifier",
+        "name": "PLAS-101 Purifier",
+        "type": "Primary",
+        "category": "Energy-Based",
+        "traits": ["Charge Up", "Explosive", "Medium Armor Penetrating"],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {
+            "standard_damage": 250,
+            "max_penetration": "Medium I"
+        },
+        "weapon_handling": {
+            "recoil": 20,
+            "fire_rate": "?",
+            "capacity": 15,
+            "reload_time": 2.5,
+            "spare_mags": 6
+        },
+        "ammunition": {
+            "starting_magazines": 3,
+            "mags_from_supply": 6,
+            "mags_from_ammo_box": 3
+        },
+        "acquisition": {
+            "source": "Polar Patriots, page 3",
+            "cost": 80
+        },
+        "details": {
+            "attacks": [
+                {
+                    "type": "Projectile",
+                    "name": "Plasma Rifle Charge",
+                    "caliber": "20 mm",
+                    "mass": "100 g",
+                    "initial_velocity": "350 m/s",
+                    "drag_factor": "100%",
+                    "gravity_factor": "150%",
+                    "penetration_slowdown": "35%",
+                    "damage": {
+                        "standard": 100,
+                        "vs_durable": 50
+                    },
+                    "penetration": {
+                        "direct": "Medium I",
+                        "slight_angle": "Medium I",
+                        "large_angle": "Medium I",
+                        "extreme_angle": "Unarmored"
+                    },
+                    "special_effects": {
+                        "demolition_force": 10,
+                        "stagger_force": 20,
+                        "push_force": 10
+                    }
+                },
+                {
+                    "type": "Explosion",
+                    "name": "Plasma Rifle Charge",
+                    "area_of_effect": {
+                        "inner_radius": "2.9 m",
+                        "outer_radius": "3 m",
+                        "shockwave_radius": "4 m"
+                    },
+                    "damage": {
+                        "inner_radius": 150,
+                        "outer_radius": "149 - 0"
+                    },
+                    "penetration": {
+                        "inner_radius": "Medium I",
+                        "outer_radius": "Light II",
+                        "shockwave": "Medium I"
+                    },
+                    "special_effects": {
+                        "demolition_force": 10,
+                        "stagger_force": 35,
+                        "push_force": 30
+                    }
+                }
+            ]
+        },
+        "image": "/assets/primaryWeapons/PLAS-101_Purifier_Weapon_Icon.webp",
+        "extra_info": []
+    },    
     {
         "id": "prim_flam66_torcher",
         "name": "FLAM-66 Torcher",
         "type": "Primary",
         "category": "Special",
-        "traits": [],
+        "traits": ["Medium Armor Penetrating", "Incendiary"],
         "input_code": null,
         "call_in_time": null,
         "uses": null,
         "permit_type": null,
         "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
+        "firepower": {
+            "standard_damage": 250,
+            "max_penetration": 3
+        },
+        "weapon_handling": {
+            "capacity": 80,
+            "recoil": 3
+        },
         "ammunition": {},
-        "acquisition": {},
+        "acquisition": {
+            "source": "Freedom's Flame, page 2",
+            "cost": 40
+        },
         "details": {},
-        "image": null,
+        "image": "/assets/primaryWeapons/FLAM-66_Torcher_Weapon_Icon.webp",
         "extra_info": []
-    }
+    }    
 ]
