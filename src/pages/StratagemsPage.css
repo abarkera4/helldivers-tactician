@@ -38,7 +38,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 150px;
+  width: 180px;
   max-width: 200px;
 }
 
