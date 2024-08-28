@@ -18,7 +18,7 @@
       "cost": "10000"
     },
     "description": "Encloses the wearer in a spherical shield which blocks high-speed projectiles. Has a limited lifetime once deployed.",
-    "image": "/assets/stratagemIcons/supportBackpacks/SH-32_Shield_Generator_Pack_Icon.webp"
+    "image": "/assets/stratagemIcons/supportBackpacks/SH-32_Shield_Generator_Pack_Icon.svg"
   },
   {
     "id": "backpack_b1_supply_pack",
@@ -39,7 +39,7 @@
       "cost": "4000"
     },
     "description": "Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.",
-    "image": "/assets/stratagemIcons/supportBackpacks/B-1_Supply_Pack_Icon.webp"
+    "image": "/assets/stratagemIcons/supportBackpacks/B-1_Supply_Pack_Icon.svg"
   },
   {
     "id": "backpack_axlas5_guard_dog_rover",
@@ -60,7 +60,7 @@
       "cost": "7500"
     },
     "description": "An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.",
-    "image": "/assets/stratagemIcons/supportBackpacks/AX_LAS-5_Guard_Dog_Rover_Icon.webp",
+    "image": "/assets/stratagemIcons/supportBackpacks/AX_LAS-5_Guard_Dog_Rover_Icon.svg",
     "stats": {
       "damage_per_sec": 350,
       "fire_limit": 8,
@@ -86,7 +86,7 @@
       "cost": "7500"
     },
     "description": "An autonomous drone equipped with a Liberator assault rifle, providing 360° cover. Returns to backpack to rearm.",
-    "image": "/assets/stratagemIcons/supportBackpacks/AX_AR-23_Guard_Dog_Icon.webp",
+    "image": "/assets/stratagemIcons/supportBackpacks/AX_AR-23_Guard_Dog_Icon.svg",
     "stats": {
       "damage": 60,
       "capacity": 45,
@@ -112,7 +112,7 @@
       "cost": "6000"
     },
     "description": "Enables the user to jump higher than 'gravity' and 'safety' would normally allow. Must be charged before use.",
-    "image": "/assets/stratagemIcons/supportBackpacks/LIFT-850_Jump_Pack_Icon.webp"
+    "image": "/assets/stratagemIcons/supportBackpacks/LIFT-850_Jump_Pack_Icon.svg"
   },
   {
     "id": "backpack_sh20_ballistic_shield",
@@ -133,6 +133,6 @@
       "cost": "6000"
     },
     "description": "A backpack which can be wielded as a one-handed ballistic shield, protecting against small arms fire.",
-    "image": "/assets/stratagemIcons/supportBackpacks/SH-20_Ballistic_Shield_Backpack_Icon.webp"
+    "image": "/assets/stratagemIcons/supportBackpacks/SH-20_Ballistic_Shield_Backpack_Icon.svg"
   }
 ]

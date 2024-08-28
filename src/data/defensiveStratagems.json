@@ -32,7 +32,7 @@
       "Effective against small to medium-sized groups.",
       "Inconveniently placed Tesla Tower can be harmful to team."
     ],
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_ARC-3_Tesla_Tower_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_ARC-3_Tesla_Tower_Icon.svg"
   },
   {
     "id": "defensive_ems_mortar_sentry",
@@ -66,7 +66,7 @@
       "unlock_requirement": "Level 20",
       "cost": "8000"
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A-M-23_EMS_Mortar_Sentry_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A-M-23_EMS_Mortar_Sentry_Icon.svg"
   },
   {
     "id": "defensive_mortar_sentry",
@@ -99,7 +99,7 @@
       "unlock_requirement": "Level 8",
       "cost": "7000"
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_M-12_Mortar_Sentry_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_M-12_Mortar_Sentry_Icon.svg"
   },
   {
     "id": "defensive_rocket_sentry",
@@ -133,7 +133,7 @@
       "unlock_requirement": "Level 15",
       "cost": "7500"
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MLS-4X_Rocket_Sentry_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MLS-4X_Rocket_Sentry_Icon.svg"
   },
   {
     "id": "defensive_autocannon_sentry",
@@ -168,7 +168,7 @@
       "unlock_requirement": "Level 13",
       "cost": "6000"
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_AC-8_Autocannon_Sentry_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_AC-8_Autocannon_Sentry_Icon.svg"
   },
   {
     "id": "defensive_gatling_sentry",
@@ -203,7 +203,7 @@
       "unlock_requirement": "Level 5",
       "cost": "4000"
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_G-16_Gatling_Sentry_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_G-16_Gatling_Sentry_Icon.svg"
   },
   {
     "id": "defensive_machine_gun_sentry",
@@ -238,6 +238,198 @@
       "unlock_requirement": "Level 3",
       "cost": "1500"
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MG-43_Machine_Gun_Sentry_Icon.webp"
+    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MG-43_Machine_Gun_Sentry_Icon.svg"
+  },
+  {
+    "id": "defensive_hmg_emplacement",
+    "name": "E/MG-101 HMG Emplacement",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Hellpod"
+    ],
+    "input_code": "↓ ↑ ↓ ↓ ←",
+    "call_in_time": "3 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Defensive",
+    "firepower": {
+      "damage": {
+        "standard": "200",
+        "vs_durable": "40"
+      },
+      "penetration": {
+        "direct": "Medium II",
+        "slight_angle": "Medium II",
+        "large_angle": "Medium II",
+        "extreme_angle": "Unarmored"
+      }
+    },
+    "weapon_handling": {
+      "fire_rate": "660 RPM",
+      "cooldown": "180s",
+      "capacity": "300"
+    },
+    "acquisition": {
+      "source": "Bridge",
+      "unlock_requirement": "Level 10",
+      "cost": "10000"
+    },
+    "extra_info": [
+      "Effective against medium to large groups.",
+      "Requires careful placement to maximize effectiveness."
+    ],
+    "image": "/assets/stratagemIcons/defensiveEmplacements/E_MG-101_HMG_Emplacement_Icon.svg"
+  },
+  {
+    "id": "defensive_shield_generator_relay",
+    "name": "FX-12 Shield Generator Relay",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Hellpod"
+    ],
+    "input_code": "↓ ← ↓ →",
+    "call_in_time": "3 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Defensive",
+    "firepower": {
+      "shield_capacity": "4000",
+      "shield_regen": "300 shield/s"
+    },
+    "weapon_handling": {
+      "cooldown": "180s",
+      "shield_radius": "8m",
+      "shield_broken_delay": "8s",
+      "shield_regen_delay": "5s",
+      "fire_limit": "30s"
+    },
+    "acquisition": {
+      "source": "Bridge",
+      "unlock_requirement": "Level 10",
+      "cost": "9000"
+    },
+    "extra_info": [
+      "Provides large area of protection for a limited time.",
+      "Highly effective for protecting objectives and players."
+    ],
+    "image": "/assets/stratagemIcons/defensiveEmplacements/FX-12_Shield_Generator_Relay_Icon.svg"
+  },
+  {
+    "id": "defensive_anti_personnel_minefield",
+    "name": "MD-6 Anti-Personnel Minefield",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Hellpod",
+      "Explosive"
+    ],
+    "input_code": "↓ → ↓ ←",
+    "call_in_time": "3 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Defensive",
+    "firepower": {
+      "damage": {
+        "inner_radius": "350",
+        "outer_radius": "349-0"
+      },
+      "penetration": {
+        "direct": "Unarmored",
+        "slight_angle": "Unarmored",
+        "large_angle": "Unarmored",
+        "extreme_angle": "Unarmored"
+      }
+    },
+    "weapon_handling": {
+      "cooldown": "180s",
+      "capacity": "48"
+    },
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 2",
+      "cost": "1500"
+    },
+    "extra_info": [
+      "Effective for controlling large areas and preventing enemy advancement."
+    ],
+    "image": "/assets/stratagemIcons/defensiveEmplacements/MD-6_Anti-Personnel_Minefield_Icon.svg"
+  },
+  {
+    "id": "defensive_incendiary_minefield",
+    "name": "MD-I4 Incendiary Minefield",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Hellpod",
+      "Explosive"
+    ],
+    "input_code": "↓ → ↓ ↓",
+    "call_in_time": "3 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Defensive",
+    "firepower": {
+      "damage": {
+        "inner_radius": "210",
+        "outer_radius": "209-0"
+      },
+      "penetration": {
+        "inner_radius": "Medium I",
+        "outer_radius": "Light II",
+        "shockwave": "Medium I"
+      }
+    },
+    "weapon_handling": {
+      "cooldown": "180s",
+      "capacity": "48"
+    },
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 8",
+      "cost": "4000"
+    },
+    "extra_info": [
+      "Highly effective against groups and causes burning damage over time."
+    ],
+    "image": "/assets/stratagemIcons/defensiveEmplacements/MD-I4_Incendiary_Mines_Icon.svg"
+  },
+  {
+    "id": "defensive_anti_tank_mines",
+    "name": "MD-17 Anti-Tank Mines",
+    "type": "Stratagem",
+    "category": "Defensive",
+    "traits": [
+      "Hellpod",
+      "Explosive"
+    ],
+    "input_code": "↓ ↑ ↑ ↑",
+    "call_in_time": "3 Seconds",
+    "uses": "Unlimited",
+    "permit_type": "Defensive",
+    "firepower": {
+      "damage": {
+        "inner_radius": "1000",
+        "outer_radius": "999-0"
+      },
+      "penetration": {
+        "inner_radius": "Heavy I",
+        "outer_radius": "Medium II",
+        "shockwave": "Heavy I"
+      }
+    },
+    "weapon_handling": {
+      "cooldown": "180s",
+      "capacity": "18"
+    },
+    "acquisition": {
+      "source": "Engineering Bay",
+      "unlock_requirement": "Level 15",
+      "cost": "7000"
+    },
+    "extra_info": [
+      "Highly effective against armored vehicles and large enemy units.",
+      "Best deployed in areas where vehicles are likely to pass."
+    ],
+    "image": "/assets/stratagemIcons/defensiveEmplacements/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp"
   }
+  
+  
 ]

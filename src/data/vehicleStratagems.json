@@ -26,7 +26,7 @@
       }
     },
     "description": "The EXO-45 Patriot Exosuit is equipped with a rocket pod on the left and a rotary gatling gun on the right. The rockets can penetrate heavy armor and are capable of destroying enemy infrastructure, including Broadcast Towers.",
-    "image": "/assets/stratagemIcons/vehicles/EXO-45_Patriot_Exosuit_Icon.webp"
+    "image": "/assets/stratagemIcons/vehicles/EXO-45_Patriot_Exosuit_Icon.svg"
   },
   {
     "id": "vehicle_exo49_emancipator_exosuit",
