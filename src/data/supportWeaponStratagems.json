@@ -51,7 +51,7 @@
       "unlock_requirement": "Level 10",
       "cost": "7000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/AC-8_Autocannon_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/AC-8_Autocannon_Icon.svg"
   },
   {
     "id": "support_flam40_flamethrower",
