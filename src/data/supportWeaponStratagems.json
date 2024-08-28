@@ -79,7 +79,7 @@
       "unlock_requirement": "Level 10",
       "cost": "6000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/FLAM-40_Flamethrower_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/FLAM-40_Flamethrower_Icon.svg"
   },
   {
     "id": "support_las98_laser_cannon",
@@ -103,7 +103,7 @@
       "unlock_requirement": "Level 5",
       "cost": "4000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/LAS-98_Laser_Cannon_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/LAS-98_Laser_Cannon_Icon.svg"
   },
   {
     "id": "support_m105_stalwart",
@@ -131,7 +131,7 @@
       "unlock_requirement": "Level 5",
       "cost": "3500"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/M-105_Stalwart_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/M-105_Stalwart_Icon.svg"
   },
   {
     "id": "support_mg43_machine_gun",
@@ -163,7 +163,7 @@
       "unlock_requirement": "Tutorial completion",
       "cost": "Free"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/MG-43_Machine_Gun_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/MG-43_Machine_Gun_Icon.svg"
   },
   {
     "id": "support_arc3_arc_thrower",
@@ -181,7 +181,7 @@
     "ammunition": {
       "ammo_capacity": "∞"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/ARC-3_Arc_Thrower_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/ARC-3_Arc_Thrower_Icon.svg"
   },
   {
     "id": "support_gl21_grenade_launcher",
@@ -205,7 +205,7 @@
       "unlock_requirement": "Level 5",
       "cost": "6000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/GL-21_Grenade_Launcher_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/GL-21_Grenade_Launcher_Icon.svg"
   },
   {
     "id": "support_apw1_anti_materiel_rifle",
@@ -233,7 +233,7 @@
       "unlock_requirement": "Level 2",
       "cost": "5000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/APW-1_Anti-Materiel_Rifle_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/APW-1_Anti-Materiel_Rifle_Icon.svg"
   },
   {
     "id": "support_rs422_railgun",
@@ -266,7 +266,7 @@
       "unlock_requirement": "Level 20",
       "cost": "10000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/RS-422_Railgun_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/RS-422_Railgun_Icon.svg"
   },
   {
     "id": "support_gr8_recoilless_rifle",
@@ -298,7 +298,7 @@
       "unlock_requirement": "Level 15",
       "cost": "8000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/GR-8_Recoilless_Rifle_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/GR-8_Recoilless_Rifle_Icon.svg"
   },
   {
     "id": "support_faf14_spear",
@@ -325,7 +325,7 @@
       "unlock_requirement": "Level 20",
       "cost": "9000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/FAF-14_Spear_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/FAF-14_Spear_Icon.svg"
   },
   {
     "id": "support_las99_quasar_cannon",
@@ -345,7 +345,7 @@
       "unlock_requirement": "Level 18",
       "cost": "7500"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/LAS-99_Quasar_Cannon_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/LAS-99_Quasar_Cannon_Icon.svg"
   },
   {
     "id": "support_mg206_heavy_machine_gun",
@@ -376,7 +376,7 @@
       "unlock_requirement": "Level 12",
       "cost": "6000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/MG-206_Heavy_Machine_Gun_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/MG-206_Heavy_Machine_Gun_Icon.svg"
   },
   {
     "id": "support_eat17_expendable_antitank",
@@ -410,6 +410,6 @@
       "unlock_requirement": "Level 3",
       "cost": "R 3000"
     },
-    "image": "/assets/stratagemIcons/supportWeapons/EAT-17_Expendable_Anti-Tank_Icon.webp"
+    "image": "/assets/stratagemIcons/supportWeapons/EAT-17_Expendable_Anti-Tank_Icon.svg"
   }
 ]

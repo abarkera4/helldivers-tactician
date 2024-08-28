@@ -3,7 +3,7 @@
     "id": "eagle_strafing_run",
     "name": "Eagle Strafing Run",
     "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Strafing_Run_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Strafing_Run_Icon.svg",
     "stats": {
       "uses": 4,
       "call_in_time": "0 Seconds",
@@ -27,7 +27,7 @@
     "id": "eagle_airstrike",
     "name": "Eagle Airstrike",
     "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Airstrike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Airstrike_Icon.svg",
     "stats": {
       "uses": 2,
       "call_in_time": "0 Seconds",
@@ -51,7 +51,7 @@
     "id": "eagle_cluster_bomb",
     "name": "Eagle Cluster Bomb",
     "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Cluster_Bomb_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Cluster_Bomb_Icon.svg",
     "stats": {
       "uses": 4,
       "call_in_time": "0 Seconds",
@@ -75,7 +75,7 @@
     "id": "eagle_napalm_airstrike",
     "name": "Eagle Napalm Airstrike",
     "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Napalm_Airstrike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Napalm_Airstrike_Icon.svg",
     "stats": {
       "uses": 2,
       "call_in_time": "0 Seconds",
@@ -99,7 +99,7 @@
     "id": "eagle_smoke_strike",
     "name": "Eagle Smoke Strike",
     "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Smoke_Strike_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Smoke_Strike_Icon.svg",
     "stats": {
       "uses": 2,
       "call_in_time": "0 Seconds",
@@ -120,7 +120,7 @@
     "id": "eagle_110mm_rocket_pods",
     "name": "Eagle 110mm Rocket Pods",
     "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_110MM_Rocket_Pods_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_110MM_Rocket_Pods_Icon.svg",
     "stats": {
       "uses": 2,
       "call_in_time": "0 Seconds",
@@ -144,7 +144,7 @@
     "id": "eagle_500kg_bomb",
     "name": "Eagle 500kg Bomb",
     "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_500KG_Bomb_Icon.webp",
+    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_500KG_Bomb_Icon.svg",
     "stats": {
       "uses": 1,
       "call_in_time": "0 Seconds",
