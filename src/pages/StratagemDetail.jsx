@@ -7,16 +7,7 @@ import orbitalStratagems from "../data/orbitalStratagems.json";
 import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
-import ProjectileStats from "../components/ProjectileStats";
-import AreaOfEffectStats from "../components/AreaOfEffectStats";
-import DamageStats from "../components/DamageStats";
-import SpecialEffects from "../components/SpecialEffects";
-import FirepowerStats from "../components/FirepowerStats";
-import GeneralStats from "../components/GeneralStats";
-import DetailsStats from "../components/DetailsStats";
-import WeaponHandlingStats from "../components/WeaponHandlingStats";
-import AcquisitionStats from "../components/AcquisitionStats";
-import AmmunitionStats from "../components/AmmunitionStats";
+import StatsBlock from "../components/StatsBlock";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -52,32 +43,14 @@ function StratagemDetail() {
         <h1 className="stratagem-title">{stratagem.name}</h1>
         <p className="stratagem-category">{stratagem.category}</p>
 
-        <GeneralStats stats={stratagem.stats} />
-        <FirepowerStats firepower={stratagem.firepower} />
-        <WeaponHandlingStats weaponHandling={stratagem.weapon_handling} />
-        <AmmunitionStats ammunition={stratagem.ammunition} />
-        <AcquisitionStats acquisition={stratagem.acquisition} />
-        <DetailsStats details={stratagem.details} />
+        <StatsBlock title="General Stats" stats={stratagem.stats} />
+        <StatsBlock title="Firepower" stats={stratagem.firepower} />
+        <StatsBlock title="Weapon Handling" stats={stratagem.weapon_handling} />
+        <StatsBlock title="Ammunition" stats={stratagem.ammunition} />
+        <StatsBlock title="Acquisition" stats={stratagem.acquisition} />
+        <StatsBlock title="Details" stats={stratagem.details} />
 
-        {/* Conditionally render ProjectileStats if the data is available */}
-        {stratagem.details?.projectile && <ProjectileStats projectile={stratagem.details.projectile} />}
-
-        {/* Conditionally render AreaOfEffectStats if the data is available */}
-        {stratagem.details?.area_of_effect && <AreaOfEffectStats areaOfEffect={stratagem.details.area_of_effect} />}
-
-        {/* Conditionally render DamageStats if the data is available */}
-        {stratagem.details?.damage && <DamageStats damage={stratagem.details.damage} />}
-
-        {/* Conditionally render SpecialEffects if the data is available */}
-        {stratagem.details?.special_effects && <SpecialEffects specialEffects={stratagem.details.special_effects} />}
-
-        {stratagem.requirements && (
-          <div className="stratagem-stats-section">
-            <div className="stat-header">Requirements</div>
-            <div className="stat-value">Cost: {stratagem.requirements.cost}</div>
-            <div className="stat-value">Level: {stratagem.requirements.level}</div>
-          </div>
-        )}
+        {stratagem.requirements && <StatsBlock title="Requirements" stats={stratagem.requirements} />}
 
         {stratagem.strike_pattern && (
           <div className="stratagem-stats-section">
