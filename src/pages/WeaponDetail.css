@@ -109,3 +109,20 @@
     font-size: 0.9rem; /* Slightly reduces the font size for smaller screens */
   }
 }
+
+.attack-detail {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #444;
+  margin-bottom: 10px;
+}
+
+.attack-detail ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0;
+}
+
+.attack-detail li {
+  margin-bottom: 5px;
+}
+

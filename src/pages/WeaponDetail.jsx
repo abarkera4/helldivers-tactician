@@ -32,12 +32,82 @@ function WeaponDetail() {
     return <h1>Loading...</h1>;
   }
 
-  // Helper function to get a nested value from the weapon object
   const getWeaponValue = (section, key, defaultValue = "N/A") => {
     return section && section[key] !== undefined ? section[key] : defaultValue;
   };
 
   const spareAmmo = getWeaponValue(weapon.ammunition, "spare_mags") || getWeaponValue(weapon.ammunition, "spare_rounds", "N/A");
+
+  const renderDetailsSection = () => {
+    if (!weapon.details) return null;
+
+    return (
+      <div className="weapon-stats-section">
+        <div className="stat-header">Details</div>
+        {weapon.details.tactical_reload_time && <div className="stat-value">Tactical Reload Time: {weapon.details.tactical_reload_time}</div>}
+        {weapon.details.reload_time && <div className="stat-value">Reload Time: {weapon.details.reload_time}</div>}
+        {weapon.details.scope_options && <div className="stat-value">Scope Options: {weapon.details.scope_options}</div>}
+        {weapon.details.attacks && (
+          <div className="stat-value">
+            <strong>Attacks:</strong>
+            {Object.entries(weapon.details.attacks).map(([attackName, attackData]) => (
+              <div key={attackName}>
+                <strong>{attackName}</strong>:
+                {attackData.Projectile && (
+                  <div className="attack-detail">
+                    <div>Projectile:</div>
+                    <ul>
+                      {Object.entries(attackData.Projectile).map(([key, value]) => (
+                        <li key={key}>
+                          <strong>{key.replace(/_/g, " ")}:</strong> {value}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {attackData.Damage && (
+                  <div className="attack-detail">
+                    <div>Damage:</div>
+                    <ul>
+                      {Object.entries(attackData.Damage).map(([key, value]) => (
+                        <li key={key}>
+                          <strong>{key.replace(/_/g, " ")}:</strong> {value}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {attackData.Penetration && (
+                  <div className="attack-detail">
+                    <div>Penetration:</div>
+                    <ul>
+                      {Object.entries(attackData.Penetration).map(([key, value]) => (
+                        <li key={key}>
+                          <strong>{key.replace(/_/g, " ")}:</strong> {value}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {attackData.Special_Effects && (
+                  <div className="attack-detail">
+                    <div>Special Effects:</div>
+                    <ul>
+                      {Object.entries(attackData.Special_Effects).map(([key, value]) => (
+                        <li key={key}>
+                          <strong>{key.replace(/_/g, " ")}:</strong> {value}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
     <div className="weapon-detail-container">
@@ -79,16 +149,7 @@ function WeaponDetail() {
           <div className="stat-value">Cost: {getWeaponValue(weapon.acquisition, "cost")}</div>
         </div>
 
-        {weapon.details && Object.keys(weapon.details).length > 0 && (
-          <div className="weapon-stats-section">
-            <div className="stat-header">Details</div>
-            {Object.entries(weapon.details).map(([key, value]) => (
-              <div key={key} className="stat-value">
-                {key.replace(/_/g, " ")}: {typeof value === "object" ? JSON.stringify(value) : value}
-              </div>
-            ))}
-          </div>
-        )}
+        {renderDetailsSection()}
       </div>
     </div>
   );
