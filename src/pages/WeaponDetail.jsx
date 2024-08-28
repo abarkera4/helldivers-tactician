@@ -32,7 +32,8 @@ function WeaponDetail() {
     return <h1>Loading...</h1>;
   }
 
-  const spareAmmo = weapon.base_stats?.spare_magazines ?? weapon.base_stats?.spare_rounds ?? "N/A";
+  // Adjust according to normalized structure
+  const spareAmmo = weapon.ammunition?.spare_magazines ?? weapon.ammunition?.spare_rounds ?? "N/A";
 
   return (
     <div className="weapon-detail-container">
@@ -50,26 +51,27 @@ function WeaponDetail() {
 
         <div className="weapon-stats-section">
           <div className="stat-header">Firepower</div>
-          <div className="stat-value">Damage: {weapon.base_stats?.damage || "N/A"}</div>
+          <div className="stat-value">Damage: {weapon.firepower?.damage || "N/A"}</div>
+          <div className="stat-value">Penetration Level: {weapon.firepower?.penetration_level || "N/A"}</div>
         </div>
 
         <div className="weapon-stats-section">
           <div className="stat-header">Weapon Handling</div>
-          <div className="stat-value">Traits: {weapon.weapon_traits?.join(", ") || "N/A"}</div>
-          <div className="stat-value">Fire Rate: {weapon.base_stats?.fire_rate || "N/A"} RPM</div>
-          <div className="stat-value">Recoil: {weapon.base_stats?.recoil || "N/A"}</div>
+          <div className="stat-value">Fire Rate: {weapon.weapon_handling?.fire_rate || "N/A"}</div>
+          <div className="stat-value">Recoil: {weapon.weapon_handling?.recoil || "N/A"}</div>
+          <div className="stat-value">Traits: {weapon.traits?.join(", ") || "N/A"}</div>
         </div>
 
         <div className="weapon-stats-section">
           <div className="stat-header">Ammunition</div>
-          <div className="stat-value">Capacity: {weapon.base_stats?.capacity || "N/A"}</div>
+          <div className="stat-value">Capacity: {weapon.ammunition?.ammo_capacity || "N/A"}</div>
           <div className="stat-value">Spare Ammunition: {spareAmmo}</div>
         </div>
 
         <div className="weapon-stats-section">
           <div className="stat-header">Acquisition</div>
-          <div className="stat-value">Source: {weapon.source || "N/A"}</div>
-          <div className="stat-value">Cost: {weapon.cost || "N/A"}</div>
+          <div className="stat-value">Source: {weapon.acquisition?.source || "N/A"}</div>
+          <div className="stat-value">Cost: {weapon.acquisition?.cost || "N/A"}</div>
         </div>
 
         {weapon.additional_traits && weapon.additional_traits.length > 0 && (
