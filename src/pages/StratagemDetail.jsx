@@ -4,7 +4,7 @@ import backpackStratagems from "../data/backpackStratagems.json";
 import defensiveStratagems from "../data/defensiveStratagems.json";
 import eagleStratagems from "../data/eagleStratagems.json";
 import orbitalStratagems from "../data/orbitalStratagems.json";
-import supportWeaponsStratagems from "../data/supportWeaponsStratagems.json";
+import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
 import "./StratagemDetail.css";
