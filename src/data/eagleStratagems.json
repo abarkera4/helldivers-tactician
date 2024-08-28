@@ -1,167 +1,174 @@
 [
-  {
-    "id": "eagle_strafing_run",
-    "name": "Eagle Strafing Run",
-    "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Strafing_Run_Icon.svg",
-    "stats": {
-      "uses": 4,
-      "call_in_time": "0 Seconds",
-      "cooldown_time": "15 Seconds",
-      "direction": "Straight"
+    {
+        "id": "eagle_strafing_run",
+        "name": "Eagle Strafing Run",
+        "type": "Offensive Stratagem",
+        "category": null,
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {
+            "rounds": 66,
+            "damage": 250,
+            "penetration": "High (5)",
+            "fall_off_start_m": 1.5,
+            "radius_m": 4.5
+        },
+        "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Strafing_Run_Icon.svg",
+        "extra_info": []
     },
-    "details": {
-      "rounds": 66,
-      "damage": 250,
-      "penetration": "High (5)",
-      "fall_off_start_m": 1.5,
-      "radius_m": 4.5
+    {
+        "id": "eagle_airstrike",
+        "name": "Eagle Airstrike",
+        "type": "Offensive Stratagem",
+        "category": null,
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {
+            "bombs": 6,
+            "damage": 800,
+            "penetration": "High (5)",
+            "fall_off_start_m": 5,
+            "radius_m": 10
+        },
+        "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Airstrike_Icon.svg",
+        "extra_info": []
     },
-    "requirements": {
-      "cost": "R 1500",
-      "level": 2
+    {
+        "id": "eagle_cluster_bomb",
+        "name": "Eagle Cluster Bomb",
+        "type": "Offensive Stratagem",
+        "category": null,
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {
+            "bombs": 64,
+            "damage": 350,
+            "penetration": "Medium (3)",
+            "fall_off_start_m": 3,
+            "radius_m": 6
+        },
+        "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Cluster_Bomb_Icon.svg",
+        "extra_info": []
     },
-    "strike_pattern": "/assets/strike_patterns/eagle_strafing_run.png"
-  },
-  {
-    "id": "eagle_airstrike",
-    "name": "Eagle Airstrike",
-    "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Airstrike_Icon.svg",
-    "stats": {
-      "uses": 2,
-      "call_in_time": "0 Seconds",
-      "cooldown_time": "15 Seconds",
-      "direction": "Perpendicular"
+    {
+        "id": "eagle_napalm_airstrike",
+        "name": "Eagle Napalm Airstrike",
+        "type": "Offensive Stratagem",
+        "category": null,
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {
+            "bombs": 4,
+            "damage": 800,
+            "penetration": "Medium (3)",
+            "fall_off_start_m": 1.6,
+            "radius_m": 8
+        },
+        "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Napalm_Airstrike_Icon.svg",
+        "extra_info": []
     },
-    "details": {
-      "bombs": 6,
-      "damage": 800,
-      "penetration": "High (5)",
-      "fall_off_start_m": 5,
-      "radius_m": 10
+    {
+        "id": "eagle_smoke_strike",
+        "name": "Eagle Smoke Strike",
+        "type": "Offensive Stratagem",
+        "category": null,
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {
+            "bombs": 8,
+            "radius_m": 5
+        },
+        "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Smoke_Strike_Icon.svg",
+        "extra_info": []
     },
-    "requirements": {
-      "cost": "R 4000",
-      "level": 2
+    {
+        "id": "eagle_110mm_rocket_pods",
+        "name": "Eagle 110mm Rocket Pods",
+        "type": "Offensive Stratagem",
+        "category": null,
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {
+            "bombs": 6,
+            "damage": 450,
+            "penetration": "High (6)",
+            "fall_off_start_m": 1.6,
+            "radius_m": 5
+        },
+        "image": "/assets/stratagemIcons/offensiveEagle/Eagle_110MM_Rocket_Pods_Icon.svg",
+        "extra_info": []
     },
-    "strike_pattern": "/assets/strike_patterns/eagle_airstrike.png"
-  },
-  {
-    "id": "eagle_cluster_bomb",
-    "name": "Eagle Cluster Bomb",
-    "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Cluster_Bomb_Icon.svg",
-    "stats": {
-      "uses": 4,
-      "call_in_time": "0 Seconds",
-      "cooldown_time": "15 Seconds",
-      "direction": "Perpendicular"
-    },
-    "details": {
-      "bombs": 64,
-      "damage": 350,
-      "penetration": "Medium (3)",
-      "fall_off_start_m": 3,
-      "radius_m": 6
-    },
-    "requirements": {
-      "cost": "R 4000",
-      "level": 3
-    },
-    "strike_pattern": "/assets/strike_patterns/eagle_cluster_bomb.png"
-  },
-  {
-    "id": "eagle_napalm_airstrike",
-    "name": "Eagle Napalm Airstrike",
-    "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Napalm_Airstrike_Icon.svg",
-    "stats": {
-      "uses": 2,
-      "call_in_time": "0 Seconds",
-      "cooldown_time": "15 Seconds",
-      "direction": "Perpendicular"
-    },
-    "details": {
-      "bombs": 4,
-      "damage": 800,
-      "penetration": "Medium (3)",
-      "fall_off_start_m": 1.6,
-      "radius_m": 8
-    },
-    "requirements": {
-      "cost": "R 5000",
-      "level": 5
-    },
-    "strike_pattern": "/assets/strike_patterns/eagle_napalm_airstrike.png"
-  },
-  {
-    "id": "eagle_smoke_strike",
-    "name": "Eagle Smoke Strike",
-    "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_Smoke_Strike_Icon.svg",
-    "stats": {
-      "uses": 2,
-      "call_in_time": "0 Seconds",
-      "cooldown_time": "15 Seconds",
-      "direction": "Perpendicular"
-    },
-    "details": {
-      "bombs": 8,
-      "radius_m": 5
-    },
-    "requirements": {
-      "cost": "R 4000",
-      "level": 8
-    },
-    "strike_pattern": "/assets/strike_patterns/eagle_smoke_strike.png"
-  },
-  {
-    "id": "eagle_110mm_rocket_pods",
-    "name": "Eagle 110mm Rocket Pods",
-    "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_110MM_Rocket_Pods_Icon.svg",
-    "stats": {
-      "uses": 2,
-      "call_in_time": "0 Seconds",
-      "cooldown_time": "15 Seconds",
-      "direction": "Perpendicular"
-    },
-    "details": {
-      "bombs": 6,
-      "damage": 450,
-      "penetration": "High (6)",
-      "fall_off_start_m": 1.6,
-      "radius_m": 5
-    },
-    "requirements": {
-      "cost": "R 7500",
-      "level": 10
-    },
-    "strike_pattern": "/assets/strike_patterns/eagle_110mm_rocket_pods.png"
-  },
-  {
-    "id": "eagle_500kg_bomb",
-    "name": "Eagle 500kg Bomb",
-    "type": "Offensive Stratagem",
-    "image": "/assets/stratagemIcons/offensiveEagle/Eagle_500KG_Bomb_Icon.svg",
-    "stats": {
-      "uses": 1,
-      "call_in_time": "0 Seconds",
-      "cooldown_time": "15 Seconds",
-      "direction": "Straight"
-    },
-    "details": {
-      "bombs": 1,
-      "damage": 1200,
-      "penetration": "High (6)",
-      "fall_off_start_m": 6.7,
-      "radius_m": 20
-    },
-    "requirements": {
-      "cost": "R 10000",
-      "level": 15
-    },
-    "strike_pattern": "/assets/strike_patterns/eagle_500kg_bomb.png"
-  }
+    {
+        "id": "eagle_500kg_bomb",
+        "name": "Eagle 500kg Bomb",
+        "type": "Offensive Stratagem",
+        "category": null,
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {
+            "bombs": 1,
+            "damage": 1200,
+            "penetration": "High (6)",
+            "fall_off_start_m": 6.7,
+            "radius_m": 20
+        },
+        "image": "/assets/stratagemIcons/offensiveEagle/Eagle_500KG_Bomb_Icon.svg",
+        "extra_info": []
+    }
 ]

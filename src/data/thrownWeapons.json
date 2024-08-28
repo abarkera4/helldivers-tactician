@@ -1,138 +1,154 @@
 [
-  {
-    "id": "throw_g6_frag",
-    "name": "G-6 Frag",
-    "category": "Standard Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 250,
-      "penetration": 3,
-      "outer_radius": 8,
-      "fuse_time": "2.4s"
+    {
+        "id": "throw_g6_frag",
+        "name": "G-6 Frag",
+        "type": "Throwable",
+        "category": "Standard Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/G-6_Frag.webp",
+        "extra_info": []
     },
-    "weapon_traits": [],
-    "additional_traits": [],
-    "image": "/assets/thrownWeapons/G-6_Frag.webp",
-    "description": "An antipersonnel fragmentation grenade. Creates damage over a large area when detonated."
-  },
-  {
-    "id": "throw_g12_high_explosive",
-    "name": "G-12 High Explosive",
-    "category": "Standard Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 400,
-      "penetration": 4,
-      "outer_radius": 7,
-      "fuse_time": "3.5s"
+    {
+        "id": "throw_g12_high_explosive",
+        "name": "G-12 High Explosive",
+        "type": "Throwable",
+        "category": "Standard Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/G-12_HE.webp",
+        "extra_info": []
     },
-    "weapon_traits": [],
-    "additional_traits": [],
-    "image": "/assets/thrownWeapons/G-12_HE.webp",
-    "description": "A high explosive grenade which damages lightly armored targets. Creates high damage over a small area when detonated."
-  },
-  {
-    "id": "throw_g10_incendiary",
-    "name": "G-10 Incendiary",
-    "category": "Standard Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 150,
-      "penetration": 3,
-      "outer_radius": 7,
-      "fuse_time": "2.9s"
+    {
+        "id": "throw_g10_incendiary",
+        "name": "G-10 Incendiary",
+        "type": "Throwable",
+        "category": "Standard Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/G-10_Incendiary.webp",
+        "extra_info": []
     },
-    "weapon_traits": [
-      "Incendiary"
-    ],
-    "additional_traits": [],
-    "image": "/assets/thrownWeapons/G-10_Incendiary.webp",
-    "description": "An incendiary grenade which ignites any targets and terrain within the blast radius. Use with caution."
-  },
-  {
-    "id": "throw_g16_impact",
-    "name": "G-16 Impact",
-    "category": "Special Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 400,
-      "penetration": 4,
-      "outer_radius": 7,
-      "fuse_time": "0.0s"
+    {
+        "id": "throw_g16_impact",
+        "name": "G-16 Impact",
+        "type": "Throwable",
+        "category": "Special Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/G-16_Impact.webp",
+        "extra_info": []
     },
-    "weapon_traits": [],
-    "additional_traits": [
-      "Impact Detonation"
-    ],
-    "image": "/assets/thrownWeapons/G-16_Impact.webp",
-    "description": "A high explosive grenade which detonates on first impact."
-  },
-  {
-    "id": "throw_g13_incendiary_impact",
-    "name": "G-13 Incendiary Impact",
-    "category": "Special Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 150,
-      "penetration": 3,
-      "outer_radius": 7,
-      "fuse_time": "0.0s"
+    {
+        "id": "throw_g13_incendiary_impact",
+        "name": "G-13 Incendiary Impact",
+        "type": "Throwable",
+        "category": "Special Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/Incen_impact.webp",
+        "extra_info": []
     },
-    "weapon_traits": [
-      "Incendiary"
-    ],
-    "additional_traits": [
-      "Impact Detonation"
-    ],
-    "image": "/assets/thrownWeapons/Incen_impact.webp",
-    "description": "Detonates on impact, covering the immediate vicinity in self-igniting white phosphorus."
-  },
-  {
-    "id": "throw_g23_stun",
-    "name": "G-23 Stun",
-    "category": "Special Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 0,
-      "penetration": 0,
-      "outer_radius": 10,
-      "fuse_time": "1.8s"
+    {
+        "id": "throw_g23_stun",
+        "name": "G-23 Stun",
+        "type": "Throwable",
+        "category": "Special Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/G-23_Stun.webp",
+        "extra_info": []
     },
-    "weapon_traits": [],
-    "additional_traits": [],
-    "image": "/assets/thrownWeapons/G-23_Stun.webp",
-    "description": "Temporarily stuns all targets within the effective radius."
-  },
-  {
-    "id": "throw_g3_smoke",
-    "name": "G-3 Smoke",
-    "category": "Special Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 0,
-      "penetration": 0,
-      "outer_radius": 5,
-      "fuse_time": "2.4s"
+    {
+        "id": "throw_g3_smoke",
+        "name": "G-3 Smoke",
+        "type": "Throwable",
+        "category": "Special Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/G-3_Smoke.webp",
+        "extra_info": []
     },
-    "weapon_traits": [],
-    "additional_traits": [],
-    "image": "/assets/thrownWeapons/G-3_Smoke.webp",
-    "description": "A 'compliance weapon' to modify enemy behaviour. Creates a thick smoke screen to block targets' line of sight."
-  },
-  {
-    "id": "throw_g123_thermite",
-    "name": "G-123 Thermite",
-    "category": "Special Throwable",
-    "type": "Throwable",
-    "base_stats": {
-      "damage": 100,
-      "penetration": 7,
-      "outer_radius": 2,
-      "fuse_time": "2.9s"
-    },
-    "weapon_traits": [],
-    "additional_traits": [],
-    "image": "/assets/thrownWeapons/G-123_Thermite.webp",
-    "description": "A thermite grenade designed to adhere to surfaces before burning at 2000°C. Capable of burning through some armor."
-  }
+    {
+        "id": "throw_g123_thermite",
+        "name": "G-123 Thermite",
+        "type": "Throwable",
+        "category": "Special Throwable",
+        "traits": [],
+        "input_code": null,
+        "call_in_time": null,
+        "uses": null,
+        "permit_type": null,
+        "cooldown_time": null,
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {},
+        "details": {},
+        "image": "/assets/thrownWeapons/G-123_Thermite.webp",
+        "extra_info": []
+    }
 ]

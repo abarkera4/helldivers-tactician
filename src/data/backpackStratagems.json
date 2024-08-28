@@ -1,138 +1,200 @@
 [
-  {
-    "id": "backpack_sh32_shield_generator",
-    "name": "SH-32 Shield Generator Pack",
-    "type": "Stratagem",
-    "category": "Backpack",
-    "traits": [
-      "Hellpod",
-      "Backpack"
-    ],
-    "input_code": ["↓", "←", "←", "→", "→", "→"],
-    "call_in_time": "5 Seconds",
-    "uses": "Unlimited",
-    "cooldown_time": "480 Seconds",
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 20",
-      "cost": "10000"
+    {
+        "id": "backpack_sh32_shield_generator",
+        "name": "SH-32 Shield Generator Pack",
+        "type": "Stratagem",
+        "category": "Backpack",
+        "traits": [
+            "Hellpod",
+            "Backpack"
+        ],
+        "input_code": [
+            "\u2193",
+            "\u2190",
+            "\u2190",
+            "\u2192",
+            "\u2192",
+            "\u2192"
+        ],
+        "call_in_time": "5 Seconds",
+        "uses": "Unlimited",
+        "permit_type": null,
+        "cooldown_time": "480 Seconds",
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 20",
+            "cost": "10000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/supportBackpacks/SH-32_Shield_Generator_Pack_Icon.svg",
+        "extra_info": []
     },
-    "description": "Encloses the wearer in a spherical shield which blocks high-speed projectiles. Has a limited lifetime once deployed.",
-    "image": "/assets/stratagemIcons/supportBackpacks/SH-32_Shield_Generator_Pack_Icon.svg"
-  },
-  {
-    "id": "backpack_b1_supply_pack",
-    "name": "B-1 Supply Pack",
-    "type": "Stratagem",
-    "category": "Backpack",
-    "traits": [
-      "Hellpod",
-      "Backpack"
-    ],
-    "input_code": ["↓", "←", "←", "→", "→", "↓"],
-    "call_in_time": "5 Seconds",
-    "uses": "Unlimited",
-    "cooldown_time": "480 Seconds",
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 3",
-      "cost": "4000"
+    {
+        "id": "backpack_b1_supply_pack",
+        "name": "B-1 Supply Pack",
+        "type": "Stratagem",
+        "category": "Backpack",
+        "traits": [
+            "Hellpod",
+            "Backpack"
+        ],
+        "input_code": [
+            "\u2193",
+            "\u2190",
+            "\u2190",
+            "\u2192",
+            "\u2192",
+            "\u2193"
+        ],
+        "call_in_time": "5 Seconds",
+        "uses": "Unlimited",
+        "permit_type": null,
+        "cooldown_time": "480 Seconds",
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 3",
+            "cost": "4000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/supportBackpacks/B-1_Supply_Pack_Icon.svg",
+        "extra_info": []
     },
-    "description": "Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.",
-    "image": "/assets/stratagemIcons/supportBackpacks/B-1_Supply_Pack_Icon.svg"
-  },
-  {
-    "id": "backpack_axlas5_guard_dog_rover",
-    "name": "AX/LAS-5 'Guard Dog' Rover",
-    "type": "Stratagem",
-    "category": "Backpack",
-    "traits": [
-      "Hellpod",
-      "Backpack"
-    ],
-    "input_code": ["↓", "←", "←", "→", "→", "←"],
-    "call_in_time": "5 Seconds",
-    "uses": "Unlimited",
-    "cooldown_time": "480 Seconds",
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 10",
-      "cost": "7500"
+    {
+        "id": "backpack_axlas5_guard_dog_rover",
+        "name": "AX/LAS-5 'Guard Dog' Rover",
+        "type": "Stratagem",
+        "category": "Backpack",
+        "traits": [
+            "Hellpod",
+            "Backpack"
+        ],
+        "input_code": [
+            "\u2193",
+            "\u2190",
+            "\u2190",
+            "\u2192",
+            "\u2192",
+            "\u2190"
+        ],
+        "call_in_time": "5 Seconds",
+        "uses": "Unlimited",
+        "permit_type": null,
+        "cooldown_time": "480 Seconds",
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 10",
+            "cost": "7500"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/supportBackpacks/AX_LAS-5_Guard_Dog_Rover_Icon.svg",
+        "extra_info": []
     },
-    "description": "An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.",
-    "image": "/assets/stratagemIcons/supportBackpacks/AX_LAS-5_Guard_Dog_Rover_Icon.svg",
-    "stats": {
-      "damage_per_sec": 350,
-      "fire_limit": 8,
-      "recoil": 1
+    {
+        "id": "backpack_axar23_guard_dog",
+        "name": "AX/AR-23 'Guard Dog'",
+        "type": "Stratagem",
+        "category": "Backpack",
+        "traits": [
+            "Hellpod",
+            "Backpack"
+        ],
+        "input_code": [
+            "\u2193",
+            "\u2190",
+            "\u2190",
+            "\u2192",
+            "\u2192",
+            "\u2192"
+        ],
+        "call_in_time": "5 Seconds",
+        "uses": "Unlimited",
+        "permit_type": null,
+        "cooldown_time": "480 Seconds",
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {
+            "source": "Robotics Workshop",
+            "unlock_requirement": "Level 10",
+            "cost": "7500"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/supportBackpacks/AX_AR-23_Guard_Dog_Icon.svg",
+        "extra_info": []
+    },
+    {
+        "id": "backpack_lift850_jump_pack",
+        "name": "LIFT-850 Jump Pack",
+        "type": "Stratagem",
+        "category": "Backpack",
+        "traits": [
+            "Hellpod",
+            "Backpack"
+        ],
+        "input_code": [
+            "\u2193",
+            "\u2190",
+            "\u2190",
+            "\u2192",
+            "\u2192",
+            "\u2191"
+        ],
+        "call_in_time": "5 Seconds",
+        "uses": "Unlimited",
+        "permit_type": null,
+        "cooldown_time": "480 Seconds",
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {
+            "source": "Hangar",
+            "unlock_requirement": "Level 8",
+            "cost": "6000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/supportBackpacks/LIFT-850_Jump_Pack_Icon.svg",
+        "extra_info": []
+    },
+    {
+        "id": "backpack_sh20_ballistic_shield",
+        "name": "SH-20 Ballistic Shield Backpack",
+        "type": "Stratagem",
+        "category": "Backpack",
+        "traits": [
+            "Hellpod",
+            "Backpack"
+        ],
+        "input_code": [
+            "\u2193",
+            "\u2190",
+            "\u2190",
+            "\u2192",
+            "\u2192",
+            "\u2193"
+        ],
+        "call_in_time": "5 Seconds",
+        "uses": "Unlimited",
+        "permit_type": null,
+        "cooldown_time": "300 Seconds",
+        "firepower": {},
+        "weapon_handling": {},
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 12",
+            "cost": "6000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/supportBackpacks/SH-20_Ballistic_Shield_Backpack_Icon.svg",
+        "extra_info": []
     }
-  },
-  {
-    "id": "backpack_axar23_guard_dog",
-    "name": "AX/AR-23 'Guard Dog'",
-    "type": "Stratagem",
-    "category": "Backpack",
-    "traits": [
-      "Hellpod",
-      "Backpack"
-    ],
-    "input_code": ["↓", "←", "←", "→", "→", "→"],
-    "call_in_time": "5 Seconds",
-    "uses": "Unlimited",
-    "cooldown_time": "480 Seconds",
-    "acquisition": {
-      "source": "Robotics Workshop",
-      "unlock_requirement": "Level 10",
-      "cost": "7500"
-    },
-    "description": "An autonomous drone equipped with a Liberator assault rifle, providing 360° cover. Returns to backpack to rearm.",
-    "image": "/assets/stratagemIcons/supportBackpacks/AX_AR-23_Guard_Dog_Icon.svg",
-    "stats": {
-      "damage": 60,
-      "capacity": 45,
-      "fire_rate": 640
-    }
-  },
-  {
-    "id": "backpack_lift850_jump_pack",
-    "name": "LIFT-850 Jump Pack",
-    "type": "Stratagem",
-    "category": "Backpack",
-    "traits": [
-      "Hellpod",
-      "Backpack"
-    ],
-    "input_code": ["↓", "←", "←", "→", "→", "↑"],
-    "call_in_time": "5 Seconds",
-    "uses": "Unlimited",
-    "cooldown_time": "480 Seconds",
-    "acquisition": {
-      "source": "Hangar",
-      "unlock_requirement": "Level 8",
-      "cost": "6000"
-    },
-    "description": "Enables the user to jump higher than 'gravity' and 'safety' would normally allow. Must be charged before use.",
-    "image": "/assets/stratagemIcons/supportBackpacks/LIFT-850_Jump_Pack_Icon.svg"
-  },
-  {
-    "id": "backpack_sh20_ballistic_shield",
-    "name": "SH-20 Ballistic Shield Backpack",
-    "type": "Stratagem",
-    "category": "Backpack",
-    "traits": [
-      "Hellpod",
-      "Backpack"
-    ],
-    "input_code": ["↓", "←", "←", "→", "→", "↓"],
-    "call_in_time": "5 Seconds",
-    "uses": "Unlimited",
-    "cooldown_time": "300 Seconds",
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 12",
-      "cost": "6000"
-    },
-    "description": "A backpack which can be wielded as a one-handed ballistic shield, protecting against small arms fire.",
-    "image": "/assets/stratagemIcons/supportBackpacks/SH-20_Ballistic_Shield_Backpack_Icon.svg"
-  }
 ]

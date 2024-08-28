@@ -1,435 +1,469 @@
 [
-  {
-    "id": "defensive_tesla_tower",
-    "name": "A/ARC-3 Tesla Tower",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Support Weapon",
-      "Hellpod",
-      "Electric"
-    ],
-    "input_code": "↓ ↑ ↓ ↑",
-    "call_in_time": "7.75 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Supply Stratagem",
-    "firepower": {
-      "damage": "WIP",
-      "penetration": "High"
+    {
+        "id": "defensive_tesla_tower",
+        "name": "A/ARC-3 Tesla Tower",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Support Weapon",
+            "Hellpod",
+            "Electric"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2191",
+        "call_in_time": "7.75 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Supply Stratagem",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": "WIP",
+            "penetration": "High"
+        },
+        "weapon_handling": {
+            "lock_on": "1.5s",
+            "range": "20m",
+            "cooldown": "150s"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 15",
+            "cost": "8000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/A_ARC-3_Tesla_Tower_Icon.svg",
+        "extra_info": [
+            "Tesla bolts ignore armor, but it cannot dispatch heavy armored units quickly.",
+            "Effective against small to medium-sized groups.",
+            "Inconveniently placed Tesla Tower can be harmful to team."
+        ]
     },
-    "weapon_handling": {
-      "lock_on": "1.5s",
-      "range": "20m",
-      "cooldown": "150s"
+    {
+        "id": "defensive_ems_mortar_sentry",
+        "name": "A/M-23 EMS Mortar Sentry",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Support Weapon",
+            "Hellpod",
+            "Non-lethal"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2190",
+        "call_in_time": "7.75 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Supply Stratagem",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": "15",
+            "penetration": "WIP"
+        },
+        "weapon_handling": {
+            "lock_on": "2s",
+            "cooldown": "180s",
+            "ems_field_duration": "9s per round"
+        },
+        "ammunition": {
+            "capacity": "10",
+            "spare_rounds": "138"
+        },
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 20",
+            "cost": "8000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/A-M-23_EMS_Mortar_Sentry_Icon.svg",
+        "extra_info": []
     },
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 15",
-      "cost": "8000"
+    {
+        "id": "defensive_mortar_sentry",
+        "name": "A/M-12 Mortar Sentry",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Support Weapon",
+            "Hellpod",
+            "Explosive"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2192",
+        "call_in_time": "7.75 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Supply Stratagem",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": "36",
+            "penetration": "High"
+        },
+        "weapon_handling": {
+            "lock_on": "2s",
+            "cooldown": "180s",
+            "range": "125m"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 8",
+            "cost": "7000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/A_M-12_Mortar_Sentry_Icon.svg",
+        "extra_info": [
+            "Fires in advance of enemy movement; good against large groups and static enemies."
+        ]
     },
-    "extra_info": [
-      "Tesla bolts ignore armor, but it cannot dispatch heavy armored units quickly.",
-      "Effective against small to medium-sized groups.",
-      "Inconveniently placed Tesla Tower can be harmful to team."
-    ],
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_ARC-3_Tesla_Tower_Icon.svg"
-  },
-  {
-    "id": "defensive_ems_mortar_sentry",
-    "name": "A/M-23 EMS Mortar Sentry",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Support Weapon",
-      "Hellpod",
-      "Non-lethal"
-    ],
-    "input_code": "↓ ↑ ↓ ←",
-    "call_in_time": "7.75 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Supply Stratagem",
-    "firepower": {
-      "damage": "15",
-      "penetration": "WIP"
+    {
+        "id": "defensive_rocket_sentry",
+        "name": "A/MLS-4X Rocket Sentry",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Support Weapon",
+            "Hellpod",
+            "Armor Penetrating"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2190",
+        "call_in_time": "7.75 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Supply Stratagem",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": "32",
+            "penetration": "High"
+        },
+        "weapon_handling": {
+            "lock_on": "1.5s",
+            "turning_speed": "24\u00b0/s",
+            "cooldown": "180s",
+            "range": "100m"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 15",
+            "cost": "7500"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/A_MLS-4X_Rocket_Sentry_Icon.svg",
+        "extra_info": [
+            "Slow rotation speed; primarily targets heavy armored units."
+        ]
     },
-    "weapon_handling": {
-      "lock_on": "2s",
-      "cooldown": "180s",
-      "ems_field_duration": "9s per round"
+    {
+        "id": "defensive_autocannon_sentry",
+        "name": "A/AC-8 Autocannon Sentry",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Support Weapon",
+            "Hellpod",
+            "Anti-armor"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2190",
+        "call_in_time": "7.75 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Supply Stratagem",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": "24",
+            "penetration": "High"
+        },
+        "weapon_handling": {
+            "lock_on": "1.5s",
+            "turning_speed": "24\u00b0/s",
+            "cooldown": "180s",
+            "range": "85m"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 13",
+            "cost": "6000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/A_AC-8_Autocannon_Sentry_Icon.svg",
+        "extra_info": [
+            "Effective at long range but struggles at close range.",
+            "Targets heavy units effectively."
+        ]
     },
-    "ammunition": {
-      "capacity": "10",
-      "spare_rounds": "138"
+    {
+        "id": "defensive_gatling_sentry",
+        "name": "A/G-16 Gatling Sentry",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Support Weapon",
+            "Hellpod",
+            "High Rate of Fire"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2192",
+        "call_in_time": "7.75 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Supply Stratagem",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": "390",
+            "penetration": "Medium"
+        },
+        "weapon_handling": {
+            "lock_on": "0.5s",
+            "turning_speed": "72\u00b0/s",
+            "cooldown": "180s",
+            "range": "75m"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 5",
+            "cost": "4000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/A_G-16_Gatling_Sentry_Icon.svg",
+        "extra_info": [
+            "Fast rotation and high rate of fire make it effective against groups.",
+            "May accidentally hit teammates if not carefully positioned."
+        ]
     },
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 20",
-      "cost": "8000"
+    {
+        "id": "defensive_machine_gun_sentry",
+        "name": "A/MG-43 Machine Gun Sentry",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Support Weapon",
+            "Hellpod",
+            "High Precision"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2192",
+        "call_in_time": "7.75 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Supply Stratagem",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": "130",
+            "penetration": "Medium"
+        },
+        "weapon_handling": {
+            "lock_on": "0.1s",
+            "turning_speed": "72\u00b0/s",
+            "cooldown": "180s",
+            "range": "75m"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 3",
+            "cost": "1500"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/A_MG-43_Machine_Gun_Sentry_Icon.svg",
+        "extra_info": [
+            "Highly accurate with lower rate of fire.",
+            "Stops firing while rotating to target."
+        ]
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A-M-23_EMS_Mortar_Sentry_Icon.svg"
-  },
-  {
-    "id": "defensive_mortar_sentry",
-    "name": "A/M-12 Mortar Sentry",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Support Weapon",
-      "Hellpod",
-      "Explosive"
-    ],
-    "input_code": "↓ ↑ ↓ →",
-    "call_in_time": "7.75 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Supply Stratagem",
-    "firepower": {
-      "damage": "36",
-      "penetration": "High"
+    {
+        "id": "defensive_hmg_emplacement",
+        "name": "E/MG-101 HMG Emplacement",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Hellpod"
+        ],
+        "input_code": "\u2193 \u2191 \u2193 \u2193 \u2190",
+        "call_in_time": "3 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Defensive",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": {
+                "standard": "200",
+                "vs_durable": "40"
+            },
+            "penetration": {
+                "direct": "Medium II",
+                "slight_angle": "Medium II",
+                "large_angle": "Medium II",
+                "extreme_angle": "Unarmored"
+            }
+        },
+        "weapon_handling": {
+            "fire_rate": "660 RPM",
+            "cooldown": "180s",
+            "capacity": "300"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Bridge",
+            "unlock_requirement": "Level 10",
+            "cost": "10000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/E_MG-101_HMG_Emplacement_Icon.svg",
+        "extra_info": [
+            "Effective against medium to large groups.",
+            "Requires careful placement to maximize effectiveness."
+        ]
     },
-    "weapon_handling": {
-      "lock_on": "2s",
-      "cooldown": "180s",
-      "range": "125m"
+    {
+        "id": "defensive_shield_generator_relay",
+        "name": "FX-12 Shield Generator Relay",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Hellpod"
+        ],
+        "input_code": "\u2193 \u2190 \u2193 \u2192",
+        "call_in_time": "3 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Defensive",
+        "cooldown_time": null,
+        "firepower": {
+            "shield_capacity": "4000",
+            "shield_regen": "300 shield/s"
+        },
+        "weapon_handling": {
+            "cooldown": "180s",
+            "shield_radius": "8m",
+            "shield_broken_delay": "8s",
+            "shield_regen_delay": "5s",
+            "fire_limit": "30s"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Bridge",
+            "unlock_requirement": "Level 10",
+            "cost": "9000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/FX-12_Shield_Generator_Relay_Icon.svg",
+        "extra_info": [
+            "Provides large area of protection for a limited time.",
+            "Highly effective for protecting objectives and players."
+        ]
     },
-    "extra_info": [
-      "Fires in advance of enemy movement; good against large groups and static enemies."
-    ],
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 8",
-      "cost": "7000"
+    {
+        "id": "defensive_anti_personnel_minefield",
+        "name": "MD-6 Anti-Personnel Minefield",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Hellpod",
+            "Explosive"
+        ],
+        "input_code": "\u2193 \u2192 \u2193 \u2190",
+        "call_in_time": "3 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Defensive",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": {
+                "inner_radius": "350",
+                "outer_radius": "349-0"
+            },
+            "penetration": {
+                "direct": "Unarmored",
+                "slight_angle": "Unarmored",
+                "large_angle": "Unarmored",
+                "extreme_angle": "Unarmored"
+            }
+        },
+        "weapon_handling": {
+            "cooldown": "180s",
+            "capacity": "48"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 2",
+            "cost": "1500"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/MD-6_Anti-Personnel_Minefield_Icon.svg",
+        "extra_info": [
+            "Effective for controlling large areas and preventing enemy advancement."
+        ]
     },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_M-12_Mortar_Sentry_Icon.svg"
-  },
-  {
-    "id": "defensive_rocket_sentry",
-    "name": "A/MLS-4X Rocket Sentry",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Support Weapon",
-      "Hellpod",
-      "Armor Penetrating"
-    ],
-    "input_code": "↓ ↑ ↓ ←",
-    "call_in_time": "7.75 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Supply Stratagem",
-    "firepower": {
-      "damage": "32",
-      "penetration": "High"
+    {
+        "id": "defensive_incendiary_minefield",
+        "name": "MD-I4 Incendiary Minefield",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Hellpod",
+            "Explosive"
+        ],
+        "input_code": "\u2193 \u2192 \u2193 \u2193",
+        "call_in_time": "3 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Defensive",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": {
+                "inner_radius": "210",
+                "outer_radius": "209-0"
+            },
+            "penetration": {
+                "inner_radius": "Medium I",
+                "outer_radius": "Light II",
+                "shockwave": "Medium I"
+            }
+        },
+        "weapon_handling": {
+            "cooldown": "180s",
+            "capacity": "48"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 8",
+            "cost": "4000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/MD-I4_Incendiary_Mines_Icon.svg",
+        "extra_info": [
+            "Highly effective against groups and causes burning damage over time."
+        ]
     },
-    "weapon_handling": {
-      "lock_on": "1.5s",
-      "turning_speed": "24°/s",
-      "cooldown": "180s",
-      "range": "100m"
-    },
-    "extra_info": [
-      "Slow rotation speed; primarily targets heavy armored units."
-    ],
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 15",
-      "cost": "7500"
-    },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MLS-4X_Rocket_Sentry_Icon.svg"
-  },
-  {
-    "id": "defensive_autocannon_sentry",
-    "name": "A/AC-8 Autocannon Sentry",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Support Weapon",
-      "Hellpod",
-      "Anti-armor"
-    ],
-    "input_code": "↓ ↑ ↓ ←",
-    "call_in_time": "7.75 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Supply Stratagem",
-    "firepower": {
-      "damage": "24",
-      "penetration": "High"
-    },
-    "weapon_handling": {
-      "lock_on": "1.5s",
-      "turning_speed": "24°/s",
-      "cooldown": "180s",
-      "range": "85m"
-    },
-    "extra_info": [
-      "Effective at long range but struggles at close range.",
-      "Targets heavy units effectively."
-    ],
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 13",
-      "cost": "6000"
-    },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_AC-8_Autocannon_Sentry_Icon.svg"
-  },
-  {
-    "id": "defensive_gatling_sentry",
-    "name": "A/G-16 Gatling Sentry",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Support Weapon",
-      "Hellpod",
-      "High Rate of Fire"
-    ],
-    "input_code": "↓ ↑ ↓ →",
-    "call_in_time": "7.75 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Supply Stratagem",
-    "firepower": {
-      "damage": "390",
-      "penetration": "Medium"
-    },
-    "weapon_handling": {
-      "lock_on": "0.5s",
-      "turning_speed": "72°/s",
-      "cooldown": "180s",
-      "range": "75m"
-    },
-    "extra_info": [
-      "Fast rotation and high rate of fire make it effective against groups.",
-      "May accidentally hit teammates if not carefully positioned."
-    ],
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 5",
-      "cost": "4000"
-    },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_G-16_Gatling_Sentry_Icon.svg"
-  },
-  {
-    "id": "defensive_machine_gun_sentry",
-    "name": "A/MG-43 Machine Gun Sentry",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Support Weapon",
-      "Hellpod",
-      "High Precision"
-    ],
-    "input_code": "↓ ↑ ↓ →",
-    "call_in_time": "7.75 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Supply Stratagem",
-    "firepower": {
-      "damage": "130",
-      "penetration": "Medium"
-    },
-    "weapon_handling": {
-      "lock_on": "0.1s",
-      "turning_speed": "72°/s",
-      "cooldown": "180s",
-      "range": "75m"
-    },
-    "extra_info": [
-      "Highly accurate with lower rate of fire.",
-      "Stops firing while rotating to target."
-    ],
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 3",
-      "cost": "1500"
-    },
-    "image": "/assets/stratagemIcons/defensiveEmplacements/A_MG-43_Machine_Gun_Sentry_Icon.svg"
-  },
-  {
-    "id": "defensive_hmg_emplacement",
-    "name": "E/MG-101 HMG Emplacement",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Hellpod"
-    ],
-    "input_code": "↓ ↑ ↓ ↓ ←",
-    "call_in_time": "3 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Defensive",
-    "firepower": {
-      "damage": {
-        "standard": "200",
-        "vs_durable": "40"
-      },
-      "penetration": {
-        "direct": "Medium II",
-        "slight_angle": "Medium II",
-        "large_angle": "Medium II",
-        "extreme_angle": "Unarmored"
-      }
-    },
-    "weapon_handling": {
-      "fire_rate": "660 RPM",
-      "cooldown": "180s",
-      "capacity": "300"
-    },
-    "acquisition": {
-      "source": "Bridge",
-      "unlock_requirement": "Level 10",
-      "cost": "10000"
-    },
-    "extra_info": [
-      "Effective against medium to large groups.",
-      "Requires careful placement to maximize effectiveness."
-    ],
-    "image": "/assets/stratagemIcons/defensiveEmplacements/E_MG-101_HMG_Emplacement_Icon.svg"
-  },
-  {
-    "id": "defensive_shield_generator_relay",
-    "name": "FX-12 Shield Generator Relay",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Hellpod"
-    ],
-    "input_code": "↓ ← ↓ →",
-    "call_in_time": "3 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Defensive",
-    "firepower": {
-      "shield_capacity": "4000",
-      "shield_regen": "300 shield/s"
-    },
-    "weapon_handling": {
-      "cooldown": "180s",
-      "shield_radius": "8m",
-      "shield_broken_delay": "8s",
-      "shield_regen_delay": "5s",
-      "fire_limit": "30s"
-    },
-    "acquisition": {
-      "source": "Bridge",
-      "unlock_requirement": "Level 10",
-      "cost": "9000"
-    },
-    "extra_info": [
-      "Provides large area of protection for a limited time.",
-      "Highly effective for protecting objectives and players."
-    ],
-    "image": "/assets/stratagemIcons/defensiveEmplacements/FX-12_Shield_Generator_Relay_Icon.svg"
-  },
-  {
-    "id": "defensive_anti_personnel_minefield",
-    "name": "MD-6 Anti-Personnel Minefield",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Hellpod",
-      "Explosive"
-    ],
-    "input_code": "↓ → ↓ ←",
-    "call_in_time": "3 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Defensive",
-    "firepower": {
-      "damage": {
-        "inner_radius": "350",
-        "outer_radius": "349-0"
-      },
-      "penetration": {
-        "direct": "Unarmored",
-        "slight_angle": "Unarmored",
-        "large_angle": "Unarmored",
-        "extreme_angle": "Unarmored"
-      }
-    },
-    "weapon_handling": {
-      "cooldown": "180s",
-      "capacity": "48"
-    },
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 2",
-      "cost": "1500"
-    },
-    "extra_info": [
-      "Effective for controlling large areas and preventing enemy advancement."
-    ],
-    "image": "/assets/stratagemIcons/defensiveEmplacements/MD-6_Anti-Personnel_Minefield_Icon.svg"
-  },
-  {
-    "id": "defensive_incendiary_minefield",
-    "name": "MD-I4 Incendiary Minefield",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Hellpod",
-      "Explosive"
-    ],
-    "input_code": "↓ → ↓ ↓",
-    "call_in_time": "3 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Defensive",
-    "firepower": {
-      "damage": {
-        "inner_radius": "210",
-        "outer_radius": "209-0"
-      },
-      "penetration": {
-        "inner_radius": "Medium I",
-        "outer_radius": "Light II",
-        "shockwave": "Medium I"
-      }
-    },
-    "weapon_handling": {
-      "cooldown": "180s",
-      "capacity": "48"
-    },
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 8",
-      "cost": "4000"
-    },
-    "extra_info": [
-      "Highly effective against groups and causes burning damage over time."
-    ],
-    "image": "/assets/stratagemIcons/defensiveEmplacements/MD-I4_Incendiary_Mines_Icon.svg"
-  },
-  {
-    "id": "defensive_anti_tank_mines",
-    "name": "MD-17 Anti-Tank Mines",
-    "type": "Stratagem",
-    "category": "Defensive",
-    "traits": [
-      "Hellpod",
-      "Explosive"
-    ],
-    "input_code": "↓ ↑ ↑ ↑",
-    "call_in_time": "3 Seconds",
-    "uses": "Unlimited",
-    "permit_type": "Defensive",
-    "firepower": {
-      "damage": {
-        "inner_radius": "1000",
-        "outer_radius": "999-0"
-      },
-      "penetration": {
-        "inner_radius": "Heavy I",
-        "outer_radius": "Medium II",
-        "shockwave": "Heavy I"
-      }
-    },
-    "weapon_handling": {
-      "cooldown": "180s",
-      "capacity": "18"
-    },
-    "acquisition": {
-      "source": "Engineering Bay",
-      "unlock_requirement": "Level 15",
-      "cost": "7000"
-    },
-    "extra_info": [
-      "Highly effective against armored vehicles and large enemy units.",
-      "Best deployed in areas where vehicles are likely to pass."
-    ],
-    "image": "/assets/stratagemIcons/defensiveEmplacements/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp"
-  }
-  
-  
+    {
+        "id": "defensive_anti_tank_mines",
+        "name": "MD-17 Anti-Tank Mines",
+        "type": "Stratagem",
+        "category": "Defensive",
+        "traits": [
+            "Hellpod",
+            "Explosive"
+        ],
+        "input_code": "\u2193 \u2191 \u2191 \u2191",
+        "call_in_time": "3 Seconds",
+        "uses": "Unlimited",
+        "permit_type": "Defensive",
+        "cooldown_time": null,
+        "firepower": {
+            "damage": {
+                "inner_radius": "1000",
+                "outer_radius": "999-0"
+            },
+            "penetration": {
+                "inner_radius": "Heavy I",
+                "outer_radius": "Medium II",
+                "shockwave": "Heavy I"
+            }
+        },
+        "weapon_handling": {
+            "cooldown": "180s",
+            "capacity": "18"
+        },
+        "ammunition": {},
+        "acquisition": {
+            "source": "Engineering Bay",
+            "unlock_requirement": "Level 15",
+            "cost": "7000"
+        },
+        "details": {},
+        "image": "/assets/stratagemIcons/defensiveEmplacements/MD-17_Anti-Tank_Mines_Stratagem_Icon.webp",
+        "extra_info": [
+            "Highly effective against armored vehicles and large enemy units.",
+            "Best deployed in areas where vehicles are likely to pass."
+        ]
+    }
 ]
