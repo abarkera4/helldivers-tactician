@@ -7,6 +7,7 @@ import orbitalStratagems from "../data/orbitalStratagems.json";
 import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
+import OrbitalStratagemDetails from "../components/OrbitalStratagemDetails";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -27,17 +28,6 @@ function StratagemDetail() {
   if (!stratagem) {
     return <h1>Loading...</h1>;
   }
-
-  const renderDetails = (details) => {
-    if (!details) return null;
-
-    return Object.entries(details).map(([key, value]) => (
-      <div key={key} className="details-section">
-        <h3>{key}</h3>
-        {typeof value === "object" ? renderDetails(value) : <p>{`${key}: ${value}`}</p>}
-      </div>
-    ));
-  };
 
   return (
     <div className="stratagem-detail-container">
@@ -60,7 +50,7 @@ function StratagemDetail() {
 
         <div className="stat-section">
           <h2>Details</h2>
-          {renderDetails(stratagem.details)}
+          <OrbitalStratagemDetails details={stratagem.details} />
         </div>
       </div>
     </div>
