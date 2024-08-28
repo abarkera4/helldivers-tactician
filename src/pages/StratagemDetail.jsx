@@ -28,6 +28,86 @@ function StratagemDetail() {
     return <h1>Loading...</h1>;
   }
 
+  const renderWeaponHandling = (weaponHandling) => {
+    return (
+      weaponHandling && (
+        <div className="stratagem-stats-section">
+          <div className="stat-header">Weapon Handling</div>
+          {weaponHandling.fire_modes && <div className="stat-value">Fire Modes: {weaponHandling.fire_modes}</div>}
+          {weaponHandling.recoil && <div className="stat-value">Recoil: {weaponHandling.recoil}</div>}
+          {weaponHandling.fire_rate && <div className="stat-value">Fire Rate: {Array.isArray(weaponHandling.fire_rate) ? weaponHandling.fire_rate.join(", ") : weaponHandling.fire_rate}</div>}
+          {weaponHandling.cooldown && <div className="stat-value">Cooldown: {weaponHandling.cooldown}</div>}
+        </div>
+      )
+    );
+  };
+
+  const renderFirepower = (firepower) => {
+    return (
+      firepower && (
+        <div className="stratagem-stats-section">
+          <div className="stat-header">Firepower</div>
+          <div className="stat-value">Damage: {firepower.damage || "N/A"}</div>
+          {firepower.penetration_level && <div className="stat-value">Penetration Level: {firepower.penetration_level}</div>}
+        </div>
+      )
+    );
+  };
+
+  const renderAmmunition = (ammunition) => {
+    return (
+      ammunition && (
+        <div className="stratagem-stats-section">
+          <div className="stat-header">Ammunition</div>
+          {ammunition.ammo_capacity && <div className="stat-value">Ammo Capacity: {ammunition.ammo_capacity}</div>}
+          {ammunition.spare_clips && <div className="stat-value">Spare Clips: {ammunition.spare_clips}</div>}
+          {ammunition.spare_canisters && <div className="stat-value">Spare Canisters: {ammunition.spare_canisters}</div>}
+          {ammunition.spare_heat_sinks && <div className="stat-value">Spare Heat Sinks: {ammunition.spare_heat_sinks}</div>}
+        </div>
+      )
+    );
+  };
+
+  const renderAcquisition = (acquisition) => {
+    return (
+      acquisition && (
+        <div className="stratagem-stats-section">
+          <div className="stat-header">Acquisition</div>
+          <div className="stat-value">Source: {acquisition.source || "N/A"}</div>
+          <div className="stat-value">Cost: {acquisition.cost || "N/A"}</div>
+          <div className="stat-value">Unlock Requirement: {acquisition.unlock_requirement || "N/A"}</div>
+        </div>
+      )
+    );
+  };
+
+  const renderDetailedStats = (detailedStats) => {
+    if (!detailedStats) return null;
+
+    return (
+      <div className="stratagem-stats-section">
+        <div className="stat-header">Detailed Stats</div>
+        {detailedStats.projectile && (
+          <div>
+            <h4>Projectile:</h4>
+            <div className="stat-value">Caliber: {detailedStats.projectile.caliber}</div>
+            <div className="stat-value">Mass: {detailedStats.projectile.mass}</div>
+            <div className="stat-value">Initial Velocity: {detailedStats.projectile.initial_velocity}</div>
+            <div className="stat-value">Damage: {detailedStats.projectile.damage.standard} (Standard)</div>
+          </div>
+        )}
+        {detailedStats.explosion && (
+          <div>
+            <h4>Explosion:</h4>
+            <div className="stat-value">Damage: {detailedStats.explosion.damage}</div>
+            <div className="stat-value">Inner Radius: {detailedStats.explosion.inner_radius}</div>
+            <div className="stat-value">Outer Radius: {detailedStats.explosion.outer_radius}</div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   return (
     <div className="stratagem-detail-container">
       <div className="wiki-content">
@@ -42,40 +122,11 @@ function StratagemDetail() {
         <h1 className="stratagem-title">{stratagem.name}</h1>
         <p className="stratagem-category">{stratagem.category}</p>
 
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Firepower</div>
-          <div className="stat-value">Damage: {stratagem.firepower?.damage || "N/A"}</div>
-          <div className="stat-value">Penetration Level: {stratagem.firepower?.penetration_level || stratagem.firepower?.penetration || "N/A"}</div>
-        </div>
-
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Weapon Handling</div>
-          <div className="stat-value">Fire Modes: {stratagem.weapon_handling?.fire_modes || "N/A"}</div>
-          <div className="stat-value">Cooldown: {stratagem.weapon_handling?.cooldown || stratagem.cooldown_time || "N/A"}</div>
-        </div>
-
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Ammunition</div>
-          <div className="stat-value">Ammo Capacity: {stratagem.ammunition?.ammo_capacity || stratagem.ammunition?.capacity || "N/A"}</div>
-          <div className="stat-value">Spare Clips/Rounds: {stratagem.ammunition?.spare_clips || stratagem.ammunition?.spare_rounds || "N/A"}</div>
-        </div>
-
-        <div className="stratagem-stats-section">
-          <div className="stat-header">Acquisition</div>
-          <div className="stat-value">Source: {stratagem.acquisition?.source || "N/A"}</div>
-          <div className="stat-value">Cost: {stratagem.acquisition?.cost || "N/A"}</div>
-        </div>
-
-        {stratagem.extra_info && stratagem.extra_info.length > 0 && (
-          <div className="stratagem-stats-section">
-            <div className="stat-header">Additional Information</div>
-            {stratagem.extra_info.map((info, index) => (
-              <div key={index} className="stat-value">
-                {info}
-              </div>
-            ))}
-          </div>
-        )}
+        {renderFirepower(stratagem.firepower)}
+        {renderWeaponHandling(stratagem.weapon_handling)}
+        {renderAmmunition(stratagem.ammunition)}
+        {renderAcquisition(stratagem.acquisition)}
+        {renderDetailedStats(stratagem.detailed_stats)}
       </div>
     </div>
   );
