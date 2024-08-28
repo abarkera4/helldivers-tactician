@@ -52,7 +52,8 @@
 }
 
 .stratagem-image {
-  max-width: 100%;
+  width: 100%;
+  max-width: 200%;
   border-radius: 10px;
   border: 2px solid #00aaff;
   margin-bottom: 20px; /* Increase margin to match larger icon */
