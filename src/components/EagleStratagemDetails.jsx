@@ -8,11 +8,15 @@ const EagleStratagemDetails = ({ details }) => {
       <div className="detail-section">
         <h4>{title}</h4>
         <ul>
-          {Object.entries(detailData).map(([key, value]) => (
-            <li key={key}>
-              <strong>{key}:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
-            </li>
-          ))}
+          {typeof detailData === "object" ? (
+            Object.entries(detailData).map(([key, value]) => (
+              <li key={key}>
+                <strong>{key}:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
+              </li>
+            ))
+          ) : (
+            <li>{detailData}</li>
+          )}
         </ul>
       </div>
     );
@@ -22,7 +26,6 @@ const EagleStratagemDetails = ({ details }) => {
     <div className="eagle-stratagem-details">
       {Object.entries(details).map(([key, value]) => (
         <div key={key} className="stratagem-part">
-          <h3>{key}</h3>
           {renderDetailSection(key, value)}
         </div>
       ))}

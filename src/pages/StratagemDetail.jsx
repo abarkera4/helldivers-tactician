@@ -31,16 +31,15 @@ function StratagemDetail() {
     return <h1>Loading...</h1>;
   }
 
-  const renderStratagemDetails = () => {
-    if (orbitalStratagems.some((orbital) => orbital.id === stratagem.id)) {
-      return <OrbitalStratagemDetails details={stratagem.details} />;
-    } else if (eagleStratagems.some((eagle) => eagle.id === stratagem.id)) {
+  const renderDetails = () => {
+    if (stratagem.category === "Offensive Stratagem" && stratagem.type.includes("Eagle")) {
       return <EagleStratagemDetails details={stratagem.details} />;
-    } else if (supportWeaponsStratagems.some((support) => support.id === stratagem.id)) {
-      return <SupportWeaponStratagemDetails details={stratagem.details} />;
-    } else {
-      return <p>No detailed information available.</p>;
+    } else if (stratagem.category === "Support Weapon") {
+      return <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} />;
+    } else if (stratagem.type === "Orbital") {
+      return <OrbitalStratagemDetails details={stratagem.details} />;
     }
+    return null;
   };
 
   return (
@@ -64,7 +63,7 @@ function StratagemDetail() {
 
         <div className="stat-section">
           <h2>Details</h2>
-          {renderStratagemDetails()}
+          {renderDetails()}
         </div>
       </div>
     </div>
