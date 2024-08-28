@@ -8,29 +8,17 @@ const EagleStratagemDetails = ({ details }) => {
       <div className="detail-section">
         <h4>{title}</h4>
         <ul>
-          {typeof detailData === "object" ? (
-            Object.entries(detailData).map(([key, value]) => (
-              <li key={key}>
-                <strong>{key}:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
-              </li>
-            ))
-          ) : (
-            <li>{detailData}</li>
-          )}
+          {Object.entries(detailData).map(([key, value]) => (
+            <li key={key}>
+              <strong>{key}:</strong> {value}
+            </li>
+          ))}
         </ul>
       </div>
     );
   };
 
-  return (
-    <div className="eagle-stratagem-details">
-      {Object.entries(details).map(([key, value]) => (
-        <div key={key} className="stratagem-part">
-          {renderDetailSection(key, value)}
-        </div>
-      ))}
-    </div>
-  );
+  return <div className="eagle-stratagem-details">{Object.entries(details).map(([key, value]) => renderDetailSection(key, { [key]: value }))}</div>;
 };
 
 export default EagleStratagemDetails;

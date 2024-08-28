@@ -23,7 +23,7 @@ const OrbitalStratagemDetails = ({ details }) => {
       {Object.entries(details).map(([key, value]) => (
         <div key={key} className="stratagem-part">
           <h3>{key}</h3>
-          {Object.entries(value).map(([subKey, subValue]) => renderDetailSection(subKey, subValue))}
+          {typeof value === "object" ? Object.entries(value).map(([subKey, subValue]) => renderDetailSection(subKey, subValue)) : renderDetailSection(key, { [key]: value })}
         </div>
       ))}
     </div>

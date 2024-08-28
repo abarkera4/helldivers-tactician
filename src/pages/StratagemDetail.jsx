@@ -32,12 +32,12 @@ function StratagemDetail() {
   }
 
   const renderDetails = () => {
-    if (stratagem.category === "Offensive Stratagem" && stratagem.type.includes("Eagle")) {
-      return <EagleStratagemDetails details={stratagem.details} />;
-    } else if (stratagem.category === "Support Weapon") {
-      return <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} />;
-    } else if (stratagem.type === "Orbital") {
+    if (orbitalStratagems.some((s) => s.id === stratagem.id)) {
       return <OrbitalStratagemDetails details={stratagem.details} />;
+    } else if (eagleStratagems.some((s) => s.id === stratagem.id)) {
+      return <EagleStratagemDetails details={stratagem.details} />;
+    } else if (supportWeaponsStratagems.some((s) => s.id === stratagem.id)) {
+      return <SupportWeaponStratagemDetails details={stratagem.details} />;
     }
     return null;
   };
