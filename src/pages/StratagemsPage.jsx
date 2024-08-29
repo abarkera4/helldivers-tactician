@@ -72,7 +72,7 @@ function StratagemsPage() {
                       {supportWeaponsByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
                           <div className="stratagem-item">
-                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image-small" />}
                             <p className="stratagem-name">{stratagem.name}</p>
                           </div>
                         </a>
@@ -95,7 +95,7 @@ function StratagemsPage() {
                       {backpackStratagemsByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
                           <div className="stratagem-item">
-                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image-small" />}
                             <p className="stratagem-name">{stratagem.name}</p>
                           </div>
                         </a>
@@ -117,7 +117,7 @@ function StratagemsPage() {
                       {vehiclesByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
                           <div className="stratagem-item">
-                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image-small" />}
                             <p className="stratagem-name">{stratagem.name}</p>
                           </div>
                         </a>
@@ -142,7 +142,7 @@ function StratagemsPage() {
                       {eagleStrikesByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
                           <div className="stratagem-item">
-                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image-small" />}
                             <p className="stratagem-name">{stratagem.name}</p>
                           </div>
                         </a>
@@ -165,7 +165,7 @@ function StratagemsPage() {
                       {orbitalStrikesByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
                           <div className="stratagem-item">
-                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image-small" />}
                             <p className="stratagem-name">{stratagem.name}</p>
                           </div>
                         </a>
@@ -188,7 +188,7 @@ function StratagemsPage() {
                       {defensiveStratagemsByCategory[category].map((stratagem) => (
                         <a key={stratagem.id} href={`/stratagem/${stratagem.id}`} className="stratagem-item-link">
                           <div className="stratagem-item">
-                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image" />}
+                            {stratagem.image && <img src={stratagem.image} alt={stratagem.name} className="stratagem-image-small" />}
                             <p className="stratagem-name">{stratagem.name}</p>
                           </div>
                         </a>
