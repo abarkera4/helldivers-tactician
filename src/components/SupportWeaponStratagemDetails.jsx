@@ -1,6 +1,12 @@
 import React from "react";
 
 const SupportWeaponStratagemDetails = ({ details, firepower, weaponHandling, ammunition, acquisition }) => {
+  console.log("Support Weapon Details: ", details);
+  console.log("Firepower: ", firepower);
+  console.log("Weapon Handling: ", weaponHandling);
+  console.log("Ammunition: ", ammunition);
+  console.log("Acquisition: ", acquisition);
+
   if (!details && !firepower && !weaponHandling && !ammunition && !acquisition) return null;
 
   const renderDetailSection = (title, detailData) => {
