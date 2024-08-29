@@ -33,7 +33,7 @@
         "image": "/assets/thrownWeapons/G-10_Incendiary.webp"
     },
     {
-        "id": "g_16_frag",
+        "id": "throw_g16_frag",
         "name": "G-16 Impact",
         "type": "Thrown",
         "category": "Special Throwable",
@@ -44,7 +44,7 @@
         "image": "/assets/thrownWeapons/G-16_Impact.webp"
       },
       {
-        "id": "g_13_incendiary_impact",
+        "id": "throw_g13_incendiary_impact",
         "name": "G-13 Incendiary Impact",
         "type": "Thrown",
         "category": "Special Throwable",
@@ -55,7 +55,7 @@
         "image": "/assets/thrownWeapons/Incen_impact.webp"
       },
       {
-        "id": "g_23_stun",
+        "id": "throw_g23_stun",
         "name": "G-23 Stun",
         "type": "Thrown",
         "category": "Special Throwable",
@@ -66,7 +66,7 @@
         "image": "/assets/thrownWeapons/G-23_Stun.webp"
       },      
       {
-        "id": "g3_smoke",
+        "id": "throw_g3_smoke",
         "name": "G-3 Smoke",
         "type": "Thrown",
         "category": "Special Throwable",
@@ -77,7 +77,7 @@
         "image": "/assets/thrownWeapons/G-3_Smoke.webp"
     },    
     {
-        "id": "g123_thermite",
+        "id": "throw_g123_thermite",
         "name": "G-123 Thermite",
         "type": "Thrown",
         "category": "Special Throwable",
@@ -88,7 +88,7 @@
         "image": "/assets/thrownWeapons/G-123_Thermite.webp"
     },
     {
-        "id": "k2_throwing_knife",
+        "id": "throw_k2_throwing_knife",
         "name": "K-2 Throwing Knife",
         "type": "Thrown",
         "category": "Special Throwable",
