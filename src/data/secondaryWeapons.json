@@ -17,7 +17,7 @@
         "firing_modes": [
             "Semi"
         ],
-        "scope_options": "N/A",
+        "scope_options": [],
         "source": "Starter Equipment",
         "image": "/assets/secondaryWeapons/P2_Peacemaker.webp"
     },
@@ -40,7 +40,7 @@
             "Auto",
             "Semi"
         ],
-        "scope_options": "N/A",
+        "scope_options": [],
         "source": "Helldivers Mobilize, page 2",
         "cost": "5 Medals",
         "image": "/assets/secondaryWeapons/P-19_Redeemer_no_mag.webp"
@@ -49,7 +49,7 @@
         "id": "sec_p4_senator",
         "name": "P-4 Senator",
         "type": "Secondary",
-        "category": "Revolver",
+        "category": "Pistol",
         "standard_damage": 175,
         "max_penetration": 0,
         "capacity": 6,
@@ -64,7 +64,7 @@
         "firing_modes": [
             "Semi"
         ],
-        "scope_options": "N/A",
+        "scope_options": [],
         "source": "Steeled Veterans, page 1",
         "cost": "15 Medals",
         "image": "/assets/secondaryWeapons/P-4_Senator.webp"
@@ -87,7 +87,7 @@
         "firing_modes": [
             "Semi"
         ],
-        "scope_options": "N/A",
+        "scope_options": [],
         "source": "Polar Patriots, page 3",
         "cost": "60 Medals",
         "image": "/assets/secondaryWeapons/Verdict_render.webp"
@@ -96,7 +96,7 @@
         "id": "sec_sg22_bushwhacker",
         "name": "SG-22 Bushwhacker",
         "type": "Secondary",
-        "category": "Shotgun",
+        "category": "Special",
         "standard_damage": 0,
         "max_penetration": "Light II",
         "capacity": 3,
@@ -157,7 +157,7 @@
         "id": "sec_las7_dagger",
         "name": "LAS-7 Dagger",
         "type": "Secondary",
-        "category": "Energy-Based",
+        "category": "Special",
         "standard_damage": 200,
         "max_penetration": 0,
         "capacity": "Infinite",
