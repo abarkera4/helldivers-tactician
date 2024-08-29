@@ -18,17 +18,16 @@
 }
 
 .stratagems-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   max-width: 1400px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .stratagem-columns > div {
-  flex: 1 1 48%;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .stratagem-category {
