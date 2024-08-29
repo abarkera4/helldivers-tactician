@@ -17,10 +17,10 @@
   margin-bottom: 20px;
 }
 
-.stratagem-columns {
+.stratagems-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 40px; /* Increase the gap between columns */
   max-width: 1400px;
   width: 100%;
   box-sizing: border-box;
@@ -33,19 +33,19 @@
 
 .stratagem-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Adjust to display 3 items horizontally */
   gap: 15px;
 }
 
 .stratagem-item {
   text-align: center;
-  padding: 8px;
+  padding: 6px; /* Slightly reduce padding */
   background-color: #2c2c2c;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 150px;
-  max-width: 170px;
+  width: 130px; /* Slightly reduce width */
+  max-width: 150px; /* Adjust max-width */
 }
 
 .stratagem-item-link {
@@ -61,11 +61,11 @@
 .stratagem-image {
   width: 100%;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* Slightly reduce margin */
 }
 
 .stratagem-name {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Slightly reduce font size */
   color: #f0f0f0;
   text-transform: uppercase;
   text-decoration: none;
