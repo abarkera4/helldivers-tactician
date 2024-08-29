@@ -20,8 +20,8 @@
 .stratagem-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px; /* Increase the gap between columns */
-  max-width: 1400px;
+  gap: 20px;
+  max-width: 1600px; /* Increased width to allow more content */
   width: 100%;
   box-sizing: border-box;
 }
@@ -33,7 +33,7 @@
 
 .stratagem-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust to display 3 items horizontally */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusted for flexibility */
   gap: 15px;
 }
 
@@ -44,10 +44,8 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 130px;  /* Adjust width to fit container */
-  max-width: 130px; /* Keep max-width consistent with width */
-  overflow: hidden; /* Prevent any overflow */
-  box-sizing: border-box; /* Include padding in width calculation */
+  max-width: 170px;
+  margin: 0 auto; /* Center the items */
 }
 
 .stratagem-item-link {
@@ -64,9 +62,9 @@
 }
 
 .stratagem-image-small {
-  width: 100px;  /* Explicitly set width */
-  height: 100px; /* Explicitly set height */
-  margin-bottom: 10px;
+  width: 100px; /* Adjusted for a better fit */
+  height: auto;
+  margin-bottom: 15px;
   object-fit: contain; /* Ensures the image scales correctly */
 }
 
