@@ -5,7 +5,7 @@
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: #1f1f1f; /* Slightly darker background */
+  background-color: #1f1f1f;
   padding: 20px;
   border-radius: 10px;
 }
@@ -19,40 +19,38 @@
 
 .stratagems-columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1400px; /* Increased from 1200px */
+  max-width: 1400px;
   width: 100%;
   box-sizing: border-box;
 }
 
-
 .stratagem-columns > div {
-  width: 48%;
+  flex: 1 1 48%;
+  box-sizing: border-box;
 }
 
 .stratagem-category {
-  overflow-x: auto; /* Allows horizontal scroll */
-  padding-bottom: 10px; /* Add some space for the scrollbar */
+  margin-bottom: 20px;
+  width: 100%;
 }
-
 
 .stratagem-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-  gap: 15px; /* Reduced gap to fit more items */
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
 }
-
 
 .stratagem-item {
   text-align: center;
-  padding: 8px; /* Reduced from 10px */
+  padding: 8px;
   background-color: #2c2c2c;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 150px; /* Reduced from 180px */
-  max-width: 170px; /* Reduced from 200px */
+  width: 150px;
+  max-width: 170px;
 }
 
 .stratagem-item-link {
@@ -66,12 +64,12 @@
 }
 
 .stratagem-image {
-  max-width: 70%; /* Reduced from 75% */
-  margin-bottom: 15px; /* Reduced from 20px */
+  max-width: 70%;
+  margin-bottom: 15px;
 }
 
 .stratagem-name {
-  font-size: 1.2rem; /* Reduced from 1.4rem */
+  font-size: 1.2rem;
   color: #f0f0f0;
   text-transform: uppercase;
   text-decoration: none;
