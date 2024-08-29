@@ -26,10 +26,6 @@
   box-sizing: border-box;
 }
 
-.stratagem-columns > div {
-  width: 100%;
-}
-
 .stratagem-category {
   margin-bottom: 20px;
   width: 100%;
@@ -64,7 +60,7 @@
 
 .stratagem-image {
   width: 100%;
-  height: auto; /* Ensures the image height scales with the width */
+  height: auto;
   margin-bottom: 15px;
 }
 
