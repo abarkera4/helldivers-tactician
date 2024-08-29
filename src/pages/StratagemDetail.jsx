@@ -12,6 +12,7 @@ import OrbitalStratagemDetails from "../components/OrbitalStratagemDetails.jsx";
 import EagleStratagemDetails from "../components/EagleStratagemDetails.jsx";
 import VehicleStratagemDetails from "../components/VehicleStratagemDetails.jsx";
 import BackpackStratagemDetails from "../components/BackpackStratagemDetails.jsx";
+import DefensiveStratagemDetails from "../components/DefensiveStratagemDetails.jsx";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -44,6 +45,8 @@ function StratagemDetail() {
       return <VehicleStratagemDetails firepower={stratagem.firepower} acquisition={stratagem.acquisition} />;
     } else if (backpackStratagems.some((backpack) => backpack.id === stratagem.id)) {
       return <BackpackStratagemDetails acquisition={stratagem.acquisition} callInTime={stratagem.call_in_time} uses={stratagem.uses} cooldownTime={stratagem.cooldown_time} />;
+    } else if (defensiveStratagems.some((defensive) => defensive.id === stratagem.id)) {
+      return <DefensiveStratagemDetails firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} acquisition={stratagem.acquisition} />;
     } else {
       return <p>No detailed information available.</p>;
     }

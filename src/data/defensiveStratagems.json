@@ -13,15 +13,15 @@
         "call_in_time": "7.75 Seconds",
         "uses": "Unlimited",
         "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
+        "cooldown_time": "150s",
         "firepower": {
-            "damage": "WIP",
-            "penetration": "High"
+            "damage": "600",
+            "damage_vs_durable": "600",
+            "penetration": "Medium II"
         },
         "weapon_handling": {
             "lock_on": "1.5s",
-            "range": "20m",
-            "cooldown": "150s"
+            "range": "20m"
         },
         "ammunition": {},
         "acquisition": {
@@ -51,19 +51,18 @@
         "call_in_time": "7.75 Seconds",
         "uses": "Unlimited",
         "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
-            "damage": "15",
-            "penetration": "WIP"
+            "damage": "20",
+            "damage_vs_durable": "2",
+            "penetration": "None"
         },
         "weapon_handling": {
             "lock_on": "2s",
-            "cooldown": "180s",
             "ems_field_duration": "9s per round"
         },
         "ammunition": {
-            "capacity": "10",
-            "spare_rounds": "138"
+            "capacity": "15"
         },
         "acquisition": {
             "source": "Engineering Bay",
@@ -88,14 +87,14 @@
         "call_in_time": "7.75 Seconds",
         "uses": "Unlimited",
         "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
-            "damage": "36",
-            "penetration": "High"
+            "damage": "400",
+            "damage_vs_durable": "2",
+            "penetration": "Medium I"
         },
         "weapon_handling": {
             "lock_on": "2s",
-            "cooldown": "180s",
             "range": "125m"
         },
         "ammunition": {},
@@ -124,15 +123,15 @@
         "call_in_time": "7.75 Seconds",
         "uses": "Unlimited",
         "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
-            "damage": "32",
-            "penetration": "High"
+            "damage": "300",
+            "damage_vs_durable": "300",
+            "penetration": "Heavy I"
         },
         "weapon_handling": {
             "lock_on": "1.5s",
             "turning_speed": "24\u00b0/s",
-            "cooldown": "180s",
             "range": "100m"
         },
         "ammunition": {},
@@ -161,15 +160,15 @@
         "call_in_time": "7.75 Seconds",
         "uses": "Unlimited",
         "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
-            "damage": "24",
-            "penetration": "High"
+            "damage": "300",
+            "damage_vs_durable": "300",
+            "penetration": "Heavy I"
         },
         "weapon_handling": {
             "lock_on": "1.5s",
             "turning_speed": "24\u00b0/s",
-            "cooldown": "180s",
             "range": "85m"
         },
         "ammunition": {},
@@ -199,15 +198,15 @@
         "call_in_time": "7.75 Seconds",
         "uses": "Unlimited",
         "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
-            "damage": "390",
-            "penetration": "Medium"
+            "damage": "90",
+            "damage_vs_durable": "23",
+            "penetration": "Medium I"
         },
         "weapon_handling": {
             "lock_on": "0.5s",
             "turning_speed": "72\u00b0/s",
-            "cooldown": "180s",
             "range": "75m"
         },
         "ammunition": {},
@@ -237,15 +236,15 @@
         "call_in_time": "7.75 Seconds",
         "uses": "Unlimited",
         "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
-            "damage": "130",
-            "penetration": "Medium"
+            "damage": "90",
+            "damage_vs_durable": "23",
+            "penetration": "Medium I"
         },
         "weapon_handling": {
             "lock_on": "0.1s",
             "turning_speed": "72\u00b0/s",
-            "cooldown": "180s",
             "range": "75m"
         },
         "ammunition": {},
@@ -273,22 +272,14 @@
         "call_in_time": "3 Seconds",
         "uses": "Unlimited",
         "permit_type": "Defensive",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
-            "damage": {
-                "standard": "200",
-                "vs_durable": "40"
-            },
-            "penetration": {
-                "direct": "Medium II",
-                "slight_angle": "Medium II",
-                "large_angle": "Medium II",
-                "extreme_angle": "Unarmored"
-            }
+            "damage": "200",
+            "damage_vs_durable": "40",
+            "penetration":"Medium II"
         },
         "weapon_handling": {
             "fire_rate": "660 RPM",
-            "cooldown": "180s",
             "capacity": "300"
         },
         "ammunition": {},
@@ -316,13 +307,12 @@
         "call_in_time": "3 Seconds",
         "uses": "Unlimited",
         "permit_type": "Defensive",
-        "cooldown_time": null,
+        "cooldown_time": "90s",
         "firepower": {
             "shield_capacity": "4000",
             "shield_regen": "300 shield/s"
         },
         "weapon_handling": {
-            "cooldown": "180s",
             "shield_radius": "8m",
             "shield_broken_delay": "8s",
             "shield_regen_delay": "5s",
@@ -354,22 +344,16 @@
         "call_in_time": "3 Seconds",
         "uses": "Unlimited",
         "permit_type": "Defensive",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
             "damage": {
-                "inner_radius": "350",
-                "outer_radius": "349-0"
-            },
-            "penetration": {
-                "direct": "Unarmored",
-                "slight_angle": "Unarmored",
-                "large_angle": "Unarmored",
-                "extreme_angle": "Unarmored"
+                "damage_inner_radius": "350",
+                "damage_outer_radius": "349-0",
+                "penetration": "Medium I"
             }
         },
         "weapon_handling": {
-            "cooldown": "180s",
-            "capacity": "48"
+            "capacity": "48 Mines"
         },
         "ammunition": {},
         "acquisition": {
@@ -396,21 +380,16 @@
         "call_in_time": "3 Seconds",
         "uses": "Unlimited",
         "permit_type": "Defensive",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
             "damage": {
-                "inner_radius": "210",
-                "outer_radius": "209-0"
-            },
-            "penetration": {
-                "inner_radius": "Medium I",
-                "outer_radius": "Light II",
-                "shockwave": "Medium I"
+                "damage_inner_radius": "210",
+                "damage_outer_radius": "209-0",
+                "penetration": "Medium I"
             }
         },
         "weapon_handling": {
-            "cooldown": "180s",
-            "capacity": "48"
+            "capacity": "48 Mines"
         },
         "ammunition": {},
         "acquisition": {
@@ -437,21 +416,16 @@
         "call_in_time": "3 Seconds",
         "uses": "Unlimited",
         "permit_type": "Defensive",
-        "cooldown_time": null,
+        "cooldown_time": "180s",
         "firepower": {
             "damage": {
-                "inner_radius": "1000",
-                "outer_radius": "999-0"
-            },
-            "penetration": {
-                "inner_radius": "Heavy I",
-                "outer_radius": "Medium II",
-                "shockwave": "Heavy I"
+                "damage_inner_radius": "1000",
+                "damage_outer_radius": "999-0",
+                "penetration":"Heavy I"
             }
         },
         "weapon_handling": {
-            "cooldown": "180s",
-            "capacity": "18"
+            "capacity": "18 Mines"
         },
         "ammunition": {},
         "acquisition": {
