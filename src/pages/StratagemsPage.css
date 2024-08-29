@@ -17,7 +17,7 @@
   margin-bottom: 20px;
 }
 
-.stratagems-columns {
+.stratagem-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px; /* Increase the gap between columns */
