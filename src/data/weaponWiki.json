@@ -203,6 +203,11 @@
     "id": "throw_g123_thermite",
     "summary": "The G-123 Thermite is a specialized grenade that adheres to surfaces and burns at extremely high temperatures.",
     "usage": "Best employed against armored targets or for destroying equipment and barriers."
+  },
+  {
+    "id": "throw_k2_throwing_knife",
+    "summary": "The G-123 Thermite is a specialized grenade that adheres to surfaces and burns at extremely high temperatures.",
+    "usage": "Best employed against armored targets or for destroying equipment and barriers."
   }
 
 

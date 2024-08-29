@@ -33,7 +33,7 @@
         "image": "/assets/thrownWeapons/G-10_Incendiary.webp"
     },
     {
-        "id": "throw_g16_frag",
+        "id": "throw_g16_impact",
         "name": "G-16 Impact",
         "type": "Thrown",
         "category": "Special Throwable",
