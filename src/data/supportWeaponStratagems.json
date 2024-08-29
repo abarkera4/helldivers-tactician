@@ -211,7 +211,7 @@
       "procurement": {
           "cost": "8000 Requisition"
       },
-      "image": "/assets/stratagemIcons/supportWeapons/RL-77_Airburst_Rocket_Launcher_Icon.svg"
+      "image": "/assets/stratagemIcons/supportWeapons/RL-77_Airburst_Rocket_Launcher_Icon.webp"
   },
   {
       "id": "support_mls4x_commando",
@@ -238,7 +238,7 @@
       "procurement": {
           "cost": "8000 Requisition"
       },
-      "image": "/assets/stratagemIcons/supportWeapons/MLS-4X_Commando_Icon.svg"
+      "image": "/assets/stratagemIcons/supportWeapons/Commando_Stratagem_Icon.webp"
   },
   {
       "id": "support_rs422_railgun",
