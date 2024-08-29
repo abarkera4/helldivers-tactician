@@ -32,48 +32,6 @@ function WeaponDetail() {
     return <h1>Loading...</h1>;
   }
 
-  const spareAmmo = weapon.ammunition?.spare_magazines ?? weapon.ammunition?.spare_rounds ?? "N/A";
-
-  const renderAttackDetails = (attackName, attackData) => (
-    <div key={attackName}>
-      <strong>{attackName}:</strong>
-      <ul>
-        {typeof attackData === "object" && !Array.isArray(attackData)
-          ? Object.entries(attackData).map(([key, value]) => (
-              <li key={key}>
-                <strong>{key}:</strong> {JSON.stringify(value)}
-              </li>
-            ))
-          : attackData}
-      </ul>
-    </div>
-  );
-
-  const renderDetailsSection = () => {
-    if (!weapon.details) return null;
-
-    return (
-      <div className="weapon-stats-section">
-        <div className="stat-header">Details</div>
-        {weapon.details.tactical_reload_time && <div className="stat-value">Tactical Reload Time: {weapon.details.tactical_reload_time}</div>}
-        {weapon.details.reload_time && <div className="stat-value">Reload Time: {weapon.details.reload_time}</div>}
-        {weapon.details.scope_options && <div className="stat-value">Scope Options: {Array.isArray(weapon.details.scope_options) ? weapon.details.scope_options.join(", ") : weapon.details.scope_options}</div>}
-        {weapon.details.attacks && (
-          <div className="stat-value">
-            <strong>Attacks:</strong>
-            {Array.isArray(weapon.details.attacks) ? (
-              weapon.details.attacks.map((attackData, index) => renderAttackDetails(`Attack ${index + 1}`, attackData))
-            ) : typeof weapon.details.attacks === "object" ? (
-              Object.entries(weapon.details.attacks).map(([attackName, attackData]) => renderAttackDetails(attackName, attackData))
-            ) : (
-              <div>{weapon.details.attacks}</div>
-            )}
-          </div>
-        )}
-      </div>
-    );
-  };
-
   return (
     <div className="weapon-detail-container">
       <div className="wiki-content">
@@ -89,42 +47,23 @@ function WeaponDetail() {
         <p className="weapon-category">{weapon.category}</p>
 
         <div className="weapon-stats-section">
-          <div className="stat-header">Firepower</div>
-          <div className="stat-value">Damage: {weapon.firepower?.damage || weapon.firepower?.standard_damage || "N/A"}</div>
-          <div className="stat-value">Penetration Level: {weapon.firepower?.max_penetration || weapon.firepower?.penetration_level || "N/A"}</div>
+          <div className="stat-header">Weapon Details</div>
+          <div className="stat-value">Standard Damage: {weapon.standard_damage || "N/A"}</div>
+          <div className="stat-value">Max Penetration: {weapon.max_penetration || "N/A"}</div>
+          <div className="stat-value">Capacity: {weapon.capacity || "N/A"}</div>
+          <div className="stat-value">Recoil: {weapon.recoil || "N/A"}</div>
+          <div className="stat-value">Fire Rate: {weapon.fire_rate || "N/A"}</div>
+          <div className="stat-value">Spare Mags: {weapon.spare_mags || "N/A"}</div>
+          <div className="stat-value">Traits: {weapon.traits?.join(" • ") || "N/A"}</div>
+          <div className="stat-value">Firing Modes: {weapon.firing_modes?.join(" • ") || "N/A"}</div>
+          <div className="stat-value">Scope Options: {weapon.scope_options?.join(", ") || "N/A"}</div>
         </div>
 
         <div className="weapon-stats-section">
-          <div className="stat-header">Weapon Handling</div>
-          <div className="stat-value">Fire Rate: {weapon.weapon_handling?.fire_rate || "N/A"}</div>
-          <div className="stat-value">Recoil: {weapon.weapon_handling?.recoil || "N/A"}</div>
-          <div className="stat-value">Traits: {weapon.traits?.join(", ") || "N/A"}</div>
+          <div className="stat-header">Procurement</div>
+          <div className="stat-value">Source: {weapon.source || "N/A"}</div>
+          <div className="stat-value">Cost: {weapon.cost || "N/A"}</div>
         </div>
-
-        <div className="weapon-stats-section">
-          <div className="stat-header">Ammunition</div>
-          <div className="stat-value">Capacity: {weapon.ammunition?.capacity || weapon.ammunition?.ammo_capacity || "N/A"}</div>
-          <div className="stat-value">Spare Ammunition: {spareAmmo}</div>
-        </div>
-
-        <div className="weapon-stats-section">
-          <div className="stat-header">Acquisition</div>
-          <div className="stat-value">Source: {weapon.acquisition?.source || "N/A"}</div>
-          <div className="stat-value">Cost: {weapon.acquisition?.cost || "N/A"}</div>
-        </div>
-
-        {renderDetailsSection()}
-
-        {weapon.additional_traits && weapon.additional_traits.length > 0 && (
-          <div className="weapon-stats-section">
-            <div className="stat-header">Additional Traits</div>
-            {weapon.additional_traits.map((trait, index) => (
-              <div key={index} className="stat-value">
-                {trait.name}: {trait.description}
-              </div>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );
