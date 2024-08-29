@@ -16,26 +16,27 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "2",
-        "permit_type": null,
         "cooldown_time": "600 Seconds",
+        "acquisition": {
+            "unlock_requirement": "Level 25",
+            "cost": "20000"
+        },
         "firepower": {
             "left_arm": {
-                "damage": "WIP",
-                "ammo_capacity": "14",
-                "rate_of_fire": "WIP",
-                "armor_penetration": "High"
+                "weapon": "Rocket Pod",
+                "damage": "400",
+                "ammo_capacity": "15",
+                "rate_of_fire": "90",
+                "armor_penetration": "Heavy II"
             },
             "right_arm": {
-                "damage": "WIP",
+                "weapon": "Machine Gun",
+                "damage": "90",
                 "ammo_capacity": "1000",
-                "rate_of_fire": "WIP",
-                "armor_penetration": "Medium"
+                "rate_of_fire": "1200",
+                "armor_penetration": "Medium I"
             }
         },
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
         "image": "/assets/stratagemIcons/vehicles/EXO-45_Patriot_Exosuit_Icon.svg",
         "extra_info": []
     },
@@ -57,26 +58,27 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "2",
-        "permit_type": null,
         "cooldown_time": "600 Seconds",
+        "acquisition": {
+            "unlock_requirement": "Level 20",
+            "cost": "20000"
+        },
         "firepower": {
             "left_arm": {
-                "damage": "WIP",
+                "weapon": "Autocannon",
+                "damage": "300",
                 "ammo_capacity": "75",
-                "rate_of_fire": "WIP",
-                "armor_penetration": "High"
+                "rate_of_fire": "120",
+                "armor_penetration": "Heavy I"
             },
             "right_arm": {
-                "damage": "WIP",
+                "weapon": "Autocannon",
+                "damage": "300",
                 "ammo_capacity": "75",
-                "rate_of_fire": "WIP",
-                "armor_penetration": "High"
+                "rate_of_fire": "120",
+                "armor_penetration": "Heavy I"
             }
         },
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {},
-        "details": {},
         "image": "/assets/stratagemIcons/vehicles/EXO-49_Emancipator_Exosuit_Icon.webp",
         "extra_info": []
     }
