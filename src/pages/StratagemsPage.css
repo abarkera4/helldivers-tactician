@@ -44,9 +44,10 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 130px;  /* Adjust to ensure the width fits the container */
-  max-width: 130px; /* Ensure max-width matches the width */
-  box-sizing: border-box; /* Include padding in the width calculation */
+  width: 130px;  /* Adjust width to fit container */
+  max-width: 130px; /* Keep max-width consistent with width */
+  overflow: hidden; /* Prevent any overflow */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .stratagem-item-link {
@@ -63,7 +64,7 @@
 }
 
 .stratagem-image {
-  width: 100%;
+  width: 100%;  /* Ensure the image fits within the container */
   height: auto;
   margin-bottom: 10px;
 }
