@@ -40,7 +40,11 @@ function StratagemDetail() {
       return <EagleStratagemDetails details={stratagem.details} />;
     } else if (supportWeaponsStratagems.some((support) => support.id === stratagem.id)) {
       console.log("Rendering SupportWeaponStratagemDetails");
-      return <SupportWeaponStratagemDetails details={stratagem.details} />;
+
+      // Log the stratagem object to inspect its structure
+      console.log("Support Weapon Stratagem Data:", stratagem);
+
+      return <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} acquisition={stratagem.acquisition} />;
     } else {
       console.log("No detailed information available.");
       return <p>No detailed information available.</p>;
