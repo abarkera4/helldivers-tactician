@@ -32,16 +32,18 @@ function StratagemDetail() {
   }
 
   const renderStratagemDetails = () => {
-    switch (stratagem.category) {
-      case "Support Weapon":
-        return <SupportWeaponStratagemDetails {...stratagem} />;
-      case "Orbital":
-        return <OrbitalStratagemDetails details={stratagem.details} />;
-      case "Eagle":
-        return <EagleStratagemDetails details={stratagem.details} />;
-      // Add more cases here if you have other subcomponents
-      default:
-        return <p>No detailed information available for this stratagem type.</p>;
+    if (orbitalStratagems.some((orbital) => orbital.id === stratagem.id)) {
+      console.log("Rendering OrbitalStratagemDetails");
+      return <OrbitalStratagemDetails details={stratagem.details} />;
+    } else if (eagleStratagems.some((eagle) => eagle.id === stratagem.id)) {
+      console.log("Rendering EagleStratagemDetails");
+      return <EagleStratagemDetails details={stratagem.details} />;
+    } else if (supportWeaponsStratagems.some((support) => support.id === stratagem.id)) {
+      console.log("Rendering SupportWeaponStratagemDetails");
+      return <SupportWeaponStratagemDetails details={stratagem.details} />;
+    } else {
+      console.log("No detailed information available.");
+      return <p>No detailed information available.</p>;
     }
   };
 
