@@ -63,7 +63,8 @@
 }
 
 .stratagem-image {
-  max-width: 70%;
+  width: 100%;
+  height: auto; /* Ensures the image height scales with the width */
   margin-bottom: 15px;
 }
 
