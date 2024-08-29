@@ -1,574 +1,426 @@
 [
-    {
-        "id": "support_rl77_airburst",
-        "name": "RL-77 Airburst Rocket Launcher",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190"
-        ],
-        "call_in_time": "7 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {
-            "damage": "500+500",
-            "penetration_level": "6, 5, 3"
-        },
-        "weapon_handling": {},
-        "ammunition": {
-            "ammo_capacity": "6 (5 in Backpack + 1 loaded)"
-        },
-        "acquisition": {},
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/RL-77_Airburst_Rocket_Launcher_Icon.webp",
-        "extra_info": []
+  {
+      "id": "support_mg43_machine_gun",
+      "name": "MG-43 Machine Gun",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 1,
+      "unlock_cost": "Already Unlocked",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ↑ ←",
+      "firepower": {
+          "standard_damage": 90,
+          "max_penetration": "Medium I",
+          "capacity": 150,
+          "fire_rate": "600 rpm • 760 rpm • 900 rpm",
+          "spare_mags": "3",
+          "traits": "Medium I",
+          "firing_modes": "Auto"
+      },
+      "procurement": {
+          "cost": "Starting Stratagem"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/MG-43_Machine_Gun_Icon.svg"
+  },
+  {
+      "id": "support_apw1_anti_materiel_rifle",
+      "name": "APW-1 Anti-Materiel Rifle",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 2,
+      "unlock_cost": "5000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← → ↓",
+      "firepower": {
+          "standard_damage": 390,
+          "max_penetration": "Medium II",
+          "capacity": "7 + 1",
+          "fire_rate": "350 rpm",
+          "spare_mags": "6",
+          "firing_modes": "Semi-auto only"
+      },
+      "procurement": {
+          "cost": "5000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/APW-1_Anti-Materiel_Rifle_Icon.svg"
+  },
+  {
+      "id": "support_m105_stalwart",
+      "name": "M-105 Stalwart",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 2,
+      "unlock_cost": "3500 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← ↑",
+      "firepower": {
+          "standard_damage": 60,
+          "max_penetration": "Light II",
+          "capacity": 250,
+          "fire_rate": "700 rpm • 850 rpm • 1150 rpm",
+          "spare_mags": "3",
+          "firing_modes": "Auto"
+      },
+      "procurement": {
+          "cost": "3500 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/M-105_Stalwart_Icon.svg"
+  },
+  {
+      "id": "support_eat17_expendable_antitank",
+      "name": "EAT-17 Expendable Anti-Tank",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 3,
+      "unlock_cost": "3000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod",
+          "Explosive"
+      ],
+      "stratagem_code": "↓ ← → ↑",
+      "firepower": {
+          "standard_damage": 650,
+          "max_penetration": "Heavy II",
+          "capacity": 1,
+          "spare_mags": "0",
+          "firing_modes": "Single shot"
+      },
+      "procurement": {
+          "cost": "3000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/EAT-17_Expendable_Anti-Tank_Icon.svg"
+  },
+  {
+      "id": "support_gr8_recoilless_rifle",
+      "name": "GR-8 Recoilless Rifle",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 5,
+      "unlock_cost": "6000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod",
+          "Explosive"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← → →",
+      "firepower": {
+          "standard_damage": 650,
+          "max_penetration": "Heavy II",
+          "capacity": 1,
+          "spare_mags": "5 (Backpack)",
+          "firing_modes": "Semi"
+      },
+      "procurement": {
+          "cost": "6000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/GR-8_Recoilless_Rifle_Icon.svg"
+  },
+  {
+      "id": "support_flam40_flamethrower",
+      "name": "FLAM-40 Flamethrower",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 10,
+      "unlock_cost": "6000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod",
+          "Incendiary"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← ←",
+      "firepower": {
+          "standard_damage": 3,
+          "max_penetration": "Medium I",
+          "spare_mags": "4 Magazines"
+      },
+      "procurement": {
+          "cost": "6000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/FLAM-40_Flamethrower_Icon.svg"
+  },
+  {
+      "id": "support_mg206_heavy_machine_gun",
+      "name": "MG-206 Heavy Machine Gun",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 12,
+      "unlock_cost": "6000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← ← ↓",
+      "firepower": {
+          "standard_damage": 150,
+          "max_penetration": "Medium II",
+          "capacity": 75,
+          "fire_rate": "450 rpm • 600 rpm • 750 rpm",
+          "spare_mags": "2",
+          "firing_modes": "Auto"
+      },
+      "procurement": {
+          "cost": "6000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/MG-206_Heavy_Machine_Gun_Icon.svg"
+  },
+  {
+      "id": "support_rl77_airburst",
+      "name": "RL-77 Airburst Rocket Launcher",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 15,
+      "unlock_cost": "8000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← ↑ ← →",
+      "firepower": {
+          "standard_damage": 0,
+          "max_penetration": "Medium I",
+          "capacity": 1,
+          "spare_mags": "5 (Backpack)",
+          "firing_modes": "Semi"
+      },
+      "procurement": {
+          "cost": "8000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/RL-77_Airburst_Rocket_Launcher_Icon.svg"
+  },
+  {
+      "id": "support_mls4x_commando",
+      "name": "MLS-4X Commando",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 15,
+      "unlock_cost": "8000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod",
+          "Explosive"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← ← ← →",
+      "firepower": {
+          "standard_damage": 450,
+          "max_penetration": "Heavy II",
+          "capacity": 4,
+          "spare_mags": "0",
+          "firing_modes": "Semi • Laser-guided • Dumb-Fire"
+      },
+      "procurement": {
+          "cost": "8000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/MLS-4X_Commando_Icon.svg"
+  },
+  {
+      "id": "support_rs422_railgun",
+      "name": "RS-422 Railgun",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 20,
+      "unlock_cost": "10000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← ↑ ← →",
+      "firepower": {
+          "standard_damage": 600,
+          "max_penetration": "Heavy III",
+          "capacity": 1,
+          "spare_mags": "20 Rounds",
+          "firing_modes": "Safe • Unsafe"
+      },
+      "procurement": {
+          "cost": "10000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/RS-422_Railgun_Icon.svg"
+  },
+  {
+      "id": "support_faf14_spear",
+      "name": "FAF-14 Spear",
+      "type": "Stratagem",
+      "category": "Support Weapon",
+      "permit_type": "Supply",
+      "unlock_level": 20,
+      "unlock_cost": "9000 Requisition",
+      "module": "Patriotic Administration Center",
+      "traits": [
+          "Support Weapon",
+          "Hellpod"
+      ],
+      "stratagem_code": "↓ ↓ ↑ ← ↑ ← ←",
+      "firepower": {
+          "standard_damage": 1000,
+          "max_penetration": "Heavy IV",
+          "capacity": 1,
+          "spare_mags": "3 (Backpack)",
+          "firing_modes": "Semi"
+      },
+      "procurement": {
+          "cost": "9000 Requisition"
+      },
+      "image": "/assets/stratagemIcons/supportWeapons/FAF-14_Spear_Icon.svg"
+  },
+  {
+    "id": "support_ac8_autocannon",
+    "name": "AC-8 Autocannon",
+    "type": "Stratagem",
+    "category": "Support Weapon",
+    "permit_type": "Support",
+    "unlock_level": 10,
+    "unlock_cost": "7000 Requisition",
+    "module": "Patriotic Administration Center",
+    "traits": [
+        "Support Weapon",
+        "Hellpod"
+    ],
+    "stratagem_code": "↓↓↑←→↑",
+    "firepower": {
+        "standard_damage": 260,
+        "max_penetration": "Medium II",
+        "capacity": 10,
+        "spare_mags": "10 Clips in Backpack (5 spare mags)",
+        "firing_modes": "Semi • Auto"
     },
-    {
-        "id": "support_ac8_autocannon",
-        "name": "AC-8 Autocannon",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Medium Armor Penetrating",
-            "Team Reload"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2192",
-            "\u2191"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {
-            "damage": "260 (Direct hit) | 150 (Blast AOE)"
-        },
-        "weapon_handling": {
-            "fire_modes": "Automatic"
-        },
-        "ammunition": {
-            "ammo_capacity": "10 (2 clips)",
-            "spare_clips": "10"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 10",
-            "cost": "7000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/AC-8_Autocannon_Icon.svg",
-        "extra_info": []
+    "procurement": {
+        "cost": "7000 Requisition"
     },
-    {
-        "id": "support_flam40_flamethrower",
-        "name": "Flam-40 Flamethrower",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Incendiary"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2190"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {
-            "recoil": "None"
-        },
-        "ammunition": {
-            "ammo_capacity": "100",
-            "spare_canisters": "4"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 10",
-            "cost": "6000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/FLAM-40_Flamethrower_Icon.svg",
-        "extra_info": []
+    "image": "/assets/stratagemIcons/supportWeapons/AC-8_Autocannon_Icon.svg"
+  },
+  {
+    "id": "support_gl21_grenade_launcher",
+    "name": "GL-21 Grenade Launcher",
+    "type": "Stratagem",
+    "category": "Support Weapon",
+    "permit_type": "Supply",
+    "unlock_level": 5,
+    "unlock_cost": "6000 Requisition",
+    "module": "Engineering Bay",
+    "traits": [
+        "Support Weapon",
+        "Hellpod",
+        "Explosive"
+    ],
+    "stratagem_code": "↓ ↓ ↑ ← ←",
+    "firepower": {
+        "standard_damage": 400,
+        "max_penetration": "Medium I",
+        "capacity": 10,
+        "spare_mags": "2",
+        "firing_modes": "Semi • Auto"
     },
-    {
-        "id": "support_las98_laser_cannon",
-        "name": "LAS-98 Laser Cannon",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Medium Armor Penetration"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2192"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {
-            "spare_heat_sinks": "1"
-        },
-        "acquisition": {
-            "source": "Engineering Bay",
-            "unlock_requirement": "Level 5",
-            "cost": "4000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/LAS-98_Laser_Cannon_Icon.svg",
-        "extra_info": []
+    "procurement": {
+        "source": "Engineering Bay",
+        "cost": "6000"
     },
-    {
-        "id": "support_m105_stalwart",
-        "name": "M-105 Stalwart",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Light Armor Penetrating"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2191"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {
-            "fire_rate": [
-                "700 RPM",
-                "850 RPM (default)",
-                "1150 RPM"
-            ]
-        },
-        "ammunition": {
-            "ammo_capacity": "250",
-            "spare_magazines": "3"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 5",
-            "cost": "3500"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/M-105_Stalwart_Icon.svg",
-        "extra_info": []
+    "image": "/assets/stratagemIcons/supportWeapons/GL-21_Grenade_Launcher_Icon.svg"
+},
+{
+    "id": "support_las98_laser_cannon",
+    "name": "LAS-98 Laser Cannon",
+    "type": "Stratagem",
+    "category": "Support Weapon",
+    "permit_type": "Supply",
+    "unlock_level": 5,
+    "unlock_cost": "4000 Requisition",
+    "module": "Engineering Bay",
+    "traits": [
+        "Support Weapon",
+        "Hellpod"
+    ],
+    "stratagem_code": "↓ ↓ ↑ ← ↑",
+    "firepower": {
+        "standard_damage": 350,
+        "max_penetration": "Medium II",
+        "spare_mags": "1"
     },
-    {
-        "id": "support_mg43_machine_gun",
-        "name": "MG-43 Machine Gun",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Medium Armor Penetrating"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2191",
-            "\u2190"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {
-            "damage": "80",
-            "structure_damage": "8"
-        },
-        "weapon_handling": {
-            "fire_rate": [
-                "630 RPM",
-                "760 RPM (default)",
-                "900 RPM"
-            ]
-        },
-        "ammunition": {
-            "ammo_capacity": "150",
-            "spare_belts": "2"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Tutorial completion",
-            "cost": "Free"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/MG-43_Machine_Gun_Icon.svg",
-        "extra_info": []
+    "procurement": {
+        "source": "Engineering Bay",
+        "cost": "4000 Requisition"
     },
-    {
-        "id": "support_arc3_arc_thrower",
-        "name": "ARC-3 Arc Thrower",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod"
-        ],
-        "input_code": null,
-        "call_in_time": null,
-        "uses": null,
-        "permit_type": null,
-        "cooldown_time": null,
-        "firepower": {
-            "damage": "250",
-            "structure_damage": "50"
-        },
-        "weapon_handling": {},
-        "ammunition": {
-            "ammo_capacity": "\u221e"
-        },
-        "acquisition": {},
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/ARC-3_Arc_Thrower_Icon.svg",
-        "extra_info": []
+    "image": "/assets/stratagemIcons/supportWeapons/LAS-98_Laser_Cannon_Icon.svg"
+},
+{
+    "id": "support_arc3_arc_thrower",
+    "name": "ARC-3 Arc Thrower",
+    "type": "Stratagem",
+    "category": "Support Weapon",
+    "permit_type": "Supply",
+    "unlock_level": 15,
+    "unlock_cost": "7000 Requisition",
+    "module": "Engineering Bay",
+    "traits": [
+        "Support Weapon",
+        "Hellpod"
+    ],
+    "stratagem_code": "↓ ↓ ↑ → ←",
+    "firepower": {
+        "standard_damage": 0,
+        "max_penetration": "Heavy III",
+        "fire_rate": 60
     },
-    {
-        "id": "support_gl21_grenade_launcher",
-        "name": "GL-21 Grenade Launcher",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Explosive"
-        ],
-        "input_code": null,
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {
-            "ammo_capacity": "10",
-            "spare_magazines": "2"
-        },
-        "acquisition": {
-            "source": "Engineering Bay",
-            "unlock_requirement": "Level 5",
-            "cost": "6000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/GL-21_Grenade_Launcher_Icon.svg",
-        "extra_info": []
+    "procurement": {
+        "source": "Engineering Bay",
+        "cost": "7000 Requisition"
     },
-    {
-        "id": "support_apw1_anti_materiel_rifle",
-        "name": "APW-1 Anti-Materiel Rifle",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2192",
-            "\u2193"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {
-            "fire_rate": "Semi-Auto only",
-            "scope_ranges": "50m, 100m, 200m"
-        },
-        "ammunition": {
-            "ammo_capacity": "7+1",
-            "spare_magazines": "6"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 2",
-            "cost": "5000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/APW-1_Anti-Materiel_Rifle_Icon.svg",
-        "extra_info": []
+    "image": "/assets/stratagemIcons/supportWeapons/ARC-3_Arc_Thrower_Icon.svg"
+},
+{
+    "id": "support_las99_quasar_cannon",
+    "name": "LAS-99 Quasar Cannon",
+    "type": "Stratagem",
+    "category": "Support Weapon",
+    "permit_type": "Supply",
+    "unlock_level": 18,
+    "unlock_cost": "7500 Requisition",
+    "module": "Engineering Bay",
+    "traits": [
+        "Support Weapon",
+        "Hellpod"
+    ],
+    "stratagem_code": "↓ ↓ ↑ ← → ←",
+    "firepower": {
+        "standard_damage": 650,
+        "max_penetration": "Heavy II",
+        "fire_rate": 19
     },
-    {
-        "id": "support_rs422_railgun",
-        "name": "RS-422 Railgun",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Heavy Armor Penetrating",
-            "Charge-up"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2192",
-            "\u2191"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {
-            "damage": "600",
-            "structure_damage": "60 (Safe Mode) | 120 (Unsafe Mode)"
-        },
-        "weapon_handling": {
-            "fire_modes": [
-                "Safe",
-                "Unsafe"
-            ]
-        },
-        "ammunition": {
-            "ammo_capacity": "1",
-            "spare_rounds": "20"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 20",
-            "cost": "10000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/RS-422_Railgun_Icon.svg",
-        "extra_info": []
+    "procurement": {
+        "source": "Engineering Bay",
+        "cost": "7500 Requisition"
     },
-    {
-        "id": "support_gr8_recoilless_rifle",
-        "name": "GR-8 Recoilless Rifle",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Explosive"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2192",
-            "\u2192"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": "480 Seconds (8 Minutes)",
-        "firepower": {
-            "damage": "650",
-            "structure_damage": "60"
-        },
-        "weapon_handling": {
-            "fire_modes": "Semi-Automatic"
-        },
-        "ammunition": {
-            "ammo_capacity": "1+5 (in Backpack)"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 15",
-            "cost": "8000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/GR-8_Recoilless_Rifle_Icon.svg",
-        "extra_info": []
-    },
-    {
-        "id": "support_faf14_spear",
-        "name": "FAF-14 Spear",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Heavy Armor Penetrating",
-            "Lock-On Targeting",
-            "Team Reload"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2192",
-            "\u2193"
-        ],
-        "call_in_time": "3 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {
-            "ammo_capacity": "1",
-            "spare_missiles": "3"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 20",
-            "cost": "9000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/FAF-14_Spear_Icon.svg",
-        "extra_info": []
-    },
-    {
-        "id": "support_las99_quasar_cannon",
-        "name": "LAS-99 Quasar Cannon",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2192",
-            "\u2192",
-            "\u2191"
-        ],
-        "call_in_time": "8 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
-        "acquisition": {
-            "source": "Engineering Bay",
-            "unlock_requirement": "Level 18",
-            "cost": "7500"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/LAS-99_Quasar_Cannon_Icon.svg",
-        "extra_info": []
-    },
-    {
-        "id": "support_mg206_heavy_machine_gun",
-        "name": "MG-206 Heavy Machine Gun",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [
-            "Support Weapon",
-            "Hellpod",
-            "Medium Armor Penetration"
-        ],
-        "input_code": [
-            "\u2193",
-            "\u2193",
-            "\u2191",
-            "\u2190",
-            "\u2190",
-            "\u2193"
-        ],
-        "call_in_time": "8 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply Stratagem",
-        "cooldown_time": null,
-        "firepower": {
-            "damage": "150"
-        },
-        "weapon_handling": {
-            "fire_modes": [
-                "450 RPM",
-                "600 RPM",
-                "750 RPM"
-            ]
-        },
-        "ammunition": {
-            "ammo_capacity": "75",
-            "spare_belts": "2"
-        },
-        "acquisition": {
-            "source": "Patriotic Center Administration",
-            "unlock_requirement": "Level 12",
-            "cost": "6000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/MG-206_Heavy_Machine_Gun_Icon.svg",
-        "extra_info": []
-    },
-    {
-        "id": "support_eat17_expendable_antitank",
-        "name": "EAT-17 Expendable Anti-Tank",
-        "type": "Stratagem",
-        "category": "Support Weapon",
-        "traits": [],
-        "input_code": [
-            "\u2193",
-            "\u2190",
-            "\u2192",
-            "\u2191"
-        ],
-        "call_in_time": "2 Seconds",
-        "uses": "Unlimited",
-        "permit_type": "Supply Stratagem",
-        "cooldown_time": "70 Seconds",
-        "firepower": {
-            "damage": "N/A",
-            "structure_damage": "N/A"
-        },
-        "weapon_handling": {
-            "fire_rate": "N/A",
-            "recoil": "N/A"
-        },
-        "ammunition": {
-            "ammo_capacity": "N/A",
-            "spare_magazines": "N/A"
-        },
-        "acquisition": {
-            "source": "Patriotic Administration Center",
-            "unlock_requirement": "Level 3",
-            "cost": "R 3000"
-        },
-        "details": {},
-        "image": "/assets/stratagemIcons/supportWeapons/EAT-17_Expendable_Anti-Tank_Icon.svg",
-        "extra_info": []
-    }
+    "image": "/assets/stratagemIcons/supportWeapons/LAS-99_Quasar_Cannon_Icon.svg"
+}
+
+
 ]
