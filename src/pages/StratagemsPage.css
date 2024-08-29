@@ -1,13 +1,23 @@
 .stratagems-page-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
+  background-color: #1f1f1f; /* Slightly darker background */
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.stratagems-columns {
+.stratagems-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.stratagem-columns {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -15,8 +25,8 @@
   box-sizing: border-box;
 }
 
-.stratagems-columns > div {
-  width: 48%; /* Two columns with a small gap */
+.stratagem-columns > div {
+  width: 48%;
 }
 
 .stratagem-category {
@@ -56,11 +66,11 @@
   max-width: 75%;
   border-radius: 10px;
   border: 2px solid #00aaff;
-  margin-bottom: 20px; /* Increase margin to match larger icon */
+  margin-bottom: 20px;
 }
 
 .stratagem-name {
-  font-size: 1.4rem; /* Slightly increase the font size */
+  font-size: 1.4rem;
   color: #f0f0f0;
   text-transform: uppercase;
   text-decoration: none;

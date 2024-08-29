@@ -5,7 +5,7 @@ import eagleStrikes from "../data/eagleStratagems.json";
 import orbitalStrikes from "../data/orbitalStratagems.json";
 import supportWeapons from "../data/supportWeaponStratagems.json";
 import vehicles from "../data/vehicleStratagems.json";
-import "./StratagemsPage.css"; // Updated to StratagemsPage.css
+import "./StratagemsPage.css";
 
 function StratagemsPage() {
   const [isBackpacksOpen, setIsBackpacksOpen] = useState(false);
@@ -58,7 +58,6 @@ function StratagemsPage() {
     <div className="stratagems-page-container">
       <div className="stratagems-page">
         <h1>Stratagems</h1>
-
         <div className="stratagem-columns">
           <div>
             {/* Support Weapons Section */}
