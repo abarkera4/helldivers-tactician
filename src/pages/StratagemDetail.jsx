@@ -7,6 +7,7 @@ import orbitalStratagems from "../data/orbitalStratagems.json";
 import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
+import SupportWeaponStratagemDetails from "./SupportWeaponStratagemDetails"; // Import your subcomponent
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -28,35 +29,6 @@ function StratagemDetail() {
     return <h1>Loading...</h1>;
   }
 
-  const renderDetailsSection = () => {
-    if (!stratagem.details && !stratagem.acquisition) return null;
-
-    return (
-      <div className="stratagem-stats-section">
-        {stratagem.details && (
-          <div>
-            <div className="stat-header">Details</div>
-            {Object.entries(stratagem.details).map(([key, value]) => (
-              <div key={key} className="stat-value">
-                {key}: {value}
-              </div>
-            ))}
-          </div>
-        )}
-        {stratagem.acquisition && (
-          <div>
-            <div className="stat-header">Procurement</div>
-            {Object.entries(stratagem.acquisition).map(([key, value]) => (
-              <div key={key} className="stat-value">
-                {key}: {value}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  };
-
   return (
     <div className="stratagem-detail-container">
       <div className="wiki-content">
@@ -76,7 +48,8 @@ function StratagemDetail() {
           <div className="stat-value">{stratagem.traits?.join(" • ") || "No traits available."}</div>
         </div>
 
-        {renderDetailsSection()}
+        {/* Use SupportWeaponStratagemDetails to render additional details */}
+        <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} acquisition={stratagem.acquisition} />
       </div>
     </div>
   );
