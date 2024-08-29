@@ -33,20 +33,12 @@ function StratagemDetail() {
 
   const renderStratagemDetails = () => {
     if (orbitalStratagems.some((orbital) => orbital.id === stratagem.id)) {
-      console.log("Rendering OrbitalStratagemDetails");
       return <OrbitalStratagemDetails details={stratagem.details} />;
     } else if (eagleStratagems.some((eagle) => eagle.id === stratagem.id)) {
-      console.log("Rendering EagleStratagemDetails");
       return <EagleStratagemDetails details={stratagem.details} />;
     } else if (supportWeaponsStratagems.some((support) => support.id === stratagem.id)) {
-      console.log("Rendering SupportWeaponStratagemDetails");
-
-      // Log the stratagem object to inspect its structure
-      console.log("Support Weapon Stratagem Data:", stratagem);
-
       return <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} acquisition={stratagem.acquisition} />;
     } else {
-      console.log("No detailed information available.");
       return <p>No detailed information available.</p>;
     }
   };
