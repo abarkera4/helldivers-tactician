@@ -1,21 +1,4 @@
 .stratagem-detail-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.wiki-content {
-  max-width: 50%;
-  width: 100%;
-  margin-right: 20px;
-  margin-left: auto;
-  text-align: left;
-  flex-basis: 100%;
-}
-
-.stratagem-stats-block {
   background-color: #1c1c1c;
   color: #f0f0f0;
   padding: 20px;
@@ -23,20 +6,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   max-width: 350px;
   width: 100%;
-  margin-left: 20px;
-  flex-basis: 100%;
-}
-
-.stratagem-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  border: 2px solid #00aaff;
-  box-shadow: 0 0 8px #00aaff;
+  margin: 20px auto;
+  text-align: left;
 }
 
 .stratagem-title {
@@ -84,15 +55,21 @@
   border-bottom: none;
 }
 
-/* Additional styling for alignment */
-.stratagem-stats-block .stat-header,
-.stratagem-stats-block .stat-value {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .stat-value strong {
   color: #00aaff;
+}
+
+/* Adjusted image display */
+.stratagem-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #00aaff;
+  box-shadow: 0 0 8px #00aaff;
 }
 
 /* Media Query for Mobile Devices */
@@ -100,26 +77,6 @@
   .stratagem-detail-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .wiki-content {
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .stratagem-stats-block {
-    max-width: 90%;
-    margin-left: 0;
-    margin-top: 20px;
-    padding: 15px;
-  }
-
-  .stratagem-image {
-    width: 80%;
-    margin: 0 auto 10px auto;
   }
 
   .stratagem-title {
