@@ -7,7 +7,7 @@ import orbitalStratagems from "../data/orbitalStratagems.json";
 import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
-import SupportWeaponStratagemDetails from "./SupportWeaponStratagemDetails"; // Import your subcomponent
+import SupportWeaponStratagemDetails from "../components/SupportWeaponStratagemDetails.jsx";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
