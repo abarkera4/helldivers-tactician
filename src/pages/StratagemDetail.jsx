@@ -7,9 +7,6 @@ import orbitalStratagems from "../data/orbitalStratagems.json";
 import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
-import OrbitalStratagemDetails from "../components/OrbitalStratagemDetails";
-import EagleStratagemDetails from "../components/EagleStratagemDetails";
-import SupportWeaponStratagemDetails from "../components/SupportWeaponStratagemDetails";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -31,15 +28,33 @@ function StratagemDetail() {
     return <h1>Loading...</h1>;
   }
 
-  const renderDetails = () => {
-    if (orbitalStratagems.some((s) => s.id === stratagem.id)) {
-      return <OrbitalStratagemDetails details={stratagem.details} />;
-    } else if (eagleStratagems.some((s) => s.id === stratagem.id)) {
-      return <EagleStratagemDetails details={stratagem.details} />;
-    } else if (supportWeaponsStratagems.some((s) => s.id === stratagem.id)) {
-      return <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} acquisition={stratagem.acquisition} />;
-    }
-    return null;
+  const renderDetailsSection = () => {
+    if (!stratagem.details && !stratagem.acquisition) return null;
+
+    return (
+      <div className="stratagem-stats-section">
+        {stratagem.details && (
+          <div>
+            <div className="stat-header">Details</div>
+            {Object.entries(stratagem.details).map(([key, value]) => (
+              <div key={key} className="stat-value">
+                {key}: {value}
+              </div>
+            ))}
+          </div>
+        )}
+        {stratagem.acquisition && (
+          <div>
+            <div className="stat-header">Procurement</div>
+            {Object.entries(stratagem.acquisition).map(([key, value]) => (
+              <div key={key} className="stat-value">
+                {key}: {value}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
   };
 
   return (
@@ -56,15 +71,12 @@ function StratagemDetail() {
         <h1 className="stratagem-title">{stratagem.name}</h1>
         <p className="stratagem-category">{stratagem.category || stratagem.type}</p>
 
-        <div className="stat-section">
-          <h2>Traits</h2>
-          <p>{stratagem.traits?.join(", ") || "No traits available."}</p>
+        <div className="stratagem-stats-section">
+          <div className="stat-header">Traits</div>
+          <div className="stat-value">{stratagem.traits?.join(" • ") || "No traits available."}</div>
         </div>
 
-        <div className="stat-section">
-          <h2>Details</h2>
-          {renderDetails()}
-        </div>
+        {renderDetailsSection()}
       </div>
     </div>
   );
