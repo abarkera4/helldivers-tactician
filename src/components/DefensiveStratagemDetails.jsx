@@ -1,5 +1,4 @@
 import React from "react";
-import "./DefensiveStratagemDetails.css";
 
 const DefensiveStratagemDetails = ({ firepower, weaponHandling, acquisition }) => {
   return (
