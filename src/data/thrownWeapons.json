@@ -50,7 +50,7 @@
         "penetration": 3,
         "outer_radius": 7,
         "fuse_time": "0.0s",
-        "image": "/assets/thrownWeapons/G-13_Incendiary_Impact.webp"
+        "image": "/assets/thrownWeapons/Incen_impact.webp"
       },
       {
         "id": "g_23_stun",
@@ -70,7 +70,7 @@
         "penetration": 0,
         "outer_radius": 5,
         "fuse_time": "2.4s",
-        "image": "/assets/thrownWeapons/G3_Smoke.png"
+        "image": "/assets/thrownWeapons/G-3_Smoke.webp"
     },    
     {
         "id": "g123_thermite",
@@ -80,7 +80,7 @@
         "penetration": 7,
         "outer_radius": 2,
         "fuse_time": "2.9s",
-        "image": "/assets/thrownWeapons/G123_Thermite.png"
+        "image": "/assets/thrownWeapons/G-123_Thermite.webp"
     },
     {
         "id": "k2_throwing_knife",
@@ -90,7 +90,7 @@
         "penetration": 3,
         "outer_radius": "N/A",
         "fuse_time": "Impact",
-        "image": "/assets/thrownWeapons/K2_Throwing_Knife.png"
+        "image": "/assets/thrownWeapons/K-2_Throwing_Knife_Throwable_Icon.webp"
     }
         
 ]

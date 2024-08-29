@@ -19,7 +19,7 @@
         ],
         "scope_options": "N/A",
         "source": "Starter Equipment",
-        "image": "/assets/secondaryWeapons/P-2_Peacemaker_Weapon_Icon.webp"
+        "image": "/assets/secondaryWeapons/P2_Peacemaker.webp"
     },
     {
         "id": "sec_p19_redeemer",
@@ -43,7 +43,7 @@
         "scope_options": "N/A",
         "source": "Helldivers Mobilize, page 2",
         "cost": "5 Medals",
-        "image": "/assets/secondaryWeapons/P-19_Redeemer_Weapon_Icon.webp"
+        "image": "/assets/secondaryWeapons/P-19_Redeemer_no_mag.webp"
     },    
     {
         "id": "sec_p4_senator",
@@ -67,7 +67,7 @@
         "scope_options": "N/A",
         "source": "Steeled Veterans, page 1",
         "cost": "15 Medals",
-        "image": "/assets/secondaryWeapons/P-4_Senator_Weapon_Icon.webp"
+        "image": "/assets/secondaryWeapons/P-4_Senator.webp"
     },    
     {
         "id": "sec_p113_verdict",
@@ -90,7 +90,7 @@
         "scope_options": "N/A",
         "source": "Polar Patriots, page 3",
         "cost": "60 Medals",
-        "image": "/assets/secondaryWeapons/P-113_Verdict_Weapon_Icon.webp"
+        "image": "/assets/secondaryWeapons/Verdict_render.webp"
     },    
     {
         "id": "sec_sg22_bushwhacker",
@@ -108,7 +108,7 @@
         "scope_options": [],
         "source": "Viper Commandos, page 2",
         "cost": "50 Medals",
-        "image": "/assets/secondaryWeapons/SG-22_Bushwhacker.webp"
+        "image": "/assets/secondaryWeapons/SG-22_Bushwhacker_WB.webp"
     },
     {
         "id": "sec_p72_crisper",
@@ -130,7 +130,7 @@
         "scope_options": [],
         "source": "Freedom's Flame, page 3",
         "cost": "45 Medals",
-        "image": "/assets/secondaryWeapons/P-72_Crisper.webp"
+        "image": "/assets/secondaryWeapons/P-72_Crisper_Weapon_Icon.webp"
     },
     {
         "id": "sec_gp31_grenade_pistol",
@@ -174,7 +174,7 @@
         "scope_options": [],
         "source": "Cutting Edge, Page 3",
         "cost": "60 Medals",
-        "image": "/assets/secondaryWeapons/LAS-7_Dagger.webp"
+        "image": "/assets/secondaryWeapons/LAS-7_Dagger_Weapon_Icon.webp"
     }
     
 ]
