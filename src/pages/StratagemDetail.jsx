@@ -9,7 +9,7 @@ import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
 import SupportWeaponStratagemDetails from "../components/SupportWeaponStratagemDetails.jsx";
 import OrbitalStratagemDetails from "../components/OrbitalStratagemDetails.jsx";
-import EagleStratagemDetails from "../components/EagleStratagemDetails.jsx"; // Assuming there's a subcomponent for Eagle stratagems
+import EagleStratagemDetails from "../components/EagleStratagemDetails.jsx"; // Assuming this exists
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -38,7 +38,7 @@ function StratagemDetail() {
       case "Orbital":
         return <OrbitalStratagemDetails details={stratagem.details} />;
       case "Eagle":
-        return <EagleStratagemDetails {...stratagem} />;
+        return <EagleStratagemDetails details={stratagem.details} />;
       // Add more cases here if you have other subcomponents
       default:
         return <p>No detailed information available for this stratagem type.</p>;
