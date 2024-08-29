@@ -18,17 +18,12 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "Unlimited",
-        "permit_type": null,
         "cooldown_time": "480 Seconds",
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
         "acquisition": {
             "source": "Engineering Bay",
             "unlock_requirement": "Level 20",
             "cost": "10000"
         },
-        "details": {},
         "image": "/assets/stratagemIcons/supportBackpacks/SH-32_Shield_Generator_Pack_Icon.svg",
         "extra_info": []
     },
@@ -51,17 +46,12 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "Unlimited",
-        "permit_type": null,
         "cooldown_time": "480 Seconds",
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
         "acquisition": {
             "source": "Engineering Bay",
             "unlock_requirement": "Level 3",
             "cost": "4000"
         },
-        "details": {},
         "image": "/assets/stratagemIcons/supportBackpacks/B-1_Supply_Pack_Icon.svg",
         "extra_info": []
     },
@@ -84,17 +74,12 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "Unlimited",
-        "permit_type": null,
         "cooldown_time": "480 Seconds",
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
         "acquisition": {
             "source": "Engineering Bay",
             "unlock_requirement": "Level 10",
             "cost": "7500"
         },
-        "details": {},
         "image": "/assets/stratagemIcons/supportBackpacks/AX_LAS-5_Guard_Dog_Rover_Icon.svg",
         "extra_info": []
     },
@@ -117,17 +102,12 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "Unlimited",
-        "permit_type": null,
         "cooldown_time": "480 Seconds",
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
         "acquisition": {
             "source": "Robotics Workshop",
             "unlock_requirement": "Level 10",
             "cost": "7500"
         },
-        "details": {},
         "image": "/assets/stratagemIcons/supportBackpacks/AX_AR-23_Guard_Dog_Icon.svg",
         "extra_info": []
     },
@@ -150,17 +130,12 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "Unlimited",
-        "permit_type": null,
         "cooldown_time": "480 Seconds",
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
         "acquisition": {
             "source": "Hangar",
             "unlock_requirement": "Level 8",
             "cost": "6000"
         },
-        "details": {},
         "image": "/assets/stratagemIcons/supportBackpacks/LIFT-850_Jump_Pack_Icon.svg",
         "extra_info": []
     },
@@ -183,17 +158,12 @@
         ],
         "call_in_time": "5 Seconds",
         "uses": "Unlimited",
-        "permit_type": null,
         "cooldown_time": "300 Seconds",
-        "firepower": {},
-        "weapon_handling": {},
-        "ammunition": {},
         "acquisition": {
             "source": "Engineering Bay",
             "unlock_requirement": "Level 12",
             "cost": "6000"
         },
-        "details": {},
         "image": "/assets/stratagemIcons/supportBackpacks/SH-20_Ballistic_Shield_Backpack_Icon.svg",
         "extra_info": []
     }

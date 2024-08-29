@@ -9,7 +9,8 @@ import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
 import SupportWeaponStratagemDetails from "../components/SupportWeaponStratagemDetails.jsx";
 import OrbitalStratagemDetails from "../components/OrbitalStratagemDetails.jsx";
-import EagleStratagemDetails from "../components/EagleStratagemDetails.jsx"; // Assuming this exists
+import EagleStratagemDetails from "../components/EagleStratagemDetails.jsx";
+import BackpackStratagemDetails from "../components/BackpackStratagemDetails.jsx";
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -38,6 +39,8 @@ function StratagemDetail() {
       return <EagleStratagemDetails details={stratagem.details} />;
     } else if (supportWeaponsStratagems.some((support) => support.id === stratagem.id)) {
       return <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} acquisition={stratagem.acquisition} />;
+    } else if (backpackStratagems.some((backpack) => backpack.id === stratagem.id)) {
+      return <BackpackStratagemDetails acquisition={stratagem.acquisition} callInTime={stratagem.call_in_time} uses={stratagem.uses} cooldownTime={stratagem.cooldown_time} />;
     } else {
       return <p>No detailed information available.</p>;
     }

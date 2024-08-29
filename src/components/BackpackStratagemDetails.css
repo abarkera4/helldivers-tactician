@@ -1,0 +1,26 @@
+.backpack-stratagem-details {
+  margin-top: 20px;
+}
+
+.detail-section {
+  margin-bottom: 15px;
+}
+
+.detail-section h4 {
+  font-size: 1.2rem;
+  color: #00aaff;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 5px;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail-section li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+}
