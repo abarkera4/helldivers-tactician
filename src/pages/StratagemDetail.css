@@ -64,6 +64,11 @@
   margin-bottom: 8px;
   padding-bottom: 5px;
   border-bottom: 2px solid #00aaff;
+  text-align: center;
+  background-color: #00aaff;
+  color: #1c1c1c;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .stat-value {
@@ -79,18 +84,11 @@
   border-bottom: none;
 }
 
-/* Additional styling for more prominent separation lines */
+/* Additional styling for alignment */
 .stratagem-stats-block .stat-header,
 .stratagem-stats-block .stat-value {
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.stratagem-stats-block .stat-header {
-  background-color: #00aaff;
-  color: #1c1c1c;
-  padding: 5px;
-  border-radius: 5px;
 }
 
 .stat-value strong {
