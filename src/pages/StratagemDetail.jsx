@@ -8,6 +8,8 @@ import supportWeaponsStratagems from "../data/supportWeaponStratagems.json";
 import vehicleStratagems from "../data/vehicleStratagems.json";
 import stratagemWiki from "../data/stratagemWiki.json";
 import SupportWeaponStratagemDetails from "../components/SupportWeaponStratagemDetails.jsx";
+import OrbitalStratagemDetails from "../components/OrbitalStratagemDetails.jsx";
+import EagleStratagemDetails from "../components/EagleStratagemDetails.jsx"; // Assuming there's a subcomponent for Eagle stratagems
 import "./StratagemDetail.css";
 
 function StratagemDetail() {
@@ -29,6 +31,20 @@ function StratagemDetail() {
     return <h1>Loading...</h1>;
   }
 
+  const renderStratagemDetails = () => {
+    switch (stratagem.category) {
+      case "Support Weapon":
+        return <SupportWeaponStratagemDetails {...stratagem} />;
+      case "Orbital":
+        return <OrbitalStratagemDetails details={stratagem.details} />;
+      case "Eagle":
+        return <EagleStratagemDetails {...stratagem} />;
+      // Add more cases here if you have other subcomponents
+      default:
+        return <p>No detailed information available for this stratagem type.</p>;
+    }
+  };
+
   return (
     <div className="stratagem-detail-container">
       <div className="wiki-content">
@@ -48,8 +64,7 @@ function StratagemDetail() {
           <div className="stat-value">{stratagem.traits?.join(" • ") || "No traits available."}</div>
         </div>
 
-        {/* Use SupportWeaponStratagemDetails to render additional details */}
-        <SupportWeaponStratagemDetails details={stratagem.details} firepower={stratagem.firepower} weaponHandling={stratagem.weapon_handling} ammunition={stratagem.ammunition} acquisition={stratagem.acquisition} />
+        {renderStratagemDetails()}
       </div>
     </div>
   );
