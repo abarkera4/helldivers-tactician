@@ -12,7 +12,7 @@ const SupportWeaponStratagemDetails = ({ details, firepower, weaponHandling, amm
         <ul>
           {Object.entries(detailData).map(([key, value]) => (
             <li key={key}>
-              <strong>{key}:</strong> {typeof value === "object" ? JSON.stringify(value) : value}
+              <strong>{key}:</strong> {typeof value === "object" && !Array.isArray(value) && value !== null ? JSON.stringify(value) : value || "N/A"}
             </li>
           ))}
         </ul>
